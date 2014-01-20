@@ -1,0 +1,116 @@
+/* layout
+-------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.page {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: table;
+  width: 100%;
+}
+
+  header h1 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+section {
+  padding: 50px 250px;
+  margin-bottom: 1em;
+}
+  section section {
+    padding: 0;
+  }
+
+
+/* typography
+-------------------------------------*/
+@font-face {
+    font-family: 'Museo sans';
+    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.eot');
+    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.eot?#iefix') format('embedded-opentype'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.woff') format('woff'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.ttf') format('truetype'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.svg#museo_sans_cyrl100') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo sans';
+    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.eot');
+    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.eot?#iefix') format('embedded-opentype'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.woff') format('woff'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.ttf') format('truetype'),
+         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.svg#museo_sans_cyrl100') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+body {
+  font-family: 'Museo sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+p {
+  margin-top: 0;
+}
+
+header h1 {
+  font-size: 72px;
+}
+
+h1, h2 {
+  color: #00f;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* custom styles
+-------------------------------------*/
+.horizontal-images {
+  list-style: none;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+  .horizontal-images li {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .horizontal-images img {
+    max-width: 500px;
+  }
+
+.instructions {
+  border: 5px solid #000;
+  padding: 20px;
+}
+
+  .instructions ul {
+    list-style: square;
+  }
+
+.emphasis {
+  color: #ff0000;
+}
