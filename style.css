@@ -37,29 +37,8 @@ section {
 
 /* typography
 -------------------------------------*/
-@font-face {
-    font-family: 'Museo sans';
-    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.eot');
-    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.eot?#iefix') format('embedded-opentype'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.woff') format('woff'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.ttf') format('truetype'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100.svg#museo_sans_cyrl100') format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo sans';
-    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.eot');
-    src: url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.eot?#iefix') format('embedded-opentype'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.woff') format('woff'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.ttf') format('truetype'),
-         url('http://moscoding.ru/wp-content/themes/mcs/fonts/museosanscyrl-100italic.svg#museo_sans_cyrl100') format('svg');
-    font-weight: 100;
-    font-style: italic;
-}
 body {
-  font-family: 'Museo sans', sans-serif;
+  font-family: "PT Sans", helvetica, arial, sans-serif;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -73,6 +52,7 @@ header h1 {
 }
 
 h1, h2 {
+  font-family: "PT Serif", georgia, times, serif;
   color: #00f;
 }
 

@@ -2,17 +2,16 @@
 <html>
 <head>
 <title>Moscow Coding School</title>
-<meta charset="utf-8">
-<!--
+<meta charset="utf-8">ф
 <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet'>
--->
 <link href="normalize.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page">
     <h1>Основы HTML и СSS</h1>
+    <h2>День 1</h2>
   </header>
 
   <section>
@@ -154,6 +153,10 @@
   </section>
 
   <section>
+    TODO: форматирование, отступы етц. + комментарии
+  </section>
+
+  <section>
     <h1>Wikipedia</h1>
     <p>Откройте страницу Википедии какого-нибудь любимого вами музыканта. Я, например, открою страницу <a href="http://en.wikipedia.org/wiki/David_Byrne">Дэвида Бирна</a>.</p>
 
@@ -270,7 +273,7 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
       <li>Теперь давайте вернемся к первому файлу и в нем в каком-нибудь из первых параграфов поставим ссылку на нашу новую страницу
         <pre><code>&lt;p>&lt;strong>David Byrne&lt;/strong> (born May 14, 1952) is a Scottish-born musician permanently residing in the United States, a founding member and principal songwriter of the American New Wave band <span class="emphasis">&lt;a href="talking-heads.html">Talking Heads&lt;/a></span>, active between 1975 and 1991.&lt;/p></code></pre>
       </li>
-      <li>Сохраните оба документа, обновите первую страницу и попробуйте проследовать по созданной ссылке</li>
+      <li>Сохраните оба документа, обновите первую страницу и попробуйте проследовать по ссылкам в обоих документах</li>
     </ul>
     <p>Класс! Мы почти закодили википедию!</p>
   </section>
@@ -279,8 +282,26 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
 
   <h2>Картинки</h2>
   <p>В Википедии довольно часто встречаются картинки, давайте добавим какое-нибудь изображение на нашу страницу.</p>
-  <p>Для вставки изображений используется тэг <code>&lt;img&gt;</code>. Но просто тэга недостаточно, ведь нам нужно уточнить что именно за изображение мы хотим увидеть. Для этого используется аттрибут <code>src</code>. Его значением будет <em>путь</em> к изображению. Понятие «путь», path по-английски, используется постоянно и является одним из важных для понимания терминов — FIXME: кроме того это определяющий <em>гипер</em>-текст термин.</p>
-  <p><strong>Path</strong> — строка текста, содержащая адрес к какому-то ресурсу. Это может быть другой HTML документ, картинка или медиа-объект, вроде аудио или видео. Пока будет проще всего думать о путях как об адресах файлов на файловой системе компьютера.</p>
+  <p>Для вставки изображений используется тэг <code>&lt;img&gt;</code>. Но просто тэга недостаточно, нам нужно уточнить что именно за изображение мы хотим увидеть. Для этого используется аттрибут <code>src</code>. Его значением будет <em>путь</em> к изображению. Понятие «путь», path по-английски, используется постоянно и является одним из важных для понимания терминов — FIXME: кроме того это определяющий <em>гипер</em>-текст термин.</p>
+  <p><strong>Path</strong> — строка текста, содержащая адрес к какому-то ресурсу. Это может быть другой HTML документ, картинка или медиа-объект, вроде аудио или видео. Пока будет проще всего думать о путях как об адресах файлов на файловой системе компьютера, но относительно других файлов.</p>
+  <p>Итак, давайте вернемся на страницу википедии с которой вы брали информацию, наведем на картинку и вызовем контекстное меню, и выберем "copy image url" TODO: на русском, для того чтобы скопировать абсолютный путь к картинке</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;meta charset="utf-8">
+  &lt;title&gt;Talking Heads&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    <span class="emphasis">&lt;a href="david-byrne.html">David Byrne&lt;/a></span>
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+  <p>Вот примеры относительных путей:</p>
+  <ul>
+    <li><code>talking-heads.html</code> – путь к файлу talking-heads.html находящийся в той же папке что и ресурс, который ссылается на этот файл</li>
+    <li><code>../index.html</code> — путь к файлу index.html находящийся в родительской папке, один шаг «вверх» по деревеу файлов</li>
+    <li><code>../../typography.css</code></li> – путь к стилю typography.css на два уровня выше в файловой структуре</li>
+    <li><code>imgs/header/logo.png</code> — путь к изображению logo.png на два уровня «ниже» в файловой структуре, в папке header, в папке imgs, которая находится в одной папке с файлом, который ссылается на это изображение</li>
   <p>Пути бывают <em>относительные</em> и <em>абсолютные</em>.</p>
 
   <section class="instructions">
@@ -289,10 +310,10 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
   &lt;img src="http://absolute.url">
   &lt;h1>Fabolous&lt;/h1>
 &lt;/aside></code></pre>
-
-
     <p>Теперь давайте сохраним картинку в ту же папку в которой находится наш HTML документ. </p>
   </section>
+
+
 <!--
 Что произошло? Браузер сделан для того чтобы показывать информацию и он умеет догадываться за разработчиков о том, что вы хотели передать кодом, правда не очень хорошо.
 
