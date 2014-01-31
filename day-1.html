@@ -251,8 +251,12 @@
   &lt;title&gt;David Byrne – Wikipedia, the free encyclopedia&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;h1&gt;David Byrne&lt;/h1&gt;
-  &lt;p><span class="emphasis">&lt;strong>David Byrne&lt;/strong></span> (born May 14, 1952) is a Scottish-born musician permanently residing in the United States, a founding member and principal songwriter of the American New Wave band Talking Heads, active between 1975 and 1991.&lt;/p>
+  <span class="emphasis">&lt;header&gt</span>
+    &lt;h1&gt;David Byrne&lt;/h1&gt;
+  <span class="emphasis">&lt;/header&gt;</span>
+  <span class="emphasis">&lt;section></span>
+    &lt;p><span class="emphasis">&lt;strong>David Byrne&lt;/strong></span> (born May 14, 1952) is a Scottish-born musician permanently residing in the United States, a founding member and principal songwriter of the American New Wave band Talking Heads, active between 1975 and 1991.&lt;/p>
+  <span class="emphasis">&lt;/section></span>
   <span class="emphasis">&lt;section></span>
     &lt;h1>Contents&lt;/h1>
     <span class="emphasis">&lt;ul></span>
@@ -360,19 +364,8 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
 
   <h2>Картинки</h2>
   <p>В Википедии довольно часто встречаются картинки, давайте добавим какое-нибудь изображение на нашу страницу.</p>
-  <p>Для вставки изображений используется тэг <code>&lt;img&gt;</code>. Но просто тэга недостаточно, нам нужно уточнить что именно за изображение мы хотим увидеть. Для этого используется аттрибут <code>src</code>. Его значением будет <em>путь</em> к изображению. Понятие «путь», path по-английски, используется постоянно и является одним из важных для понимания терминов — FIXME: кроме того это определяющий <em>гипер</em>-текст термин.</p>
+  <p>Для вставки изображений используется тэг <code>&lt;img&gt;</code>. Но просто тэга недостаточно, нам нужно уточнить что именно за изображение мы хотим увидеть. Для этого используется аттрибут <code>src</code>. Его значением будет <em>путь</em> к изображению. Понятие «путь», path по-английски, используется постоянно и является одним из важных для понимания терминов.</p>
   <p><strong>Path</strong> — строка текста, содержащая адрес к какому-то ресурсу. Это может быть другой HTML документ, картинка или медиа-объект, вроде аудио или видео. Пока будет проще всего думать о путях как об адресах файлов на файловой системе компьютера, но относительно других файлов.</p>
-  <p>Итак, давайте вернемся на страницу википедии с которой вы брали информацию, наведем на картинку и вызовем контекстное меню, и выберем "copy image url" TODO: на русском, для того чтобы скопировать абсолютный путь к картинке</p>
-  <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;meta charset="utf-8">
-  &lt;title&gt;Talking Heads&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    <span class="emphasis">&lt;a href="david-byrne.html">David Byrne&lt;/a></span>
-  &lt;/body&gt;
-&lt;/html&gt;
 </code></pre>
   <p>Вот примеры относительных путей:</p>
   <ul>
@@ -380,21 +373,21 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
     <li><code>../index.html</code> — путь к файлу index.html находящийся в родительской папке, один шаг «вверх» по деревеу файлов</li>
     <li><code>../../typography.css</code></li> – путь к стилю typography.css на два уровня выше в файловой структуре</li>
     <li><code>imgs/header/logo.png</code> — путь к изображению logo.png на два уровня «ниже» в файловой структуре, в папке header, в папке imgs, которая находится в одной папке с файлом, который ссылается на это изображение</li>
-  <p>Пути бывают <em>относительные</em> и <em>абсолютные</em>.</p>
+  </ul>
+  <!-- <p>Пути бывают <em>относительные</em> и <em>абсолютные</em>.</p> -->
 
   <section class="instructions">
-    <p>Давайте добавим новую секцию в нашу страницу на википедии:</p>
-    <pre><code>&lt;aside>
-  &lt;img src="http://absolute.url">
-  &lt;h1>Fabolous&lt;/h1>
-&lt;/aside></code></pre>
-    <p>Теперь давайте сохраним картинку в ту же папку в которой находится наш HTML документ. </p>
-  </section>
+    <p>Давайте добавим новую секцию в нашу страницу на википедии сразу за первой секцией с параграфом текста:</p>
 
-  <section>
-    <iframe width='100%' height='500px' src="http://jsbin.com/UlazeTIR/2/embed"></iframe>
+    <pre><code>&lt;section>
+  &lt;p>&lt;strong>David Byrne&lt;/strong> (born May 14, 1952) is a Scottish-born musician …&lt;/p>
+&lt;/section>
+<span class="emphasis">&lt;aside></span>
+  &lt;img src="<span class="emphasis">http://4.bp.blogspot.com/-M1zGI6-bQuY/UZMBfPA6cMI/AAAAAAAAAro/vtacWAFTQL8/s1600/3-DAVID-BYRNE.jpg</span>">
+  &lt;h1>David Byrne&lt;/h1>
+<span class="emphasis">&lt;/aside></span>
+</code></pre>
   </section>
-
 
 <!--
 Что произошло? Браузер сделан для того чтобы показывать информацию и он умеет догадываться за разработчиков о том, что вы хотели передать кодом, правда не очень хорошо.
