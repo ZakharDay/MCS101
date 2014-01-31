@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Moscow Coding School</title>
-<meta charset="utf-8">ф
+<meta charset="utf-8">
 <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet'>
 <link href="normalize.css" rel="stylesheet">
@@ -29,6 +29,24 @@
 
   <section>
     <h1>Немножко истории</h1>
+    <p><strong>1990, CERN в Швейцарии</strong> — <strong>Тим Бернерс-Ли</strong> выкладывает в сеть первый браузер и первый сервер, а также первый сайт, где он описывает использование HTML.</p>
+    <h3>Первый сайт</h3>
+    <p><img style="border:1px dashed #000" src="imgs/1st-website.png" width="100%"></p>
+    <h3>Первые версии браузеров</h3>
+    <ul>
+      <li><strong>1994</strong> – Netscape, Opera</li>
+      <li><strong>1995</strong> – MS Internet Explorer</li>
+      <li><strong>2000</strong> – Opera Mobile</li>
+      <li><strong>2003</strong> – Apple Safari</li>
+      <li><strong>2004</strong> – Mozilla Firefox (based on Gecko, Netscape’s “engine”)</li>
+      <li><strong>2007</strong> – Mobile Safari</li>
+      <li><strong>2008</strong> – Google Chrome (based on Webkit, Safari’s “engine”)</li>
+      <li><strong>2010</strong> – Firefox Mobile</li>
+      <li><strong>2012</strong> – Chrome for Android and iOS</li>
+    </ul>
+  </section>
+  <!--section>
+    <h1>Немножко истории</h1>
     <p>Мы собираемся освоить HTML и CSS, но что это за технологии и почему они так называются? Кто их придумал?</p>
 
     <h2>Определения</h2>
@@ -44,25 +62,12 @@
 
     <h2>История</h2>
     <p>До 1990 года интернет уже существовал, в том понимании, что существовала глобальная сеть к которой могли подключаться компьютеры. Однако не существовало никаких сайтов - был email, были разные протоколы для чатов, для обмена информации — как например FTP, когда зная адрес какого-то компьютера в сети пользователь мог подключиться к этому компьютеру и просмотреть доступное содержимое его файловой системы.</p>
-    <p>В 1980 году Тим Бёрнерс-Ли из Швейцарского CERN начал создавать систему для каталогизации и организации доступа к информации для собственного использования. В 1990 году он выложил в открытый доступ первые программу браузер, программу сервер и первый сайт, написанный при помощи языка разметки HTML. FIXME: screenshot for the first website<img src=""></p>
-
-    <h2>Популярные браузеры</h2>
-
-    <p>В 1994 выходят первые версии Netscape и Opera</p>
-    <p>В 1995 Microsoft выпускает первый Internet Explorer</p>
-    <p>В 2004 году появляется Mozilla Firefox</p>
-    <p>В 2003 году Apple выпускает первую версию Safari</p>
-    <p>В 2008 году выходит первый Google Chrome</p>
+    <p>В 1980 году Тим Бёрнерс-Ли из Швейцарского CERN начал создавать систему для каталогизации и организации доступа к информации для собственного использования. В 1990 году он выложил в открытый доступ первые программу браузер, программу сервер и первый сайт, написанный при помощи языка разметки HTML. <img src=""></p>
 
     <h2>Развитие</h2>
     <p>Как мы уже увидели, первые сайты были достаточно простыми, немного позже появились картинки и таблицы, которые хоть и не предназначались для этого, стали инструментом для реализации более сложного дизайна. Дальше с развитием браузеров и поддержки ими новых технологий возможности веб-разработчиков становились все более близки к тому, что могли делать разработчики полноценных приложений, к 2010, веб стал платформой для серьезных программ с кучей возможностей.</p>
     <h2>90s</h2>
     <ul class="horizontal-images">
-      <!--
-      TODO: screenshots for the first websites
-      <li>http://info.cern.ch/hypertext/WWW/TheProject.html</li>
-      <li>http://www2.warnerbros.com/spacejam/movie/jam.htm</li>
-      -->
       <li><img src="imgs/apple97.png"></li>
       <li><img src="imgs/ms97.png"></li>
       <li><img src="imgs/amazon.png"></li>
@@ -75,18 +80,18 @@
     <ul>
       TODO
     </ul>
-  </section>
+  </section!-->
 
   <section>
     <h1>Hands-on</h1>
     <h2>Первая страница</h2>
-    <p>Давайте приступим к написанию нашей первой страницы!</p>
+    <p>Давайте приступим к написанию нашей первой страницы.</p>
+
     <section class="instructions">
       <ul>
-        TODO: troubleshooting (make sure extension is shown in the OS, for example)
         <li>Создайте папку с названием CodingSchool-1 или любым другим где-нибудь в удобном для вас месте (у меня в папке юзера есть папка Source, где я храню проекты над которыми работаю).</li>
-        <li>откройте текстовый редактор</li>
-        <li>создайте новый файл и сохраните его как "index.html" в только что созданную нами папку</li>
+        <li>откройте текстовый редактор (Sublime Text)</li>
+        <li>создайте новый файл и сохраните его как "index.html" в только что созданную нами папку, обратите внимание на то, чтобы файл назывался именно так и имел расширение <code>.html</code></li>
         <li>напишите внутри файла "Hello World" и сохраните его</li>
         <li>откройте хром и перетащите в него наш файл</li>
       </ul>
@@ -100,16 +105,15 @@
     <p>Давайте напишем наш первый код</p>
 
     <section class="instructions">
-      <p>Откроем в текстовом редакторе созданный нами HTML документ и скопируем туда следующий код:</p>
-      <!-- iframe src="http://jsbin.com/UwoXAjuR/4/embed?html" width="100%" height="400" -->
+      <p>Вернемся к созданному нами HTML документу, открытому в текстовом редакторе, и скопируем туда следующий код:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-  &lt;meta charset="utf-8">
-  &lt;title&gt;Moscow Coding Cool&lt;/title&gt;
+    &lt;meta charset="utf-8">
+    &lt;title&gt;Moscow Coding Cool&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-  &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       <p>Обновим открытый в хроме таб с нашей страницей</p>
@@ -118,57 +122,132 @@
 
     <p>После обновления таба, мы видим, что текст "Hello world" стал больше размером и оказался выделенным жирным, кроме того, у нашего таба появился заголовок.</p>
 
-    <p>Отлично, мы <em>разметили</em> наш первый HTML документ! При помощи разметки мы описываем структуру и природу информации</p>
+    <p>Отлично, мы <em>разметили</em> наш первый HTML документ! При помощи разметки мы описываем структуру и природу информации.</p>
 
-    <p>Давайте разберемся как размечен наш документ и что означает каждая строчка. </p>
+    <p>Давайте разберемся, как размечен наш документ и что означает каждая строчка. </p>
 
     <ul>
-      <li><code>&lt;!DOCTYPE html&gt;</code> — строчка, которая декларирует тип документа. Современные браузеры включают «стандартный режим раскладки» (нужный нам) если написано именно так, как в примере. TODO (telemetric text?): <a href="">Больше скучной информации о доктайпе</a></li>
+      <li><code>&lt;!DOCTYPE html&gt;</code> — строчка, которая декларирует тип документа. Она сообщает браузеру, что он работает с документом HTML. Без этой строчки, некоторые браузеры могут некорректно отоброжать полученный документ</li>
       <li><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> и <code>&lt;body&gt;</code> — вместе с доктайпом, это стандартный набор элементов, которые будут существовать для любой страницы.
         <ul>
-          <li><code>&lt;html&gt;</code> — это <em>корень</em> нашего дерева. Родитель всех остальных элементов, внутри должны находиться <code>&lt;head></code> и <code>&lt;body></code>
+          <li><code>&lt;html&gt;</code> — это <em>корень</em> документа. Родитель всех остальных элементов, внутри должны находиться <code>&lt;head></code> и <code>&lt;body></code>
           <li><code>&lt;head></code> – элемент содержащий метаданные о странице. Такими данными например могут быть заголовок документа, который потом отображается в гугле, используемая кодировка, ссылка на картинку которую отобразит фейсбук, если вставить в него ссылку на эту страницу.</li>
           <li><code>&lt;body></code> – содержимое этого элемента браузер будет отображать.</li>
         </ul>
+      <li><code>&lt;meta charset="utf-8"></code> – это <em>тэг</em> описывающий страницу, содержащий информацию <strong>о странице</strong>, в данном случае этот тэг сообщает браузеру и любому другому <em>потребителю</em> этого документа, что текст в нем содержит знаки в кодировке UTF-8. Я рекомендую всегда использовать именно такую декларацию кодировки. <strong>Важно</strong>: декларация кодировки должна быть первым <em>ребенком</em> элемента <code>head</code>.</li>
       <li><code>&lt;title&gt;Moscow Coding Cool&lt;/title&gt;</code> – это <em>тэг</em> отвечающий за заголовок страницы</li>
-      <li><code>&lt;h1&gt;Hello Worldlt;/h1&gt;</code> – мы разметили текст “Hello World” обозначив его как заголовок первого уровня, heading one.</li>
+      <li><code>&lt;h1>Hello Worldl&lt;/h1></code> – мы разметили текст “Hello World” обозначив его как заголовок первого уровня, heading one.</li>
     </ul>
 
     <h2>Определения</h2>
-    <p><strong>Тэг</strong> – это метка, специальный синтаксис определяющий начало или конец HTML элемента. Тэг состоит из угловых скобок <code>&lt;</code>, <code>></code> и названия элемента (например <code>head</code>). Есть открывающие и закрывающие тэги. Для обозначения закрывающего тэга используется косая черта (правый слэш). То есть <code>&lt;html lang="en"></code> это тэг, также как и <code>&lt;title></code> и <code>&lt;/head>.</code></p>
+    <p><strong>Тэг</strong> – это метка, специальный синтаксис определяющий начало или конец HTML элемента. Тэг состоит из угловых скобок "<code>&lt;</code>", "<code>></code>" и названия элемента (например <code>head</code>). Есть открывающие и закрывающие тэги. Для обозначения закрывающего тэга используется косая черта (правый слэш). То есть <code>&lt;html lang="en"></code> это тэг, также как и <code>&lt;title></code> и <code>&lt;/head>.</code></p>
     <p><strong>Элементы</strong> - это компоненты, состовляющие вместе веб-страницу. Заголовок в названии таба - это элемент, также как и все тело документа, также как и выделенный жирным кусок текста. Элементы могут содержать другие элементы и текстовое содержимое, а также могут иметь аттрибуты.</p>
-    <p>Например:</p>
+    <p><strong>Аттрибут</strong> — слово, описывающее какое-то свойство элемента. Аттрибуты размечаются <strong>внутри</strong> открывающего тэга через пробел от названия тэга. Большинство аттрибутов имеют значение, которое задается при помощи знака равно «<code>=</code>» и кавычек «<code>""</code>». Аттрибутов может быть больше чем один, тогда они разделяются пробелами:
+      <pre><code>&lt;meta <span class="emphasis">charset="utf-8"</span>>
+&lt;html <span class="emphasis">lang="en"</span>>
+&lt;body <span class="emphasis">id="home" class="awesome"</span>>
+&lt;input <span class="emphasis">name="description" type="texatrea" required</span>>
+</code></pre>
+    <p>Снова посмотрим на код страницы index.html в текстовом редакторе:</p>
     <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html&gt;
   &lt;head&gt;
-  &lt;title&gt;Moscow Coding Cool&lt;/title&gt;
+    &lt;meta charset="utf-8">
+    &lt;title&gt;Moscow Coding Cool&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-  &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-    <p>Здесь мы видим 5 элементов, в «корне» нашего «дерева» находится элемент html, его «детьми» явлются элементы head и body. У элемента html есть аттрибут lang, значение которого "en". Кроме того, у элементов head и body есть «дети», элемент title и элемент h1.</p>
+    <p>Здесь мы видим 5 <strong>элементов</strong>, в «корне» нашего «дерева» находится элемент html, его «детьми» явлются элементы head и body. У элемента <code>meta</code>, есть <strong>аттрибут</strong> “<code>charset</code>” значение которого “<code>utf-8</code>”. Кроме того, у элементов head и body есть «дети», элемент title и элемент h1.</p>
     <p>Наличие иерархии является важным качеством кода HTML — мы можем выстроить наши элементы в виде дерева</p>
     <p>TODO: нарисовать дерево</p>
   </section>
 
   <section>
-    TODO: форматирование, отступы етц. + комментарии
+    <h1>Форматирование документа и комментарии</h1>
+    <h2>Форматирование</h2>
+    <p>Существуют общепринятые правила форматирования кода — следование этим правилам сделает ваш код более читаемым и простым для понимания.</p>
+    <p>Пробелы, табы и переносы строки — эти специальные «символы» называются whitespace, они помогают оформлять текст.</p>
+    <p>Как мы уже сказали, HTML код предствляет иерархию, поэтому правила форматирования HTML помогают увидеть эту иерархию работающему с кодом человеку</p>
+    <section class="instructions">
+      <p>Давайте посмотрим на криво отформатированный HTML код:</p>
+      <pre><code>&lt;html>&lt;head>&lt;title>Bla-bla&lt;/title>&lt;body>
+  &lt;h1>Whoa
+     &lt;/h1>
+                &lt;ul>&lt;li>  test&lt;/li>
+   &lt;/ul>&lt;/body>
+  &lt;/html></code></pre>
+      <p>А теперь отформатируем этот код правильно:</p>
+      <pre><code>&lt;html>
+  &lt;head>
+    &lt;title>Bla-bla&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;h1>Whoa&lt;/h1>
+    &lt;ul>
+      &lt;li>test&lt;/li>
+    &lt;/ul>
+  &lt;/body>
+&lt;/html></code></pre>
+    </section>
+
+    <p>Правильное форматирование кода позволяет избежать ошибок, таких как незакрытые тэги или кавычки аттрибутов или неправильного отношения элементов.</p>
+    <p>В зависимости от команды в которой вы будете работать или от вашего личного предпочтения для отступов используется либо знак tab, либо несколько пробелов, обычно от двух до четырех. Для контроля ширины отступов у всех нормальных текстовых редакторов есть специальная настройка.</p>
+    <section class="instructions">
+      <p>Вот небольшой набор правил для авторства HTML документов:</p>
+      <ul>
+        <li>Открытые тэги элементов, у которых может быть содержимое, необходимо закрывать</li>
+        <li>Окрытые кавычки для значений аттрибутов должны быть закрыты</li>
+        <li>За исключением <strong>текстовых</strong> элементов, уровень иерархии отображается при помощи отступов
+          <pre><code>&lt;body>
+  &lt;header>
+    &lt;h1>Heading Level &lt;strong>One&lt;/strong>&lt;/h1>
+  &lt;/header>
+  &lt;p>Paragraph of text &lt;em>paragraph&lt;/em> of text&lt;/p>
+&lt;/body></code></pre>
+        </li>
+      </ul>
+    </section>
+
+    <h2>Комментарии</h2>
+    <p>Комментарии используются для того, чтобы оставлять пометки которые не влияют на отображение документа, они обычно <strong>описывают код</strong></p>
+    <pre><code>&lt;head>
+  &lt;!-- The title of the page -->
+  &lt;title>Hello World&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;!-- main content of the page -->
+  …
+  &lt;!-- advertising links below -->
+  …
+&lt;/body></code></pre>
+    <p>Комментарии в основном используются для следующих целей:</p>
+    <ul>
+      <li>что-то вроде сообщения читающему код человеку — себе или кому-то другому</li>
+      <li>для визуального разделения кода документа на части</li>
+      <li>для того, чтобы <em>закомментировать</em> часть кода, так что он не будет использоваться браузером</li>
+    </ul>
+
+
+    <h2>Практика</h2>
+    <p>Давайте попробуем поупражняться в написании кода. <a href="exercises/exercise1.html">Упражнение 1</a>
   </section>
 
   <section>
     <h1>Wikipedia</h1>
-    <p>Откройте страницу Википедии какого-нибудь любимого вами музыканта. Я, например, открою страницу <a href="http://en.wikipedia.org/wiki/David_Byrne">Дэвида Бирна</a>.</p>
+    <p>Сейчас мы закодим свой вариант википедии. Откройте, пожалуйста, страницу <a href="http://en.wikipedia.org/wiki/David_Byrne">Дэвида Бирна</a>.</p>
 
     <section class="instructions">
       <ul>
         <li>Создайте папку <code>wikipedia</code> рядом с нашей первой папкой</li>
-        <li>Внутри этой папки, создайте файл с именем соответсвующим выбранной вами странице и расширением <code>.html</code>. Пробелы не являются разрешенными символами для адресов страниц, поэтому давайте заменим пробелы на знак «минус» и напишем все знаки в нижнем регистре  — у меня получится <code>david-byrne.html</code></li>
-        <li>Теперь давайте закодим страницу, взяв содержимое со страницы википедии. Посмотрите на мой пример, возьмите из Википедии несколько секций, необязательно копировать текст целиком, можно использовать только первый параграф.</li>
+        <li>Создайте новый файл в текстовом редакторе (File – New File) и сохраните его в папку wikipedia с именем <code>david-byrne.html</code>. Пробелы не являются разрешенными символами для адресов страниц, поэтому мы заменяем пробелы на знак «минус». Кроме того, для адресов страниц принято использовать латинские буквы в нижнем регистре.
       </ul>
+      <p>Скопируйте следующий код:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
+  &lt;meta charset="utf-8">
   &lt;title&gt;David Byrne – Wikipedia, the free encyclopedia&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -181,7 +260,7 @@
       &lt;li>&lt;a href="#talking-heads">Talking Heads&lt;/a>&lt;/li>
       &lt;li>&lt;a href="#interesting">Interesting facts&lt;/a>&lt;/li>
     <span class="emphasis">&lt;/ul></span>
-  <span class="emphasis">/&lt;section></span>
+  <span class="emphasis">&lt;/section></span>
   &lt;section id="early-life">
     &lt;h1>Early life&lt;/h1>
     &lt;p>David Byrne was born in Dumbarton, Scotland, to parents Tom and Emma. He was the elder of two children. Two years later, his parents moved to Hamilton, Ontario, and then to Arbutus, Maryland, when he was 8 or 9 years old. His father worked as an electronics engineer.
@@ -251,12 +330,11 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
 &lt;/section></code></pre>
    — аттрибут <strong>id</strong> позволяет выделить фрагмент документа, т.е. при помощи этого аттрибута браузер знает к какому фрагменту нужно перейти при навигации по соответствующей ссылке.</p>
 
-
   <h2>Ссылки</h2>
   <p>Мы сделали так, чтобы браузер перешел к определенному фрагменту нашей страницы. Но главное качество <em>гипертекста</em> — это ссылки между разными документами.</p>
   <section class="instructions">
     <ul>
-      <li>Создайте новый файл в папке <code>wikipedia</code> с каким-нибудь именем, на которое мог бы ссылаться текст нашей первой страницы википедии. У меня будет <code>talking-heads.html</code></li>
+      <li>Создайте новый файл в папке <code>wikipedia</code> с именем <code>talking-heads.html</code></li>
       <li>Отройте его и скопируйте в него следующий код, но замените значение аттрибута <code>href</code> на название первого файла, а текст внутри тэга замените на такой, который подходит вашей странице по смыслу
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -311,6 +389,10 @@ Before high school, David Byrne already knew how to play the guitar, accordion, 
   &lt;h1>Fabolous&lt;/h1>
 &lt;/aside></code></pre>
     <p>Теперь давайте сохраним картинку в ту же папку в которой находится наш HTML документ. </p>
+  </section>
+
+  <section>
+    <iframe width='100%' height='500px' src="http://jsbin.com/UlazeTIR/2/embed"></iframe>
   </section>
 
 
