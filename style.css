@@ -1,7 +1,7 @@
 /* layout
 -------------------------------------*/
 * {
-  box-sizing: border-box;
+  box-sizing: padding-box;
 }
 
 html,
@@ -34,7 +34,7 @@ header {
   }
 
 section {
-  padding: 50px 250px;
+  padding: 50px 22%;
   margin-bottom: 1em;
 }
   section section {

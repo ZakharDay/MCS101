@@ -17,177 +17,248 @@
   </header>
 
   <section>
-    <h1>CSS</h1>
-    <p><strong>Cascading Style Sheets</strong> — каскадные таблицы стилей. Это язык описывающий оформление HTML документов.</p>
-    <p><strong>CSS3</strong> — последняя версия CSS, значительно расширившая возможности декорации элементов, включая возможность описывать анимации, создавать более сложную графику.</p>
-    <p>Есть несколько способов подключить стили к документу HTML.</p>
-    <h2>Элемент &lt;style></h2>
-    <section class="instructions">
-      <p>Давайте откроем код нашей страницы и добавим новый элемент <code>style</code> внутри элемента <code>head</code></p>
-      <pre><code>&lt;!DOCTYPE html>
-&lt;html lang="en">
-&lt;head>
-  &lt;title>David Byrne – Wikipedia, the free encyclopedia</title>
-  &lt;meta charset="utf-8">
-  <span class="emphasis">&lt;style>
-  &lt;/style></span>
-&lt;/head></code></pre>
-    <p>Напишем наш первый CSS</p>
-    <pre><code>&lt;style><span class="emphasis">
-body {
-  color: red;
-}
-a {
-  color: black;
-}
-</span>&lt;/style></code></pre>
-    <a href="examples/example6.html">Результат</a>
-    </section>
-
-  <p>Разберем написанное по строчке.</p>
-
-    <ul>
-      <li><code>&lt;style>&lt;/style></code> — это элемент, предназначенный для подключения стилей к странице. Стилевые правила, которые будут применены к элементам страницы описаны внутри этого элемента при помощи специального синтаксиса. Этот элемент обычно является <em>ребенком</em> элемента <code>head</code>.</li>
-      <li><pre><code>&lt;style>
-<span class="emphasis">body</span> {
-  color: red;
-}
-&lt;/style></code></pre> — здесь <code>body</code>, это <em>селектор</em> (selector), который, как следует из названия, <em>выбирает</em> элементы к которым будет применены стилевые правила.</li>
-      <li><pre><code>&lt;style>
-body <span class="emphasis">{
-  color: red;
-}</span>
-a <span class="emphasis">{
-  color: black;
-}</span>
-&lt;/style></code></pre> – красным выделены <em>блоки объявлений</em>, (declaration block), которые представляют из себя фигурные кавычки и набор из одного или более правил.</li>
-    <h2>Стили в отдельном файле</h2>
-    <p>Обычно удобнее использовать отдельный файл, для определния стилей. Одна из главных причин — можно подключать один и тот же файл стилей к разным страницам – что в случае с сайтами, которые часто имеют общий визуальный стиль, помогает не дублировать код.
-    <p>Кроме того, разделение <em>ответственности</em> (separation of concerns) при написании кода помогает в простоте поддержки проекта – изменение стилей страницы (CSS) не должно быть причиной изменения стуктуры и информации страницы (HTML).</p>
-      </li>
+    <h1>Вёрстка по макету</h1>
+    <p>Сегодня мы сделаем сайт по макету – я опишу процесс того как это сделал бы я и по дороге расскажу обо всех новых штуках которые я буду использовать.</p>
+    <p>Первое, что нужно сделать — это открыть перед собой макет и внимательно посмотреть на него. Попробовать описать его части в виде HTML.</p>
+    <a href="maket/design/homepage.png"><img class="example" src="maket/design/homepage.png"></a>
     <section class="instructions">
       <ul>
-        <li>Создайте новый файл и сохраните его в папке проекта с именем <code>style.css</code> (обратите внимание на расширение <code>.css</code>)</li>
-        <li>В этот файл скопируйте код из тэга <code>style</code>, который мы написали до этого</li>
-        <li>В HTML коде статьи внутри элемента <code>head</code> добавьте следующий код:
-          <pre><code>&lt;link href="style.css" rel="stylesheet"></code></pre>
-        </li>
-        <li>Удалите элемент <code>style</code> вместе с его содержимым</li>
-        <li>Обновите страницу</li>
+        <li>Создайте, пожалуйста и новую папку так рядом с папкой <code>wikipedia</code>, назовите ее <code>design-layout</code></li>
+        <li>Откройте тесктовый редактор (sublime text 2), создайте новый файл и сохраните его как <code>index.html</code> (не забывайте о расширении)</li>
       </ul>
-      <br>
-      <p><a href="examples/example7.html">Результат HTML</a>, <a href="examples/style-1.css">Результат CSS</a></p>
+      <p>Мы начнем с уже знакомого нам «скелета»:</p>
+      <pre><textarea>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mixd Homepage</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+  </body>
+</html>
+</textarea></pre>
+      <p>Давайте набросаем структуру документа. Скопируйте следующий код и вставьте его в элемент <code>body</code></p>
+
+      <pre><textarea>
+<header>
+  <!-- logo -->
+  <a href="index.html">
+    <img src="" alt="Mixd Logo">
+    <h1>World Class Web Design</h1>
+  </a>
+
+  <!-- navigation -->
+  <nav>
+    <ul>
+      <li><a href='.'>Home</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='approach.html'>Approach</a></li>
+      <li><a href='work.html'>Work</a></li>
+      <li><a href='blog.html'>Blog</a></li>
+      <li><a href='contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <figure>
+    <img src="" alt="Beautiful Form, Perfect Function">
+    <figcaption>
+      <h1>Beautiful Form, Perfect Function</h1>
+      <p>We create beautifully-crafted websites that stand out from the crowd – and perfect function comes as standard.</p>
+      <a href="approach.html">See how we work</a>
+    </figcaption>
+  </figure>
+</section></textarea></pre>
+
+    <p><a href="examples/maket-1.html">Результат</a></p>
     </section>
-    <p>К одному документу HTML можно подключать несколько стилей, кроме того, подключать можно файлы стилей хранящиеся на других серверах, что позволяет использовать библиотеки с предопределенными стилями или писать такие библиотеки самим.</p>
-    <p>В общем случае, я рекомендую писать стили в отдельном файле.</p>
-  </section>
 
-  <section>
-    <h1>Синтаксис CSS</h1>
-    <p>У CSS довольно простой синтаксис – определения стилей страницы это набор правил.</p>
-    <p>Каждое правило CSS имеет две основные части — селектор и блок объявлений.</p>
-    <p><pre><code>selector, selector {
-  property: value;
-  property: value;
-}
-selector {
-  property: value;
-}
-</pre></code></p>
-    <p><em>Селектор</em>, расположенный в левой части правила, определяет, на какие части документа распространяется правило. </p>
-    <p><em>Блок объявлений</em> располагается в правой части правила. Он помещается в фигурные скобки, и, в свою очередь, состоит из одного или более объявлений, разделённых знаком <code>;</code>. Каждое объявление представляет собой сочетание свойства CSS и значения, разделённых знаком <code>:</code>. Селекторы могут группироваться при помощи запятых. В таком случае описанные стили применяются к элементам, выбранным этими селекторами.</p>
-  </section>
+    <p>Обсудим написанный код. Здесь есть несколько новых элементов.</p>
+    <ul>
+      <li><strong><code>&lt;nav></code></strong> – описывает главную секцию навигации на странице</li>
+      <li><strong><code>&lt;figure></code></strong> – описывает часть содержимого, иллюстрирующее нашу страницу, подобно блоку с иллюстрацией на книжной или газетной странице</li>
+      <li><strong><code>&lt;figcaption></code></strong> – заголовок или легенда нашей иллюстрации</li>
+    </ul>
+    <p>Кроме того, обратите внимание на аттрибут <code>alt</code> (от “alternative”) у элементов <code>img</code>:
+    <ul>
+      <li><code>&lt;img <span class="emphasis">alt="Mixd Logo"</span>></code></li>
+      <li><code>&lt;img <span class="emphasis">alt="Beautiful Form, Perfect Function"</span>></code></li>
+    </ul>
+    <p>Этот аттрибут используется для того, чтобы браузер имел возможность отобразить какой-то текст вместо картинки, если она не может быть отображена — существуют текстовые бразуеры, скринридеры или например картинка поломана или вы смотрели на этот сайт со своего мобильного телефона и зашли в лифт. Значение этого аттрибута описывает картинку, <em>что</em> увидит пользователь если она загрузится. Кроме того, машины, такие как яндексовский или гугловский поисковые роботы используют эту информацию для того, чтобы знать что на картинке изображено. Если картинка носит не исключтельно декоративный характер, стоит описывать ее смысл в аттрибуте <code>alt</code></p>
 
-  <section>
-    <h1>Стили по-умолчанию</h1>
-    <p>Когда мы до этого работали над нашей страницей, текст, который мы разметили разными тэгами отображался по-разному — то есть несмотря на то, что мы не подключали к странице никаких стилей, разные элементы были оформлены по-разному.</p>
-    <p>Заголовок жирный и большой, элементы списков выделены горизонтальными отступами и маркерами списка, ссылки синего цвета и подчеркнуты. Всё это стили которые браузеры применяют по умолчанию к разным элементам.</p>
-    <p>Наличие стилей по-умолчанию позволяет отображать документы к которым не подключены никакие стили так, чтобы пользователю было ясно где заголовок, а где список. Однако в случае когда вы контролируете стили своей страницы, стили по-умолчанию могут мешать оформить страницу так, как хочется.</p>
+    <p>Давайте добавим картинки</p>
     <section class="instructions">
-      <p>Самой главной помехой обычно являются отступы, поэтому давайте пока отключим разные отступы определенные браузером.</p>
-      <p>Скопируйте следующий код в файл стилей и вставьте так, чтобы это были первые строчки файла стилей.</p>
+      <ul>
+        <li>Создайте папку <code>imgs</code> внутри папки <code>design-layout</code></li>
+        <li>Сохраните в нее три картинки (вызовите контекстное меню и выберите “save image as” или «сохранить изображение как») не меняя их названия или расширения
+          <div>
+            <style scoped>
+            img {
+              background: #ccc;
+              border: 1px dashed #000 ;
+              margin: 5px 0;
+            }
+            </style>
+            <img src="maket/imgs/mixd-logo.svg">
+            <br><br>
+            <img src="maket/imgs/wheel.png">
+            <br><br>
+            <img src="maket/imgs/line.svg">
+          </div>
+        </li>
+        <li>В файле <code>index.html</code> добавьте пути к картинкам
+          <pre><textarea>…
+<img src="imgs/mixd-logo.svg" alt="Mixd Logo">
+…
+<img src="imgs/wheel.png" alt="Beautiful Form, Perfect Function">
+…</textarea></pre>
+      </ul>
+      <p><a href="examples/maket-2.html">Результат</a></p>
+    </section>
+    <p>Отлично, разметка домашней страницы готова</p>
+  </section>
+
+  <section>
+    <h1>Применим стили</h1>
+    <section class="instructions">
+      <p>Прежде всего обнулим стили по умолчанию и зададим общие для всей страницы правила</p>
       <pre><code>* {
-  margin: 0;
-  padding: 0;
-}</code></pre>
-      <p><a href="examples/example8.html">Результат</a></p>
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #34ab00;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  </code></pre>
+      <p><a href="examples/maket-3.html">Результат</a></p>
     </section>
   </section>
 
   <section>
-    <h2>Селекторы</h2>
-    <p>Бывают разные типы селекторов, в зависимости от того, к каким элементам они будут применены. Вот некоторые из них:</p>
-    <ul>
-      <li>Селекторы, которые применяются ко всем элементам определенного типа</li>
-        <pre><code><span class="emphasis">h1</span> {
-…
+    <h1>Раскладка (Layout)</h1>
+    <p>Под <em>раскладкой</em> понимается расположение элементов на странице.</p>
+    <p>Для понимания механизма раскладки нужно понять определение <strong>потока</strong></p>
+    <h2>Поток (flow)</h2>
+    <p><strong>Поток</strong> — это порядок в котором элементы отображаются и распологаются внутри страницы.</p>
+    <p>Существует несколько типов элементов и сейчас мы поговорим о двух самых распространенных: инлайн (inline) элементы и блок (block) элементы.</p>
+    <p><strong>Блоки</strong> — это элементы которые можно представить в виде контейнеров и они разделяют документ на какие-то части. Блоками по-умолчанию будут не только элементы <code>section</code> и <code>header</code> о которых мы говорили, но и <code>p</code>, и <code>h1</code>. Блоки обычно являются «родительскими» для инлайн-элементов.</p>
+    <p><strong>Инлайн</strong> — как следует из названия, это элементы которые находятся «в строке» и о них можно думать как о «словах» в предложении.</p>
+    <p>По умолчанию, в потоке блоки занимают всю ширину родительского элемента (если элемент является дочерним элементу <code>body</code> то он займет ширину окна) и идут один за одним сверху вниз в том же порядке, в котором они появляются в коде HTML.</p>
+    <p>Инлайны в потоке ведут себя как слова, то есть занимают только ширину своего содержимого и следуют один за одним слева направа</p>
+    <section class="inline-block-example">
+      <style scoped>
+      .inline-block-example div {
+        margin: 5px 0;
+        background: hsla(0, 100%, 70%, .4);
+        min-height: 60px;
+        font-size: 2em;
+      }
+      .inline-block-example div > * {
+        background: hsla(120, 100%, 70%, .4);
+      }
+      </style>
+      <h3>Блоки</h3>
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <h3>Инлайны</h3>
+      </style>
+      <div>
+        <strong>strong</strong>, <em>em</em>, <a href="#">anchor</a>
+      </div>
+    </section>
+
+    <p><strong>Важно!</strong> Мы можем задавать размеры (свойства <code>height</code> и <code>width</code>) только блокам — на инлайн элементы размеры не действуют, их размер зависит от их текстового содержимого</p>
+
+    <p>Несмотря на то, что у всех элементов имеется принадлежность к блокам или инлайнам по-умолчанию, мы можем контролировать то, как они будут вести себя при помощи CSS свойства <code>display</code>:</p>
+
+    <pre><code>strong {
+  display: block;
 }
-<span class="emphasis">p</span> {
-…
-}</code></pre></li>
-      <li>Универсальный селектор (он выделяет <strong>все</strong> элементы)
-        <pre><code><span class="emphasis">*</span> {
-…
-}</code><pre></li>
-      <li>Селекторы, применяющиеся к элементам, в зависимости от их положения в дереве элементов<pre><code><span class="emphasis">section p</span> {
-…
+section {
+  display: inline;
 }
-<span class="emphasis">section li h1</span> {
-…
-}
-</code><pre></li>
-    </ul>
-    <h2>Свойства</h2>
-    <p>Пoсмотрим на несколько свойств и их возможных значений.</p>
-    <ul>
-      <li><code>color: red;</code> — определеяет цвет текста.</p><p>Есть несколько способов обозначения цветов:
-        <ul>
-          <li>английским названием цвета, как в примере (<code>red</code>, <code>green</code>, <code>yellow</code> etc.)</li>
-          <li>при помощи схемы <a href="https://en.wikipedia.org/wiki/Rgb" title="Red Green Blue">RGB</a>, где цвет выражен смешанными каналами красного, зеленого и голубого. Интенсивность цвета определенного канал выражена значениями от 0 до 255. (<code style="color: rgb(255, 0, 0);">rgb(255, 0, 0)</code>, <code style="color: rgb(0, 255, 0);">rgb(0, 255, 0)</code>…)</li>
-          <li>при помощи HEX-кода, который на самом деле является тем же RGB, но числовые значения записаны в шестнадцатиричной системе (отсюда название, hexadecimal) и перед значением стоит знак <code>#</code> (<code style="color: #ff0000;">#ff0000</code>, <code style="color: #00FF00;">#00FF00</code>…)</li>
-          <li>при помощи схемы <a href="http://en.wikipedia.org/wiki/HSL_and_HSV" title="Hue Saturation Lightness">HSL</a> — на самом деле это один из самых классных способов определения цвета, об этом подробнее можно почитать <a href="http://www.useragentman.com/blog/2010/08/28/coding-colors-easily-using-css3-hsl-notation/">тут</a>. (<code style="color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</code>, <code style="color: hsl(120, 100%, 50%);">hsl(120, 100%, 50%)</code>…)
-        </ul>
-      </li>
-      <li><code>background-color: yellow;</code> – определяет цвет бэкграунда элемента</li>
-      <li><code>font-family</code> – определеяет набор шрифтов для отображения текста элемента. Например, <code>font-family: Helvetica, Arial, sans-serif</code>. Эта запись означает, что если у пользователя установлен шрифт Helvetica (как на всех маках, айфонах, айпэдах и т.д.), то текст будет отображен в этом шрифте, в противном случае будет использован Arial (установлен на всех устройствах с Windows), а если нету ни одного, ни другого, будет использоваться дефолтный системный шрифт без засечек (sans-serif). Еще примеры: <code>font-family: Georgia, Cambria, "Times New Roman", Times, serif;</code> – шрифты с засечками, хорошо подходящие для основной массы текста, <code>font-family: Tahoma, Verdana, Geneva</code> — набор шрифтов без засечек, подходящий для элементов пользовательского интерфейса</li>
-    </ul>
+    </code></pre>
+
+    <p>Если бы мы написали код как в этом примере, то все элементы <code>strong</code> стали бы вести себя в потоке как блоки и заняли бы всю ширину своего родительского элемента, а <code>section</code> наоборот сжались бы по ширине.</p>
   </section>
 
   <section>
-    <h1>Сила стилей</h1>
-    <p>Сделаем из википедии что-нибудь покрасивее, не меняя кода HTML</p>
+    <h1>Раскладка хэдера и позиционирование</h1>
+    <p>Если посмотреть на верхнюю часть нашей страницы, мы можем увидеть что два блока распологаются слева и справа — добьемся того же результата</p>
+
     <section class="instructions">
-      <ul>
-        <li>Сохраните еще одну картинку в папку imgs — <a href="examples/imgs/talking-heads.jpg">talking-heads.jpg</a></li>
-        <li>Скопируйте следующий код в файл style.css</li>
-        <pre><code>* {
-  margin: 0;
-  padding: 0;
+      <h3>Структура элементов</h3>
+      <pre><textarea><header>
+  <!-- logo -->
+  <a class="logo" href="index.html">
+    <img src="" alt="Mixd Logo">
+    <h1>World Class Web Design</h1>
+  </a>
+
+  <!-- navigation -->
+  <nav>
+    <ul>
+      <li><a href='.'>Home</a></li>
+      <li><a href='about.html'>About</a></li>
+      <li><a href='approach.html'>Approach</a></li>
+      <li><a href='work.html'>Work</a></li>
+      <li><a href='blog.html'>Blog</a></li>
+      <li><a href='contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+</header></textarea></pre>
+      <h3>Стили</h3>
+      <pre><code>header {
+  position: relative;
+  height: 270px;
 }
-body {
-  font-family: georgia;
-  font-size: 20px;
-  line-height: 1.5;
-}
-header {
-  background: url(imgs/talking-heads.jpg);
-}
-header h1 {
-  height: 400px;
-  line-height: 400px;
-  color: white;
-  font-family: helvetica, arial, sans-serif;
-  font-size: 144px;
-  text-align: center;
-  text-shadow: 0 0 2px black;
-}
-section,
-aside {
-  width: 65%;
-  margin: 2em auto;
-}</pre></code>
-        </li>
-      </ul>
-      <p><a href="examples/example9.html">Результат</a></p>
+  header .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  header nav {
+    position: absolute;
+    right: 0;
+    top:0;
+  }</code></pre>
+      <p><a href="examples/maket-4.html">Результат</a></p>
     </section>
+    <p>Мы использовали новый аттрибут и новый тип селектора: <span class="emphasis"><code>class="logo"</code></span> и <span class="emphasis"><code>header .logo</code></span></p>
+    <p>Аттрибут <code>class</code> используется для того, чтобы выделять в группы один или более элементов. Если у элемента-(ов) объявлен класс, мы можем выбрать этот или эти элементы при помоще селектора с точкой: <code>.classname</code>. Таким образом, мы можем группировать и применять стили к элементам не только в зависимости от названия элемента, но и полностью по своему желанию.</p>
+
+    <h2>Позиционирование</h2>
+    <p>Кроме того, мы использовали несколько новых свойств, а именно</p>
+    <ul>
+      <li><strong><code>position: relative;</code></strong> – это свойство необходимо для того, чтобы в последствие мы могли позиционировать элементы <strong>внутри</strong> этого родителя</li>
+      <li>
+        <p><strong><code>position: absolute;</code></strong> – элемент будет позиционироваться абсолютно при помощи свойств <code>top</code>, <code>right</code>, <code>bottom</code> и <code>left</code> внутри ближайшего родителя у которого задано свойство position: relative либо относительно всего окна браузера, если таких элементов нету.</p>
+        <p>Для того, чтобы прижать элемент к правому краю, можно задать <code>right: 0</code> и так же для левого края, верхней или нижней границы (но используя соответствующие свойства <code>left</code>, <code>top</code> и <code>bottom</code>)
+      </li>
+
+    </ul>
   </section>
+
+<!--
+  <section>
+    <h1>Классы и ID</h1>
+  </section>
+
+  <h1></h1>
+  <h1>Как встраивать шрифты</h1>
+  <h1>Веб инспектор и дизайн в браузере</h1>
+  <h1>Формы</h1>
+-->
+  <script src="elastic-textarea.js"></script>
+  <script>elasticize(document.querySelectorAll('.instructions textarea'));</script>
+</body>

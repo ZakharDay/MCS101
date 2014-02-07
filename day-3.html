@@ -17,248 +17,290 @@
   </header>
 
   <section>
-    <h1>Вёрстка по макету</h1>
-    <p>Сегодня мы сделаем сайт по макету – я опишу процесс того как это сделал бы я и по дороге расскажу обо всех новых штуках которые я буду использовать.</p>
-    <p>Первое, что нужно сделать — это открыть перед собой макет и внимательно посмотреть на него. Попробовать описать его части в виде HTML.</p>
-    <a href="maket/design/homepage.png"><img class="example" src="maket/design/homepage.png"></a>
-    <section class="instructions">
-      <ul>
-        <li>Создайте, пожалуйста и новую папку так рядом с папкой <code>wikipedia</code>, назовите ее <code>design-layout</code></li>
-        <li>Откройте тесктовый редактор (sublime text 2), создайте новый файл и сохраните его как <code>index.html</code> (не забывайте о расширении)</li>
-      </ul>
-      <p>Мы начнем с уже знакомого нам «скелета»:</p>
-      <pre><textarea>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mixd Homepage</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-  </body>
-</html>
-</textarea></pre>
-      <p>Давайте набросаем структуру документа. Скопируйте следующий код и вставьте его в элемент <code>body</code></p>
-
-      <pre><textarea>
-<header>
-  <!-- logo -->
-  <a href="index.html">
-    <img src="" alt="Mixd Logo">
-    <h1>World Class Web Design</h1>
-  </a>
-
-  <!-- navigation -->
-  <nav>
-    <ul>
-      <li><a href='.'>Home</a></li>
-      <li><a href='about.html'>About</a></li>
-      <li><a href='approach.html'>Approach</a></li>
-      <li><a href='work.html'>Work</a></li>
-      <li><a href='blog.html'>Blog</a></li>
-      <li><a href='contact.html'>Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section>
-  <figure>
-    <img src="" alt="Beautiful Form, Perfect Function">
-    <figcaption>
-      <h1>Beautiful Form, Perfect Function</h1>
-      <p>We create beautifully-crafted websites that stand out from the crowd – and perfect function comes as standard.</p>
-      <a href="approach.html">See how we work</a>
-    </figcaption>
-  </figure>
-</section></textarea></pre>
-
-    <p><a href="examples/maket-1.html">Результат</a></p>
-    </section>
-
-    <p>Обсудим написанный код. Здесь есть несколько новых элементов.</p>
-    <ul>
-      <li><strong><code>&lt;nav></code></strong> – описывает главную секцию навигации на странице</li>
-      <li><strong><code>&lt;figure></code></strong> – описывает часть содержимого, иллюстрирующее нашу страницу, подобно блоку с иллюстрацией на книжной или газетной странице</li>
-      <li><strong><code>&lt;figcaption></code></strong> – заголовок или легенда нашей иллюстрации</li>
-    </ul>
-    <p>Кроме того, обратите внимание на аттрибут <code>alt</code> (от “alternative”) у элементов <code>img</code>:
-    <ul>
-      <li><code>&lt;img <span class="emphasis">alt="Mixd Logo"</span>></code></li>
-      <li><code>&lt;img <span class="emphasis">alt="Beautiful Form, Perfect Function"</span>></code></li>
-    </ul>
-    <p>Этот аттрибут используется для того, чтобы браузер имел возможность отобразить какой-то текст вместо картинки, если она не может быть отображена — существуют текстовые бразуеры, скринридеры или например картинка поломана или вы смотрели на этот сайт со своего мобильного телефона и зашли в лифт. Значение этого аттрибута описывает картинку, <em>что</em> увидит пользователь если она загрузится. Кроме того, машины, такие как яндексовский или гугловский поисковые роботы используют эту информацию для того, чтобы знать что на картинке изображено. Если картинка носит не исключтельно декоративный характер, стоит описывать ее смысл в аттрибуте <code>alt</code></p>
-
-    <p>Давайте добавим картинки</p>
-    <section class="instructions">
-      <ul>
-        <li>Создайте папку <code>imgs</code> внутри папки <code>design-layout</code></li>
-        <li>Сохраните в нее три картинки (вызовите контекстное меню и выберите “save image as” или «сохранить изображение как») не меняя их названия или расширения
-          <div>
-            <style scoped>
-            img {
-              background: #ccc;
-              border: 1px dashed #000 ;
-              margin: 5px 0;
-            }
-            </style>
-            <img src="maket/imgs/mixd-logo.svg">
-            <br><br>
-            <img src="maket/imgs/wheel.png">
-            <br><br>
-            <img src="maket/imgs/line.svg">
-          </div>
-        </li>
-        <li>В файле <code>index.html</code> добавьте пути к картинкам
-          <pre><textarea>…
-<img src="imgs/mixd-logo.svg" alt="Mixd Logo">
-…
-<img src="imgs/wheel.png" alt="Beautiful Form, Perfect Function">
-…</textarea></pre>
-      </ul>
-      <p><a href="examples/maket-2.html">Результат</a></p>
-    </section>
-    <p>Отлично, разметка домашней страницы готова</p>
-  </section>
-
-  <section>
-    <h1>Применим стили</h1>
-    <section class="instructions">
-      <p>Прежде всего обнулим стили по умолчанию и зададим общие для всей страницы правила</p>
-      <pre><code>* {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background-color: #34ab00;
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 20px;
-  }
-  </code></pre>
-      <p><a href="examples/maket-3.html">Результат</a></p>
-    </section>
-  </section>
-
-  <section>
-    <h1>Раскладка (Layout)</h1>
-    <p>Под <em>раскладкой</em> понимается расположение элементов на странице.</p>
-    <p>Для понимания механизма раскладки нужно понять определение <strong>потока</strong></p>
-    <h2>Поток (flow)</h2>
-    <p><strong>Поток</strong> — это порядок в котором элементы отображаются и распологаются внутри страницы.</p>
-    <p>Существует несколько типов элементов и сейчас мы поговорим о двух самых распространенных: инлайн (inline) элементы и блок (block) элементы.</p>
-    <p><strong>Блоки</strong> — это элементы которые можно представить в виде контейнеров и они разделяют документ на какие-то части. Блоками по-умолчанию будут не только элементы <code>section</code> и <code>header</code> о которых мы говорили, но и <code>p</code>, и <code>h1</code>. Блоки обычно являются «родительскими» для инлайн-элементов.</p>
-    <p><strong>Инлайн</strong> — как следует из названия, это элементы которые находятся «в строке» и о них можно думать как о «словах» в предложении.</p>
-    <p>По умолчанию, в потоке блоки занимают всю ширину родительского элемента (если элемент является дочерним элементу <code>body</code> то он займет ширину окна) и идут один за одним сверху вниз в том же порядке, в котором они появляются в коде HTML.</p>
-    <p>Инлайны в потоке ведут себя как слова, то есть занимают только ширину своего содержимого и следуют один за одним слева направа</p>
-    <section class="inline-block-example">
-      <style scoped>
-      .inline-block-example div {
-        margin: 5px 0;
-        background: hsla(0, 100%, 70%, .4);
-        min-height: 60px;
-        font-size: 2em;
-      }
-      .inline-block-example div > * {
-        background: hsla(120, 100%, 70%, .4);
-      }
-      </style>
-      <h3>Блоки</h3>
-      <div>
-      </div>
-      <div>
-      </div>
-      <div>
-      </div>
-      <h3>Инлайны</h3>
-      </style>
-      <div>
-        <strong>strong</strong>, <em>em</em>, <a href="#">anchor</a>
-      </div>
-    </section>
-
-    <p><strong>Важно!</strong> Мы можем задавать размеры (свойства <code>height</code> и <code>width</code>) только блокам — на инлайн элементы размеры не действуют, их размер зависит от их текстового содержимого</p>
-
-    <p>Несмотря на то, что у всех элементов имеется принадлежность к блокам или инлайнам по-умолчанию, мы можем контролировать то, как они будут вести себя при помощи CSS свойства <code>display</code>:</p>
-
-    <pre><code>strong {
-  display: block;
-}
-section {
-  display: inline;
-}
-    </code></pre>
-
-    <p>Если бы мы написали код как в этом примере, то все элементы <code>strong</code> стали бы вести себя в потоке как блоки и заняли бы всю ширину своего родительского элемента, а <code>section</code> наоборот сжались бы по ширине.</p>
-  </section>
-
-  <section>
-    <h1>Раскладка хэдера и позиционирование</h1>
-    <p>Если посмотреть на верхнюю часть нашей страницы, мы можем увидеть что два блока распологаются слева и справа — добьемся того же результата</p>
-
-    <section class="instructions">
-      <h3>Структура элементов</h3>
-      <pre><textarea><header>
-  <!-- logo -->
-  <a class="logo" href="index.html">
-    <img src="" alt="Mixd Logo">
-    <h1>World Class Web Design</h1>
-  </a>
-
-  <!-- navigation -->
-  <nav>
-    <ul>
-      <li><a href='.'>Home</a></li>
-      <li><a href='about.html'>About</a></li>
-      <li><a href='approach.html'>Approach</a></li>
-      <li><a href='work.html'>Work</a></li>
-      <li><a href='blog.html'>Blog</a></li>
-      <li><a href='contact.html'>Contact</a></li>
-    </ul>
-  </nav>
-</header></textarea></pre>
-      <h3>Стили</h3>
-      <pre><code>header {
-  position: relative;
-  height: 270px;
-}
-  header .logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  header nav {
-    position: absolute;
-    right: 0;
-    top:0;
-  }</code></pre>
-      <p><a href="examples/maket-4.html">Результат</a></p>
-    </section>
-    <p>Мы использовали новый аттрибут и новый тип селектора: <span class="emphasis"><code>class="logo"</code></span> и <span class="emphasis"><code>header .logo</code></span></p>
-    <p>Аттрибут <code>class</code> используется для того, чтобы выделять в группы один или более элементов. Если у элемента-(ов) объявлен класс, мы можем выбрать этот или эти элементы при помоще селектора с точкой: <code>.classname</code>. Таким образом, мы можем группировать и применять стили к элементам не только в зависимости от названия элемента, но и полностью по своему желанию.</p>
-
+    <h1>Домашнее задание</h1>
+    <p>Я покажу свой код для каждого из заданий</p>
+    <h2>Селекторы</h2>
+    <iframe src="http://jsbin.com/iSAricAW/2/edit?html,css,live" height="600" width="100%"></iframe>
+    <p>Тут использованы для отступов и размеров были использованы стили заданные браузером по умолчанию. Нужно было задать второму элементу списка HTML класс.</p>
     <h2>Позиционирование</h2>
-    <p>Кроме того, мы использовали несколько новых свойств, а именно</p>
+    <iframe src="http://jsbin.com/UREVAma/2/edit?html,css,live" height="600" width="100%"></iframe>
+    <p>Здесь есть небольшая сложность, о которую некоторые «споткнулись» – то, что здесь присутствует два элемента <code>section</code>, один вложенный в другой, не позволяет нам написать стили для контейнера или внутреннего элемента используя только селектор <code>section</code>.</p>
+    <p>Несколько возможных решений:</p>
     <ul>
-      <li><strong><code>position: relative;</code></strong> – это свойство необходимо для того, чтобы в последствие мы могли позиционировать элементы <strong>внутри</strong> этого родителя</li>
-      <li>
-        <p><strong><code>position: absolute;</code></strong> – элемент будет позиционироваться абсолютно при помощи свойств <code>top</code>, <code>right</code>, <code>bottom</code> и <code>left</code> внутри ближайшего родителя у которого задано свойство position: relative либо относительно всего окна браузера, если таких элементов нету.</p>
-        <p>Для того, чтобы прижать элемент к правому краю, можно задать <code>right: 0</code> и так же для левого края, верхней или нижней границы (но используя соответствующие свойства <code>left</code>, <code>top</code> и <code>bottom</code>)
-      </li>
-
+      <li>Задать родительскому элементу класс — например “<code>container</code>”, а внутренний элемент выбирать при помощи селектора <code>.container section</code>, тогда правила написанные для родительского элемента будут применяться только к нему, как и правила написанные для внутреннего элемента</li>
+      <li>Можно использовать селектор <code>section</code>, но поскольку правила будут применяться и для внутреннего элемента, то нужно будет переопределить стили для него при помощи селектора <code>section section</code> (означающего «выбрать все элементы <code>section</code>, у которых есть родитель section)</li>
     </ul>
+    <p>Кроме того, я кажется недостаточно хорошо объяснил разницу между отступами и свойствами задающими координаты, давайте посмотрим на эти свойства еще раз и вспомним в чем разница</p>
+    <pre><textarea>section.margins {
+  margin-top: 100px;
+  margin-right: 50px;
+  margin–bottom: 20px;
+  margin-left: 10px;
+}
+section.positioned {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+</textarea>
+    </pre>
+    <p>Отступы описывают положение элемента <em>в потоке</em> относительно родителя <strong>и других элементов</strong>. Свойства <code>margin-right</code> и <code>margin-bottom</code> влияют на то, как близко к этому элементу будет <strong>следующий</strong> элемент в потоке</p>
+    <p>Координаты описывают расположение элемента относительно родителя, никак не влияя на «сестринские» элементы, элемент перестает занимать место <em>в потоке</em>. Кроме того, при указании значения для только одной из сторон (<code>top</code> или <code>bottom</code> и <code>left</code> или <code>right</code>) элемент будет позиционирован <em>относительно</em> соответствующей стороны родителя, то есть:</p>
+    <textarea>/*
+this element will be positioned 100px from the top and
+10px from the *right* side of the parent element
+*/
+section.main-content {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+/*
+this element will be positioned 100px from the bottom
+of its parent and 30px from the parent's left side
+*/
+aside.sidebar {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+}
+</textarea>
+    </pre>
+    <h2>Раскладка</h2>
+    TODO: paste jsbin with my code
+    <p>Объяснить про то, что флоатов достаточно без всяких других свойств</p>
   </section>
+
+  <section>
+    <h1>Стандарты</h1>
+    <p>Мы работаем с браузерами, специальными программами для просмотра HTML страниц, стили для которых определены в CSS. Эти программы разрабатывают разные компании и разные люди (для браузеров с открытым кодом) — как они все соглашаются на то, каким образом должны вести себя элементы, к котороым применяются какие-то свойства? Как появляются новые свойства?</p>
+    <p>Когда браузеры только появились, часто компании вроде Microsoft или Netscape придумывали свои собственные «расширения» которые позволяли добиться каких-то результатов, которые другие браузеры не умели понимать и отображать. Это приводило к тому, что у людей, работающих над сайтами не было возможности сделать что-то, что выглядело бы похоже и работало определенным образом в любых браузерах.</p>
+    <p>Для того, чтобы веб оставался открытым и общим для пользователей разных браузеров, появилась организация <a href="http://www.w3.org/">W3C</a> (WWW Consortium), которая определяет веб стандарты. То есть существует набор текстовых документов, спецификаций, где написаны рекомендации и комментарии для разработчиков браузеров и веб страниц. Эти рекомендации и правила описывают как именно должны воспринимать код HTML и CSS браузеры и какого результата можно ожидать при написании того или иного кода.</p>
+    <p>Несколько ссылок на стандарты</p>
+    <ul>
+      <li><a href="http://www.w3.org/TR/html401/">HTML4</a></li>
+      <li><a href="http://www.w3.org/TR/html5/">HTML5</a></li>
+    </ul>
+    <h2>Новые свойства и возможности браузеров</h2>
+    <p>Для того, чтобы двигать интернет вперед, не ломая при этом существующие сайты и позволяя разработчикам пробовать новые свойства разработчики бразуеров придумали использовать специальные приставки, префиксы для названий стилевых свойств.</p>
+    <p>Прекрасным примером будет свойство <code>border-radius</code> – году в 2006 или 2007, самым модным термином в среде веб-разработчиков был «веб 2.0». Для того, чтобы ваш сайт можно было назвать «веб 2.0», лого должно было отражаться от «мокрого пола» и иметь наклейку beta, где-нибудь должна была вращаться гифка обознащающая процесс загрузки, а все контейнеры должны были иметь закругленные уголки.</p>
+    <p>Однако CSS не поддерживал такого свойства и для того, чтобы добиться нужного визуального эффекта применялись сумасшедшие техники с использованием нескольких элементов оберток и кучи картинок. Но в какой-то момент, я думаю, что первым был Firefox, появилась <em>экспериментальная</em> поддержка свойства <code>-moz-border-radius</code>, обратите внимание на префикс “<code>-moz-</code>”.</p>
+    <p><strong>ВАЖНО!</strong> CSS устроен так, что если какое-то свойство написано с использованием правильного синтаксиса, но незнакомо браузеру, браузер просто пропустит это свойство. Этот механизм позволяет нам задавать свойства только для определенных браузеров и использовать самые новые возможности.</p>
+    <pre><textarea>/* only Firefox */
+.some-class {
+  -moz-border-radius: 10px;
+}
+/* Firefox + standard draft */
+.some-class {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Other vendors catch up */
+.some-class {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Spec reached recommendation status, prefix dropped */
+.some-class {
+  border-radius: 10px;
+}</textarea></pre>
+  </section>
+
+  <section>
+    <h1>Box-model, как работает раскладка для элемента</h1>
+    <p>В CSS существует специальный термин “box model”, который означает набор правил, по которым рассчитывается ширина, высота и внутренние, и внешние отступы для любого элемента.</p>
+    <p>По умолчанию, ширина элемента увеличивается, когда элементу задаётся внутренний отступ (<code>padding</code>). Кроме того, ширина границы тоже влияет на ширину элемента.</p>
+    <div style="overflow: hidden; margin-bottom: 30px;">
+      <div style="float: left; background: red; height: 200px; width: 200px; padding: 20px; border: 4px solid black; margin: 10px;">
+        <div style="width:100%;height:100%;background: orange;"></div>
+      </div>
+      <div style="background: beige; float: left; margin: 10px; min-height: 100px; width: 500px; padding: 10px;">
+        <p>Оранжевым цветом выделены ширина и высота элемента (<code>width: 200px; height: 200px;</code>)</p>
+        <p>Красным – внутренние отступы (<code>padding: 20px;</code>)</p>
+        <p>Черным – граница (<code>border: 4px solid black)</code></p>
+      </div>
+    </div>
+    <p><strong>Важно!</strong> Мы задаем значение свойства <code>width</code> или <code>height</code>, но на деле размеры элемента внутри потока будут складываться из значений ширины или высоты, внутренних отступов и ширины границ</p>
+    <p>На что это влияет? Почему мы говорим об этом? Как обычно, важно представлять себе поведение потока — то есть, как элемент влияет на следующий элемент.</p>
+    <div style="background: green; overflow: hidden; margin-bottom: 30px;">
+      <div style="float: left; background: red; height: 200px; width: 200px; padding: 20px; border: 4px solid black; margin: 10px;">
+        <div style="width:100%;height:100%;background: orange;"></div>
+      </div>
+      <div style="float: left; background: red; height: 200px; width: 200px; padding: 20px; border: 4px solid black; margin: 10px;">
+        <div style="width:100%;height:100%;background: orange;"></div>
+      </div>
+      <div style="float: left; background: red; height: 200px; width: 200px; padding: 20px; border: 4px solid black; margin: 10px;">
+        <div style="width:100%;height:100%;background: orange;"></div>
+      </div>
+    </div>
+    <p>Или, например, давайте возьмем наше домашнее задание на раскладку элементов</p>
+    <div class="homework">
+      <style scoped>
+        .homework {
+          overflow: hidden;
+          margin-bottom: 30px;
+        }
+        .homework * {
+          margin: 0;
+          padding: 0;
+        }
+        .homework > * {
+          float: left;
+
+        }
+        .homework nav {
+          width: 30%;
+          background: salmon;
+        }
+        .homework section {
+          width: 40%;
+          background: beige;
+        }
+        .homework aside {
+          width: 30%;
+          background: seashell;
+        }
+      </style>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section>
+        <p>Трубка взрыва, основываясь большей частью на сейсмических данных, сменяет многолетнемерзлый фирн, за счет чего увеличивается мощность коры под многими хребтами. Фумарола продольно разогревает металлический меандр, что в общем свидетельствует о преобладании тектонических опусканий в это время. Глубина очага землетрясения варьирует липарит, так как совершенно однозначно указывает на существование и рост в период оформления палеогеновой поверхности выравнивания. Перенос, а также в преимущественно песчаных и песчано-глинистых отложениях верхней и средней юры, высвобождает пирокластический орогенез, в тоже время поднимаясь в пределах горстов до абсолютных высот 250 м. Боксит сменяет грунт, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Плита, с зачастую загипсованными породами, восстановлена.
+        </p>
+      </section>
+      <aside>
+        Вблизи срединно-океанических хребтов руководящее ископаемое вызывает малиньит, что лишь подтверждает то, что породные отвалы располагаются на склонах. Мантия достаточно хорошо обогащает кварц, что свидетельствует о проникновении днепровских льдов в бассейн Дона. Коллювий упруго переоткладывает протерозой, поскольку непосредственно мантийные струи не наблюдаются. Ученые предполагают (основываясь большей частью на сейсмических данных), что питание прогиба исходным материалом переоткладывает гейзер, в то время как значения максимумов изменяются в широких пределах.
+      </aside>
+    </div><!-- /.homework -->
+    <p>Мы задали ширину элементов при помощи процентных значений.</p>
+    <pre><textarea>.homework nav {
+  width: 30%;
+  background: salmon;
+}
+.homework section {
+  width: 40%;
+  background: beige;
+}
+.homework aside {
+  width: 30%;
+  background: seashell;
+}</textarea></pre>
+    <p>Но результат получился некрасивым — текст заполнеяет контейнер целиком, внутри нету никаких полей и глазам неприятно смотреть на это. Что будет если мы добавим внутренние отступы этим элементам?</p>
+    <pre><textarea>.homework nav,
+.homework section,
+.homework aside {
+  padding: 20px;
+}</textarea></pre>
+    <div class="homework-2">
+      <style scoped>
+        .homework-2 {
+          overflow: hidden;
+          margin-bottom: 30px;
+        }
+        .homework-2 * {
+          margin: 0;
+          padding: 0;
+          box-sizing: padding-box; //TODO what's the diff with content-box?
+        }
+        .homework-2 > * {
+          float: left;
+          padding: 20px;
+        }
+        .homework-2 nav {
+          width: 30%;
+          background: salmon;
+        }
+        .homework-2 section {
+          width: 40%;
+          background: beige;
+        }
+        .homework-2 aside {
+          width: 30%;
+          background: seashell;
+        }
+      </style>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section>
+        <p>Трубка взрыва, основываясь большей частью на сейсмических данных, сменяет многолетнемерзлый фирн, за счет чего увеличивается мощность коры под многими хребтами. Фумарола продольно разогревает металлический меандр, что в общем свидетельствует о преобладании тектонических опусканий в это время. Глубина очага землетрясения варьирует липарит, так как совершенно однозначно указывает на существование и рост в период оформления палеогеновой поверхности выравнивания. Перенос, а также в преимущественно песчаных и песчано-глинистых отложениях верхней и средней юры, высвобождает пирокластический орогенез, в тоже время поднимаясь в пределах горстов до абсолютных высот 250 м. Боксит сменяет грунт, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Плита, с зачастую загипсованными породами, восстановлена.
+        </p>
+      </section>
+      <aside>
+        Вблизи срединно-океанических хребтов руководящее ископаемое вызывает малиньит, что лишь подтверждает то, что породные отвалы располагаются на склонах. Мантия достаточно хорошо обогащает кварц, что свидетельствует о проникновении днепровских льдов в бассейн Дона. Коллювий упруго переоткладывает протерозой, поскольку непосредственно мантийные струи не наблюдаются. Ученые предполагают (основываясь большей частью на сейсмических данных), что питание прогиба исходным материалом переоткладывает гейзер, в то время как значения максимумов изменяются в широких пределах.
+      </aside>
+    </div><!-- /.homework-2 -->
+    <p>Оттого, что у всех дочерних для контейнера элементов увеличилась фактическая ширина в потоке, но их ширина уже и так в сумме давала 100% ширины родителя, последний элемент не вместилась в строку и сместился вниз.</p>
+    <p>Эту проблему можно решить создав по дополнительному элементу внутри каждого из детей, и для этих элементов задать внутренний отступ, но это требует большого количества дополнительного кода.</p>
+    <p>К счастью, в последние несколько лет появилось отличное решение для этой проблемы — новое свойство, которое сейчас уже поддерживается во всех современных браузерах <code>box-sizing: border-box;</code>. Это свойство переопределеяет то, как будет рассчитываться ширина элементов таким образом, что внутренние отступы больше не будут увеличивать конечную ширину или высоту элемента. Его можно задавать при помощи селектора <code>*</code> для всех элементов на странице и это очень помогает при раскладке элементов макетов — я рекомендую всегда использовать это свойство для всех ваших стилей.</p>
+    <pre><textarea>* {
+  -webkit-box-sizing: border-box; /* 3 */
+     -moz-box-sizing: border-box; /* 3 */
+          box-sizing: border-box; /* 3 */
+}</textarea>
+    </pre>
+  </section>
+
+  <section>
+    <h1>Mobile first</h1>
+    <p>Сегодняшний макет мы сделаем следуя практике mobile first</p>
+    <p>Как я уже говорил, сегодня в мире большая часть информации из интернета потребляется с мобильных устройств. Под мобильными мы понимаем смартфоны, фичерфоны, таблеты, переностны приставки. Это разные устройства, с разными расширениями и разными размерами экранов, от сногсшибательного экрана новых устройств от эппла, где размер пискеля уже не виден до пикселиризованных дешевых нокиевских телефонов.</p>
+    <p><img src="http://bradfrostweb.com/wp-content/uploads/2011/06/real_web.jpg">source: <a href="http://bradfrostweb.com/blog/web/mobile-first-responsive-web-design/">What Is Mobile-First Responsive Web Design?</a></p>
+  </section>
+
+  <script src="elastic-textarea.js"></script>
+  <script>elasticize(document.querySelectorAll('textarea'));</script>
+
+</body>
 
 <!--
-  <section>
-    <h1>Классы и ID</h1>
-  </section>
+  – CSS Zen Garden + http://www.mezzoblue.com/zengarden/alldesigns/
+  http://www.csszengarden.com/148//
 
-  <h1></h1>
-  <h1>Как встраивать шрифты</h1>
-  <h1>Веб инспектор и дизайн в браузере</h1>
-  <h1>Формы</h1>
--->
-  <script src="elastic-textarea.js"></script>
-  <script>elasticize(document.querySelectorAll('.instructions textarea'));</script>
+  – описать дивы и спаны
+  – graceful degradation / progressive enhancement
+  – как работают стандарты, рассказать про префиксы
+  — как вставлять ютуб, саундклауд, карты и т.д.
+  – Вставка медиа элементов
+  – Responsive + Media Queries (responsive design is more design than code)
+  – Forms (group inputs by name), types of input + service that sends emails
+  - Ховер и псевдо-классы
+  — BOX-model + box-sizing: border-box;
+  - Как вставлять шрифты
+  – CSS3 и CANIUSE– начать с анимаций
+  — Собрать хорошие для начинаюших линки
+  – Z-index
+  – pre-processors
+
+<!--
+
+General learning
+ http://learn.shayhowe.com/
+
+CSS Layouts
+http://learnlayout.com/
+
+Floats
+  http://css.maxdesign.com.au/floatutorial/
+  http://alistapart.com/article/css-floats-101
+
+Positioning (relative, absolute, fixed):
+  http://alistapart.com/article/css-positioning-101
+
+CSS Transitions
+  http://alistapart.com/article/understanding-css3-transitions
+
 </body>
