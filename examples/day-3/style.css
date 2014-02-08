@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  color: rgb(0,200,215);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-header {
+  padding: 24px 3% 10px;
+  overflow: hidden;
+}
+
+  .header-logo {
+    float: left;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .header-signin {
+    float: right;
+  }
+
+.marketing-intro {
+  color: #fff;
+  text-align: center;
+}
+
+  .marketing-intro-story {
+    padding: 45px 3% 52px;
+  }
+
+  .marketing-intro-manage {
+    background: rgb(0,200,215);
+  }
+
+  .marketing-intro-find {
+    background: rgb(66,96,116);
+  }
+
+  .marketing-intro-story h1 {
+    margin-bottom: 28px;
+    font-size: 22px;
+  }
+  .marketing-intro-story p {
+    margin-bottom: 44px;
+  }
+
+.features {
+  padding: 20px 3%;
+}
+
+  .feature {
+    padding: 20px 0;
+  }
+
+    .feature p {
+      color: #78848b;
+    }
