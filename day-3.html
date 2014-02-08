@@ -286,6 +286,35 @@ aside.sidebar {
       <li>
         <p><a href="http://jsbin.com/hona/3/edit">Только HTML и базовые стили</a>. Важно обратить внимание на использование классов и на «сетку» (реализованную при помощи padding:0 3%).</p></li>
       <li><a href="http://jsbin.com/hona/4/edit">+ собственный шрифт</a>. Мы использовали свой собственный шрифт — давайте посмотрим как вы можете выбрать другой шрифт и как его использовать. <a href="http://www.google.com/fonts">Google Fonts</a></li>
+      <li><<a href="http://jsbin.com/hona/5/edit">+ media queries</a>. <a href="http://www.w3.org/TR/css3-mediaqueries/">Спецификация</a>
+        <p>Вот список возможных переменных предоставленных нам «средой» в которой будет выполняться код нашего сайта</p>
+        <ul>
+          <li>width – ширина окна/таба браузера</li>
+          <li>height – высота окна/таба</li>
+          <li>device-width – ширина экрана устройства</li>
+          <li>device-height - высота экрана</li>
+          <li>orientation  – portrait or landscape – положение экрана — вертикально или горизонтально</li>
+          <li>aspect-ratio – пропорция ширины к высоте, выражаемая двумя целыми числами разделенными косой чертой — 16/9</li>
+          <li>monochrome – количество бит доступных для передачи оттенков, в случае если экран монохромный (0 для цветных экранов)</li>
+          <li>resolution – разрешение экрана — dpi (dots per inch) or dppx (dots per pixel)</li>
+          <li>grid – 0 or 1 — если значение 1, это означает что устройство поддерживает только один шрифт фискированной ширины (как консоль компьютера)</li>
+        </ul>
+        <pre><textarea>@media screen and (min-width: 40em) {
+  selector {
+    property: value;
+  }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    /* Retina-specific stuff here */
+}
+/* from SoundCloud mobileweb */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+}
+</textarea></pre>
+      </li>
     </ul>
   </section>
 
