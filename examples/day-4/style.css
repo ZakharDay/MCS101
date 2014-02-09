@@ -166,6 +166,7 @@ a {
       border: none;
       font-size: 14px;
       width: 62%;
+      min-width: 12em;
       height: 32px;
       padding: 0 4px;
       border-radius: 3px;
