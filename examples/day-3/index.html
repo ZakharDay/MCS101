@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Desktime</title>
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:200,300' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,16 +12,23 @@
     <header class="page-header">
       <a href="." class="header-logo"><h1>Desktime</h1></a>
       <a href="sign-in" class="header-signin">Sign In</a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#request-a-demo">Request a demo</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="directory.html">Directory</a></li>
+        </ul>
+      </nav><!-- /.header-nav-->
     </header><!-- /.page-header -->
 
     <div class="marketing-intro">
       <section class="marketing-intro-story marketing-intro-manage">
         <h1>Take control of your coworking space</h1>
         <p>Accept payments, book your space, and build a community with a single web-based app.</p>
-        <a href="#demo">Request a demo</a>
+        <a href="#demo" class="marketing-story-action">Request a demo</a>
       </section>
       <section class="marketing-intro-story marketing-intro-find">
-        <h1>Find the perfect shared workspace.</h1>
+        <h1>Find the <span>perfect</span> shared workspace.</h1>
         <p>Search the Desktime Directory for a great place to work anywhere in the world.</p>
         <input>
       </section>
@@ -28,6 +36,7 @@
 
     <div class="features">
       <section class="feature feature-payments">
+        <a href="#" class="feature-payments-link"></a>
         <h1>Effortless integrated payments.</h1>
         <p>There’s no easier way to accept recurring or one-time credit card payments for your space. And it takes minutes to set up.</p>
       </section>
