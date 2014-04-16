@@ -3,51 +3,249 @@
 <head>
 <title>Moscow Coding School</title>
 <meta charset="utf-8">
-<link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet'>
-<link href="normalize.css" rel="stylesheet">
+<link href="reset.css" rel="stylesheet">
+<link href="PTSansWeb/stylesheet.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page">
-    <h1>Основы HTML и СSS</h1>
-    <h2>День 1</h2>
+    <section class="wrapper">
+      <section class="container">
+        <div class="line"></div>
+        <div class="basics">Основы</div>
+        <div class="html">HTML</div>
+        <div class="and">и</div>
+        <div class="css">CSS</div>
+        <div class="day">День 1</div>
+      </section>
+    </section>
   </header>
 
-  <section>
-    <h1>Немножко истории</h1>
-    <p><strong>1990, CERN в Швейцарии</strong> — <strong>Тим Бернерс-Ли</strong> выкладывает в сеть первый браузер и первый сервер, а также первый сайт, где он описывает использование HTML.</p>
-    <h3>Первый сайт</h3>
-    <p><img style="border:1px dashed #000" src="imgs/1st-website.png" width="100%"></p>
-    <h3>Первые версии браузеров</h3>
-    <ul>
-      <li><strong>1994</strong> – Netscape, Opera</li>
-      <li><strong>1995</strong> – MS Internet Explorer</li>
-      <li><strong>2000</strong> – Opera Mobile</li>
-      <li><strong>2003</strong> – Apple Safari</li>
-      <li><strong>2004</strong> – Mozilla Firefox (based on Gecko, Netscape’s “engine”)</li>
-      <li><strong>2007</strong> – Mobile Safari</li>
-      <li><strong>2008</strong> – Google Chrome (based on Webkit, Safari’s “engine”)</li>
-      <li><strong>2010</strong> – Firefox Mobile</li>
-      <li><strong>2012</strong> – Chrome for Android and iOS</li>
-    </ul>
+  <article>
+    <section>
+      <h3>Знакомьтесь, это Google Chrome</h3>
+      <p>Самый передовой на сегодняшний день веб-браузер</p>
+      <div class="img" id="chromeWelcome">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+      <p class="center">
+        <a href="http://fmbip.com/litmus/">Поддержка браузерами HTML5 и CSS3</a>
+      </p>
+    </section>
 
-    <h3>HTML</h3>
+    <section>
+      <h3>Chrome Dev Tools</h3>
+      <p>Лучший инструмент для отладки кода</p>
+      <div class="img" id="chromeOpenInspector">
+        <img src="imgs/02-chrome-inspect.png" id="chromeInspect">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
 
-    <p class="red">Написать проще что такое HTML, что такое тег, зачем он нужен, как он строится...</p>
+      <br>
 
-    <p><abbr title="Hyper Text Markup Language">HTML</abbr> – язык разметки информации. При помощи <em>тэгов</em> мы описывам смысл инфромации. Страница HTML может быть создана в текстовом редакторе дизайнером или собрана из кусков информации при помощи машины, в любом случае браузер отображает именно HTML</p>
-    <h3>HTML5</h3>
+      <div class="img" id="chromeInspector">
+        <img src="imgs/03-chrome-dev-tools.png">
+      </div>
+    </section>
 
-    <p class="red">
-      <ul>
-        <li class="red">Сайт должен быть понятен поисковику</li>
-        <li class="red">Появились новые модули, которые поддерживают браузеры (canvas, video, audio)</li>
-      </ul>
-    </p>
+    <h2>Немножко истории</h2>
 
-    <p>HTML5 — это последняя, новая версия стандарта HTML, оформившаяся относительно недавно после длительного застоя, с 1998 года по 2009 новые функции добавлялись отдельными компаниями (Microsoft, Apple и Mozilla) в отдельные браузеры, но с 2009 года новый текст стандарта был опубликован и предложен организации занимающейся стандартизацией, что позволило производителям разных браузеров поддерживать один и тот же набор новых функций. Среди новых функций — возможность проигрывать медиа (видео и аудио) без использования плагинов (таких как Adobe Flash), встраивание векторной графики (SVG) и многие другие.</p>
-  </section>
+    <section>
+      <h3>1990, CERN, Швейцария</h3>
+      <p>Тим Бернерс-Ли выложил в сеть первый браузер WorldWideWeb, сервер,<br>а также сайт, где он описал использование HTML 1.0</p>
+
+      <div class="img">
+        <img src="imgs/04-1st-wedsite.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Краткая история браузеров</h3>
+
+      <table class="browsersHistory">
+        <tr>
+          <td>1991</td>
+          <td>Тим доработал WorldWideWeb и выложил его исходный код в сеть (позже был переименован в Nexus, что бы не путать браузер со всемирной сетью).</td>
+        </tr>
+        <tr>
+          <td>1992</td>
+          <td>Появляются новые браузеры MidasWWW, Erwise и ViolaWWW. Начинается работа над NCSA Mosaic (или просто Mosaic). Выходит Lynx — текстовой браузер, который до сих работает, развивается и обновляется.</td>
+        </tr>
+        <tr>
+          <td>1993</td>
+          <td>Выходит браузер Mosaic.</td>
+        </tr>
+        <tr>
+          <td>1994</td>
+          <td>Выходит Web Explorer от IBM. Тим Бернерс-Ли создаёт World Wide Web Consortium (W3C). Начиначется работа над браузером Opera. Выходит браузер Netscape Navigator.</td>
+        </tr>
+        <tr>
+          <td>1995</td>
+          <td>Выходит Microsoft Internet Explorer.</td>
+        </tr>
+        <tr>
+          <td>1996</td>
+          <td>Выходит браузер Opera под Microsoft Windows. Netscape Navigator на пике своей популярности. Выходит Internet Explorer под Mac OS X.</td>
+        </tr>
+        <tr>
+          <td>1997</td>
+          <td>Прекращается разработка и поддержка Mosaic. Начало разработки браузерного движка Gecko. IE 4 выходит на новом движке Trident.</td>
+        </tr>
+        <tr>
+          <td>1998</td>
+          <td>Начинается работа над браузером Opera под мобильные устройства. Зарождается браузерный движок WebKit (KDE's HTML layout engine (KHTML), KDE's JavaScript engine (KJS)). Создан проект Mozilla.</td>
+        </tr>
+        <tr>
+          <td>1999</td>
+          <td>Начало бума доткомов. Инвесторы вкладывают огромные деньги в онлайн стартапы.</td>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>Выходит кросплатформенный браузер Opera 4.0. Opera Mobile 3.6 впервые начинает использоваться на телефонах. IE навсегда покидает Mac.</td>
+        </tr>
+        <tr>
+          <td>2001</td>
+          <td>Начата работа над WebKit отдельно от KHTML и KJS. Окончание бума доткомов, большинство стартапов растратили вложенные инвестиции, так и не окупившись.</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>Анонсирован JavaScriptCore (компонет WebKit). Зарождение эры Web 2.0. Вышла первая версия браузера Mozilla на базе Gecko. Началась работа над браузером известным сегодня как Firefox (сначала он назывался Phoenix, потом Firebird, позже Mozilla Firefox).</td>
+        </tr>
+        <tr>
+          <td>2003</td>
+          <td>Apple Safari и WebCore (компонент WebKit) был представлен Стивом Джобсом на конференции Macworld Expo. Opera Mobile 6.0 начинает поддерживать Windows Mobile.</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>Начинается работа над Opera Mini. Выходит первая версия Mozilla Firefox на базе Gecko.</td>
+        </tr>
+        <tr>
+          <td>2005</td>
+          <td>WebKit становится общедоступным (open-source), добавлена поддержка векторной графики в формате (SVG).</td>
+        </tr>
+        <tr>
+          <td>2006</td>
+          <td>Выходит Opera для Nintendo DS и Nintendo Wii (браузер назывался Internet Channel). Opera Mobile начинает поддерживать SVG.</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>Стив Джобс показал миру первый iPhone, который поставлялся с Mobile Safari. Позже в этом же году выходит Safari под Windows. После лимитированного распространения в Европе релизится Opera Mini.</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>Выходит Google Chrome, а так же open-source браузер Chromium. Оба на основе WebKit.</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>Выходит Firefox Mobile. Анонсирован WebKit2.</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>Выходит Chrome под Android и iOS. Выходит Яндекс Браузер на основе Chromium.</td>
+        </tr>
+        <tr>
+          <td>2013</td>
+          <td>Анонсирован браузерный движок Blink на который в этом же году перешли Google Chrome, Chromium, Opera и все остальные браузеры использующие в своей основе Chromium. Выходит мобильная версия Яндекс Браузера под Android и iOS.</td>
+        </tr>
+      </table>
+
+<!-- http://en.wikipedia.org/wiki/File:Lynx_vs._Firefox_rendering.png -->
+
+    </section>
+
+    <h2>Немножко терминов</h2>
+
+    <section>
+      <h3>Hypertext</h3>
+
+      <p>Текст, который может быть нелинейным и<br>содержать ссылки на другие тексты.</p>
+      <p class="center grey">Термин впервые упомянут Тедом Нэльсоном в 1965 году</p>
+    </section>
+
+    <section>
+      <h3>Hypermedia</h3>
+      <p>Термин, используемый для обозначения гипертекста, который может содержать в себе ещё и графику (картинки), звуковые файлы, видео, и прочие современные штучки.</p>
+
+      <p class="center"><a href="http://www.w3.org/WhatIs.html">"Что такое гипертекст?" на сайте W3C</a></p>
+    </section>
+
+    <section>
+      <h3>HTML</h3>
+      <p>HyperText Markup Language</p>
+
+      <p class="center grey">Язык гипертекстовой разметки</p>
+    </section>
+
+    <section>
+      <h3>HTTP</h3>
+      <p>HyperText Transfer Protocol</p>
+
+      <p class="center grey">Протокол передачи гипертекста</p>
+    </section>
+
+    <section>
+      <h3>HTTPS</h3>
+      <p>HyperText Transfer Protocol Secure</p>
+
+      <p class="center grey">Расширение протокола HTTP, поддерживающее шифрование</p>
+    </section>
+
+    <section>
+      <h3>HTML Tag</h3>
+      <p>
+        <span class="tagColor">&lt;tag&gt;&lt;/tag&gt;</span>
+<!--         <br>
+        <span class="tagColor">&lt;tag&gt;</span>Контент<span class="tagColor">&lt;/tag&gt;</span>
+        <br><br>
+        <span class="tagColor">&lt;tag attribute=</span><span class="attributeColor">"value"</span><span class="tagColor">&gt;</span>Контент<span class="tagColor">&lt;/tag&gt;</span> -->
+      </p>
+
+      <p class="center grey">Тэги — это элементы гипертекстовой разметки. Они могут содержать внутри текст и другие элементы (тэги), а те в свою очередь другие элементы, таким образом создавая древовидную структуру документа DOM.</p>
+
+      <div class="img" id="wireframe">
+        <img src="imgs/05-wireframes.gif">
+      </div>
+
+      <p class="center"><a href="http://dribbble.com/shots/1017934-Free-responsive-wireframes-GIF">Источник картинки</a></p>
+    </section>
+
+    <section>
+      <h3>DOM</h3>
+      <p>Document Object Model</p>
+
+      <p class="center grey">Объектная модель документа</p>
+
+      <div class="img" id="dom">
+        <img src="imgs/06-dom-tree.gif">
+      </div>
+    </section>
+
+    <section>
+      <h3>CSS</h3>
+      <p>Cascading Style Sheets</p>
+
+      <p class="center grey">Каскадные таблицы стилей</p>
+
+      <div class="img">
+        <img src="imgs/07-google-with-css.png">
+      </div>
+
+      <div class="img" width="500px">
+        <img src="imgs/08-google-without-css.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>HTML5 & CSS3</h3>
+      <p>Новые возможности современного веба</p>
+
+      <p class="center grey">Это последние общепринятые версии спецификаций, которые дают нам огромные возможности по работе с контентом и пользователем. Прямо в HTML документе можно проиграть аудио и видео, рисовать и анимировать 2D и 3D на специальном слое Canvas, хранить дополнительную информацию и контент у пользователя, работать с векторной графикой (SVG), отправлять в браузер оповещения о произошедших на сервере событиях, вычислять местонахождение пользователя, объяснять поисковику какого рода контент он видит и что этот контент обозначает.</p>
+    </section>
+
+    <h2>Практическая работа</h2>
+
+
+  </article>
 
   <section>
     <h1>Hands-on</h1>
