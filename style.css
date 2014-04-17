@@ -264,23 +264,6 @@ img.example {
   border-radius: 3px;
 }
 
-.browsersHistory {
-  width: 700px;
-  margin: 80px auto;
-}
-
-.browsersHistory td {
-  padding: 20px 5px;
-  line-height: 28px;
-  /*border-left: 2px solid #1473B5;*/
-}
-
-.browsersHistory tr td:first-child {
-  width: 42px;
-  color: #1473B5;
-  font-weight: bold;
-}
-
 #lynx {
   margin-left: -50px;
 }
@@ -293,4 +276,33 @@ img.example {
   width: 700px;
   padding: 50px;
   background: white;
+}
+
+.centeredTable {
+  width: 700px;
+  margin: 80px auto;
+}
+
+.centeredTable td {
+  padding: 20px 5px;
+  line-height: 28px;
+  /*border-left: 2px solid #1473B5;*/
+}
+
+.centeredTable tr td:first-child {
+  color: #1473B5;
+  font-weight: bold;
+}
+
+/*#browsersHistory {
+  width: 700px;
+}*/
+
+#browsersHistory tr td:first-child {
+  width: 42px;
+}
+
+#htmlStructure tr td:first-child {
+  width: 230px;
+  text-align: right;
 }
