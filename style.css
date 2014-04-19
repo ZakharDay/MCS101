@@ -66,6 +66,15 @@ div.img {
   text-align: center;
 }
 
+div.img.plee {
+  margin: 30px 0 30px -47px;
+  text-align: center;
+}
+
+code {
+  font-family: "Courier New";
+}
+
 .center {
   text-align: center;
 }
@@ -302,7 +311,11 @@ img.example {
   width: 42px;
 }
 
+#htmlStructure {
+  width: 850px;
+}
+
 #htmlStructure tr td:first-child {
-  width: 230px;
+  width: 315px;
   text-align: right;
 }

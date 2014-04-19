@@ -8,7 +8,9 @@ body {
   line-height: 1.5;
 }
 header {
-  background: url(imgs/talking-heads.jpg);
+  background: url(../imgs/rick-boss.jpg);
+  background-position: bottom center;
+  background-attachment: fixed;
 }
 header h1 {
   height: 400px;
