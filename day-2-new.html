@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <title>Moscow Coding School</title>
+  <meta charset="utf-8">
+  <link href="reset.css" rel="stylesheet">
+  <link href="PTSansWeb/stylesheet.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page">
+    <section class="wrapper">
+      <section class="container">
+        <div class="line"></div>
+        <div class="basics">Основы</div>
+        <div class="html">HTML</div>
+        <div class="and">и</div>
+        <div class="css">CSS</div>
+        <div class="day">День 2</div>
+      </section>
+    </section>
+  </header>
+
+  <article>
+
+    <h2>Современный WEB</h2>
+
+    <section>
+      <h3>HTML5 & CSS3</h3>
+      <p>Новые возможности современного веба</p>
+
+      <p class="center grey">Это последние общепринятые версии спецификаций, которые дают нам огромные возможности по работе с контентом и пользователем. Прямо в HTML документе можно проиграть аудио и видео, рисовать и анимировать 2D и 3D на специальном слое Canvas, хранить дополнительную информацию и контент у пользователя, работать с векторной графикой (SVG), отправлять в браузер оповещения о произошедших на сервере событиях, вычислять местонахождение пользователя, объяснять поисковику какого рода контент он видит и что этот контент обозначает.</p>
+    </section>
+
+    <section>
+      <h3>Шрифты</h3>
+      <p></p>
+
+      <p class="center grey">Сервис <a href="http://www.google.com/fonts">Google Fonts</a> даёт нам возможность возможность<br>очень просто вставить шрифт в наш сайт</p>
+    </section>
+
+    <section>
+      <h3>Иконки</h3>
+      <p></p>
+
+      <p class="center grey">Замечательный шрифт <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome</a> позволяет очень быстро и просто использовать иконки на нашем сайте</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Результат</p>
+
+      <div class="img">
+        <img src="imgs/20-fonts-icons.png">
+      </div>
+    </section>
+
+    <h2>Как всё работает?</h2>
+
+    <section>
+      <h3>Flow</h3>
+      <p>Поток</p>
+
+      <p>Поток — это порядок в котором элементы отображаются и распологаются внутри страницы.</p>
+
+      <p>Существует несколько типов элементов и сейчас мы поговорим о двух самых распространенных: inline элементы (строчные) и block элементы (блоки).</p>
+
+      <p>Block — это элементы которые можно представить в виде контейнеров и они разделяют документ на какие-то части. Блоками по-умолчанию будут не только элементы <code class="tagColor">section</code> и <code class="tagColor">header</code> о которых мы говорили, но и <code class="tagColor">p</code>, и <code class="tagColor">h1</code>. Блоки обычно являются «родительскими» для инлайн-элементов.</p>
+
+      <p>Inline — как следует из названия, это элементы которые находятся «в строке» и о них можно думать как о «словах» в предложении.</p>
+
+      <p>По умолчанию, в потоке блоки занимают всю ширину родительского элемента (если элемент является дочерним элементу <code  class="tagColor">body</code> то он займет ширину окна) и идут один за одним сверху вниз в том же порядке, в котором они появляются в коде HTML.</p>
+
+      <p>Строчные элементы в потоке ведут себя как слова, то есть занимают только ширину своего содержимого и следуют один за одним слева направо.</p>
+    </section>
+
+    <section>
+      <h3>Блоки</h3>
+      <p></p>
+
+      <div class="img">
+        <img src="imgs/21-block-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/21-block-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Инлайны</h3>
+      <p></p>
+
+      <div class="img">
+        <img src="imgs/22-inline-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/22-inline-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <p>Важно! Мы можем задавать размеры (свойства height и width) только блокам — на инлайн элементы размеры не действуют, их размер зависит от их текстового содержимого.</p>
+    </section>
+
+    <section>
+      <h3>Свойство display</h3>
+      <p></p>
+
+      <p>Несмотря на то, что у всех элементов имеется принадлежность к блокам или инлайнам по-умолчанию, мы можем контролировать то, как они будут вести себя при помощи CSS свойства <code>display</code>.</p>
+
+      <div class="img">
+        <img src="imgs/23-display-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/23-display-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Свойство position</h3>
+      <p>Позиционирование элементов</p>
+
+      <p class="center grey">Существует несколько значений свойства position</p>
+
+      <table class="centeredTable">
+        <tr>
+          <td><code>absolute</code></td>
+          <td>Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента.</td>
+        </tr>
+        <tr>
+          <td><code>fixed</code></td>
+          <td>По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элемента.</td>
+        </tr>
+        <tr>
+          <td><code>relative</code></td>
+          <td>Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</td>
+        </tr>
+        <tr>
+          <td><code>static</code></td>
+          <td>Значение по умолчанию. Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.</td>
+        </tr>
+        <tr>
+          <td><code>inherit</code></td>
+          <td>Наследует значение родителя.</td>
+        </tr>
+      </table>
+
+      <p class="center grey">Источник <a href="http://htmlbook.ru/css/position">HTML Book</a></p>
+    </section>
+
+    <section>
+      <h3>Box model</h3>
+      <p>Структура блока</p>
+
+      <div class="img" id="boxModel">
+        <img src="imgs/24-boxdim.png">
+      </div>
+
+      <p class="center grey"><a href="http://www.w3.org/TR/CSS2/box.html">Спецификация на английском</a><br>для более подробного изучения</p>
+    </section>
+
+    <section>
+      <h3>Селекторы</h3>
+      <p>Класы и айдишники (идентификаторы)</p>
+
+      <div class="img">
+        <img src="imgs/25-selector-showcase.png">
+      </div>
+
+      <p class="center grey"><a href="http://www.w3.org/TR/CSS21/selector.html">Спецификация на английском</a><br>для более подробного изучения</p>
+    </section>
+
+  </article>
+
+</body>

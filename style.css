@@ -319,3 +319,8 @@ img.example {
   width: 315px;
   text-align: right;
 }
+
+#boxModel {
+  padding: 80px 0;
+  background: white;
+}
