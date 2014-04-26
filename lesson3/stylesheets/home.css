@@ -1,0 +1,117 @@
+.oceanOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/home-background-optimized.jpg) bottom;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+#home {
+  background: black;
+}
+
+#home .flex {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  text-align: center;
+}
+
+#home header,
+#home ul,
+#home footer {
+  display: block;
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+
+#home header {
+  padding-top: 30px;
+}
+
+#home header h1 {
+  font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#home header p {
+  font-size: 14px;
+}
+
+#home ul {
+  display: flex;
+  justify-content: center;
+}
+
+#home li {
+  width: 228px;
+  height: 228px;
+  margin: 0 15px;
+
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  overflow: none;
+}
+
+#home li figure {
+  position: absolute;
+  z-index: 3;
+  width: 208px;
+  height: 208px;
+  background-size: cover;
+  border: 10px solid white;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.30);
+}
+
+#home li:hover figure {
+  width: 300px;
+  height: 300px;
+  margin: -46px 0 0 -46px;
+  z-index: 4;
+  border-top: 14px solid white;
+  border-right: 14px solid white;
+  border-bottom: 66px solid white;
+  border-left: 14px solid white;
+  box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.30);
+}
+
+#home li h2 {
+  font-size: 32px;
+  position: relative;
+  margin-top: 100px;
+  font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  visibility: hidden;
+}
+
+#home li:hover h2 {
+  z-index: 4;
+  margin-top: 286px;
+  visibility: visible;
+}
+
+#food     figure { background: url(../images/home-01-food.jpg)    center center; }
+#legs     figure { background: url(../images/home-02-legs.jpg)    center center; }
+#cats     figure { background: url(../images/home-03-cats.jpg)    center center; }
+#selfies  figure { background: url(../images/home-04-selfies.jpg) center center; }
+
+#home footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}

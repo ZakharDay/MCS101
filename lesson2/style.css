@@ -12,8 +12,12 @@ header {
 }
 .nav-logo {
 	position: absolute;
+	width: 94px;
+	height: 28px;
 	left: 150px;
-	padding-top: 20px;
+	margin-top: 20px;
+	background-image: url(imgs/logo-square.png);
+	background-size: cover;
 }
 nav {
 	position: absolute;
@@ -24,10 +28,17 @@ nav {
 }
 nav ul li {
 	display: inline;
-	color:#888;
 	font-size: 12px;
 	padding:10px;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+nav ul li a {
+	color:#888;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color:#888;
+	color: black;
 }
 nav ul {
 	width:100%;
@@ -65,8 +76,8 @@ h1 span {
 .fa-chevron-down {
 	position: absolute;
 	font-size: 63px;
-	z-index:3; 
-	bottom:100px; 
+	z-index:3;
+	bottom:100px;
 	color:#fff;
 	text-shadow: 2px 2px #000;
 	left:48%;
