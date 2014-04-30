@@ -8,7 +8,8 @@
 }
 
 .photoSection {
-  background-size: cover;
+  background-size: cover !important;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
@@ -152,6 +153,10 @@
 
 #selfiesSection {
   background: url(../images/selfies-background.jpg) center;
+}
+
+#selfiesSection .photos ul {
+  width: 2048px;
 }
 
 
