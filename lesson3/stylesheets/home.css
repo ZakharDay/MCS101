@@ -28,7 +28,6 @@
 
 #homeSection header,
 #homeSection ul,
-#homeSection .flex > section,
 #homeSection footer {
   display: block;
   width: 100%;
@@ -120,28 +119,6 @@ a#selfies { background: url(../images/home-04-selfies.jpg) center center; }
   margin-top: 318px;
   visibility: visible;
   opacity: 1;
-}
-
-#homeSection .flex > section {
-
-}
-
-a#video {
-  display: block;
-  width: 228px;
-  height: 128px;
-  margin: 0 auto;
-  background: url(../images/video-thumb.jpg) center center;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.30);
-  border-radius: 5px;
-  color: rgba(0,0,0,.6);
-  background-size: cover;
-  line-height: 128px;
-  transition: color 0.1s linear;
-}
-
-a#video:hover {
-  color: rgba(0,0,0,.9);
 }
 
 #homeSection footer a {
