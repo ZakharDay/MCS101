@@ -168,6 +168,10 @@ header.page div.day {
   color: white;
 }
 
+header.page div.day.last {
+  width: 165px;
+}
+
 article {
   width: 1000px;
   margin: 0 auto;
