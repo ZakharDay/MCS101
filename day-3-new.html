@@ -24,14 +24,246 @@
   <article>
 
     <section>
+      <h3>Сброс стилей браузера</h3>
+      <p>CSS Reset</p>
+
+      <p>В первый день мы видели, что в браузере предустановлены стили для различных эллементов ( <code class="tagColor">h1</code>, <code class="tagColor">h2</code>, <code class="tagColor">h3</code>, <code class="tagColor">h4</code>, <code class="tagColor">h5</code>, <code class="tagColor">h6</code>, <code class="tagColor">p</code> ). Что бы эти предустановки не влияли на наш дизайн и вёрстку, мы используем различные техники сброса этих стилей.</p>
+
+      <p>Ниже приведён код Eric Meyer’s “Reset CSS” 2.0, который я рекомендую использовать.</p>
+
+      <div class="img">
+        <img src="examples-new/reset.png">
+      </div>
+
+      <p class="grey center">Этот и другие ресеты вы можете скопировать на сайте <a href="http://cssreset.com/">CSS Reset</a>. Обратите внимание на Universal Selector ‘*’ Reset, мы использовали эту технику в первый день, когда работали над Википедией.</p>
+    </section>
+
+    <section>
+      <h3>Сетка</h3>
+      <p>У вас должна быть продумана система</p>
+
+      <div class="img">
+        <img src="examples-new/grid.png">
+      </div>
+
+      <p class="grey center">Мы вешаем на эллементы классы в которых описаны<br>необходимые нам размеры.</p>
+    </section>
+
+    <section>
       <h3>Структура проекта</h3>
       <p>Как организовать свой код</p>
+
+      <p class="center">Я предлагаю следующую логику</p>
+
+      <table class="centeredTable">
+        <tr>
+          <td><code>reset.css</code></td>
+          <td>Сбрасывает браузер</td>
+        </tr>
+        <tr>
+          <td><code>basics.css</code></td>
+          <td>Настраевает базовые элементы</td>
+        </tr>
+        <tr>
+          <td><code>layout.css</code></td>
+          <td>Описывает стилистику главных элементов шаблона</td>
+        </tr>
+        <tr>
+          <td><code>content.css</code></td>
+          <td>Описывает контент</td>
+        </tr>
+      </table>
 
       <div class="img">
         <img src="examples-new/project-structure.png">
       </div>
 
-      <p class="grey center"></p>
+      <p>Контент — это абстрактное название, называйте свои описания контента понятными для вас названиями. В нашем дизайне у нас есть фото и видео секции, которые логически отличаются, но в целом могут быть похожи. Отсюда можно выделить структуру: <span class="attributeColor">photo-section.css</span>, <span class="attributeColor">video-sections.css</span>, в которых можно описывать соответствующие свойства. Какие-то смежные свойства можно описывать в <span class="attributeColor">layout.css</span>, а какие-то фундаментальные свойства в <span class="attributeColor">basics.css</span>.</p>
+
+      <p>Хороший принцип для любого кодера — не повторять, а переиспользовать код или по другому <a href="http://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself">DRY</a>.</p>
+    </section>
+
+    <section>
+      <h3>Позиционирование с помощью Flexbox</h3>
+      <p>Разберитесь однажды, получайте удовольствие</p>
+
+      <p class="center"><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
+    </section>
+
+    <section>
+      <h3>Пользуйтесь генераторами</h3>
+      <p>Как можно чаще</p>
+
+      <p class="center"><a href="http://css3gen.com">Easy CSS3 Generator</a></p>
+      <p class="center"><a href="http://css3maker.com">CSS3 Maker</a></p>
+      <p class="center"><a href="http://border-radius.com/">Border Radius Generator</a></p>
+      <p class="center"><a href="http://www.colorzilla.com/gradient-editor/">Gradient Generator</a></p>
+    </section>
+
+    <section>
+      <h3>Параметр overflow</h3>
+      <p>Как положить в блок больше чем он может в себя вместить</p>
+
+      <p class="center">Свойства</p>
+
+      <table class="centeredTable" id="overflowProperty">
+        <tr>
+          <td><code>overflow</code></td>
+          <td>Определяет что будет если контент внутри бока по размеру будет больше чем сам блок</td>
+        </tr>
+        <tr>
+          <td><code>overflow-x</code></td>
+          <td>Определяет что будет если контент внутри бока по ширине будет больше чем сам блок</td>
+        </tr>
+        <tr>
+          <td><code>overflow-y</code></td>
+          <td>Определяет что будет если контент внутри бока по высоте будет больше чем сам блок</td>
+        </tr>
+      </table>
+
+      <p class="center">Значения</p>
+
+      <table class="centeredTable" id="overflowProperty">
+        <tr>
+          <td><code>visible</code></td>
+          <td>Покажет всё, что выходит за границы элемента</td>
+        </tr>
+        <tr>
+          <td><code>hidden</code></td>
+          <td>Спрячем всё, что выходит за границы элемента</td>
+        </tr>
+        <tr>
+          <td><code>scroll</code></td>
+          <td>Появится скроллинг (полоса прокрутки). В зависимости от указанного свойства и размера внутреннего блока, может быть скролл по горизонтали, по вертикали или оба сразу.</td>
+        </tr>
+        <tr>
+          <td><code>auto</code></td>
+          <td>Скроллы будут показыватся при неободимости</td>
+        </tr>
+        <tr>
+          <td><code>initial</code></td>
+          <td>Сбрасывает значение на значение по умолчанию</td>
+        </tr>
+        <tr>
+          <td><code>inherit</code></td>
+          <td>Будет насдедовать значение родителя</td>
+        </tr>
+      </table>
+
+      <p class="grey center"><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp">CSS Overflow</a> на русском</p>
+      <p class="grey center">Чуть более правильное описание на английском<br><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp">CSS Overflow Property</a></p>
+    </section>
+
+    <section>
+      <h3>Forms, Inputs, Textareas</h3>
+      <p>Формы на сайте</p>
+
+      <p>Вообще, формы сложная штука, потому что вы передаёте через интернет какие-то данные и иногда эти данные являются конфиденциальной информацией, но это вопрос к back-end разработчикам и специалистам по защите информации.</p>
+
+      <p>Что касается стилизации, в целом, всё то же самое что и с обычными блоками. Есть два правила, которые вам могут помочь.</p>
+
+      <p>
+        <code>
+          <span class="tagColor">textarea</span>, <span class="tagColor">input</span> { <span class="propertyColor">outline</span>: <span class="valueColor">none</span>; }
+        </code>
+        <br>
+        <code>
+          <span class="tagColor">textarea</span> { <span class="propertyColor">resize</span>: <span class="valueColor">none</span>; }
+        </code>
+      </p>
+
+      <br>
+
+      <p class="grey center"><a href="http://htmlbook.ru/css/outline">CSS Outlines</a></p>
+      <p class="grey center"><a href="http://htmlbook.ru/css/resize">CSS3 resize Property</a></p>
+    </section>
+
+    <section>
+      <h3>Video & Audio Tags</h3>
+      <p>Мультимедиа без боли</p>
+
+      <p>Мультимедиа эллементы добавляются на страничку элементарно, просто копируйте готовый код.</p>
+
+      <p class="center"><a href="http://www.w3schools.com/html/html5_video.asp">Video</a> & <a href="http://www.w3schools.com/html/html5_audio.asp">Audio</a></p>
+
+      <br>
+
+      <p>Основная проблема может быть с форматами файлов, так как разные браузеры понимают разные форматы.</p>
+      <p class="center"><a href="http://fmbip.com/litmus/#html5-graphics-embedded-content">Таблица поддержки форматов</a></p>
+    </section>
+
+    <section>
+      <h3>Responsive vs. Adaptive</h3>
+      <p>Техники создания веб-сайтов под разные размеры экранов</p>
+
+      <p>Responsive Web Design или RWD — это концепция "резиновых" сайтов. Сайтов, которые могут растягиваться в зависимости от размера экрана.</p>
+      <p>Adaptive Web Design или AWD — это концепция предопределённых дизайнов сайта под различные размеры экранов.</p>
+      <p>В идеале, нужно использовать обе техники одновременно. Нужно иметь несколько макетов сайта под разные экраны, а также продумывать состояния "между" одним размером экрана и другим.</p>
+
+      <p class="center"><a href="http://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/">What is the difference between responsive vs. adaptive web design?</a></p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Минимальный и максимальный размер элемента</p>
+
+      <table class="centeredTable" id="minMaxSize">
+        <tr>
+          <td><code>min-width</code></td>
+          <td>Минимальная ширина эллемента</td>
+        </tr>
+        <tr>
+          <td><code>max-width</code></td>
+          <td>Максимальная ширина эллемента</td>
+        </tr>
+        <tr>
+          <td><code>min-height</code></td>
+          <td>Минимальная высота эллемента</td>
+        </tr>
+        <tr>
+          <td><code>max-height</code></td>
+          <td>Максимальная высота эллемента</td>
+        </tr>
+      </table>
+
+      <p class="grey center">Также, эти правила очень полезны в случае <a href="http://davidwalsh.name/textarea-resize">изменения размера textarea</a>, о чём мы говорили выше.</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Media Queries</p>
+
+      <p>В зависимости от размера экрана можно подключать и/или использовать другие стили и правила.</p>
+
+      <p class="grey center"><a href="http://css-tricks.com/css-media-queries/">CSS Media Queries & Using Available Space</a></p>
+    </section>
+
+    <section>
+      <h3>Классные инструменты</h3>
+      <p></p>
+
+      <p><a href="http://cyberduck.io/">Cyberduck</a> — FTP клиент</p>
+      <p><a href="http://codepen.io/">Codepen</a> — онлайн инструмент для написания, проверки и шэринга front-end кода</p>
+      <p><a href="http://jsfiddle.net/">JSFiddle</a> — ещё один хороший инструмент для шеринга кода</p>
+      <p><a href="https://github.com/">GitHub</a> — сервис для хранения <code>.git</code> репозиториев</p>
+      <p><a href="https://gist.github.com/">GitHub Gist</a> — сервис от GitHub чтобы быстро делиться кодом сохраняя форматирование</p>
+      <p><a href="https://goo.gl/wdpcFv">1GB</a> — русский хостинг, удобен в использовании</p>
+      <p><a href="https://goo.gl/Qyymcj">DigitalOcean</a> — заграничный хостинг для более серьёзных проектов, требуется настройка сервера</p>
+      <p><a href="http://www.hetzner.de/en/">Hetzner</a> — не дорогой хостинг для больших, сильно нагруженных проектов с огромной аудиторией, может понадобится, если ваш стартап станет супер популярным</p>
+    </section>
+
+    <section>
+      <h3>Давайте дружить</h3>
+      <br><br>
+
+      <p class="center">Захар День<br><a href="mailto:zakhar.day@gmail.com">zakhar.day@gmail.com</a>, <a href="http://facebook.com/zakhar.day">Facebook</a>, <a href="http://zakharday.com">сайт</a></p>
+      <br>
+      <p class="center">Данила Пли<br><a href="mailto:fiend.of.sound@gmail.com">fiend.of.sound@gmail.com</a>, <a href="http://facebook.com/danilaplee">Facebook</a></p>
+    </section>
+
+    <section>
+      <h2>Спасибо за внимание</h2>
+      <h3>Приходите ещё</h3>
     </section>
 
   </article>

@@ -91,6 +91,14 @@ code {
   color: #8F9D6A;
 }
 
+.propertyColor {
+  color: #C5AF75;
+}
+
+.valueColor {
+  color: #F9EE98;
+}
+
 header.page {
   position: relative;
   display: table;
@@ -323,4 +331,16 @@ img.example {
 #boxModel {
   padding: 80px 0;
   background: white;
+}
+
+#overflowProperty {
+  /*width: 850px;*/
+}
+
+#overflowProperty tr td:first-child {
+  width: 125px;
+}
+
+#minMaxSize {
+  width: 460px;
 }
