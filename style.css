@@ -61,6 +61,10 @@ p + .img {
   margin: 50px auto;
 }
 
+ol {
+  list-style: decimal;
+}
+
 .img {
   display: block;
   margin: 30px auto;
