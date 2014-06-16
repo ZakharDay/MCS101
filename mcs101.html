@@ -49,6 +49,11 @@
     </section>
 
     <section>
+      <h3>Установка Sublime Text и Package Control</h3>
+      <P>После установки <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>, скопируйте код для установки <a href="https://sublime.wbond.net/installation#st2" target="_blank">Package Control</a>. Нажмите Ctrl + ` или зайдите во View > Show Console для вызова консоли Sublime Text.</p>
+    </section>
+
+    <section>
       <h3>Первый HTML документ</h3>
       <p>Создайте на рабочем столе новую папку и назовите её Source,<br>в ней создайте новую папку и назовите её MCS1.</p>
 
@@ -464,6 +469,8 @@
       <h3></h3>
       <p>Добавим несколько тегов</p>
 
+      <p class="center grey">Для быстрого написания открывающего и закрывающего тегов<br>напишите название тега и нажмите Tab.</p>
+
       <div class="img">
         <img src="imgs/09-hello-world-with-h-and-p.png">
       </div>
@@ -488,9 +495,13 @@
       <h3></h3>
       <p>Организуем правильный DOM</p>
 
+      <p class="center grey">Для управления уровнем вложенности тега используйте сочетания<br>Cmd + [ и Cmd + ]. В некоторых случаях можно удобно раздвинуть курсор<br>на несколько строк используя сочетания Ctrl + Shift + &uarr; и Ctrl + Shift + &darr;.<br>Дополнительный курсор можно ставить в любое место зажав Cmd.</p>
+
       <div class="img">
         <img src="imgs/10-hello-world-with-dom.png">
       </div>
+
+      <p class="center grey">В редакторах кода предусмотрены различные цветовые схемы. Что бы код у нас с вами выглядел одинакого переключите цветовую схему<br>Preferences > Color Scheme > Twilight.</p>
 
       <div class="img">
         <img src="imgs/10-hello-world-with-dom-in-chrome.png">
@@ -501,7 +512,7 @@
       <h3>Encoding</h3>
       <p>Кодировка или как браузер понимает документ</p>
 
-      <p class="center grey">Если мы хотим общаться правильно, нам надо сказать браузеру на каком "языке" мы с ним будем говорить</p>
+      <p class="center grey">Если мы хотим общаться правильно, нам надо сказать браузеру<br>на каком "языке" мы с ним будем говорить.</p>
 
       <div class="img">
         <img src="imgs/10-hello-world-with-charset.png">
@@ -637,6 +648,8 @@
         <img src="imgs/14-html-formatting-1.png">
       </div>
 
+      <p class="center grey">Как мы уже сказали, HTML код предствляет иерархию, поэтому правила форматирования HTML помогают увидеть эту иерархию<br> работающему с кодом человеку.</p>
+
       <div class="img">
         <img src="imgs/14-html-formatting-2.png">
       </div>
@@ -646,6 +659,14 @@
       </div>
 
       <p>Whitespace (пробел), tab (символ табуляции), endspace (перенос строки), они помогают кодерам удобно оформлять и читать текст.</p>
+
+      <p>Управлять отступами можно через меню, находящееся в нижнем правом углу.</p>
+
+      <div class="img" id="sublimeIdentation">
+        <img src="imgs/14-html-formatting-5.png" id="sublimeIdentationMenu">
+        <img src="imgs/14-html-formatting-4.png">
+      </div>
+
       <p>Правильное форматирование кода позволяет избежать ошибок, таких как незакрытые тэги или кавычки аттрибутов или неправильного отношения элементов, к тому же Sublime Text покажет вам цветовым выделением всё ли правильно.</p>
       <p>В зависимости от команды в которой вы будете работать или от вашего личного предпочтения для отступов используется либо знак tab, либо несколько пробелов, обычно от двух до четырех. Для контроля ширины отступов у всех нормальных текстовых редакторов есть специальная настройка.</p>
     </section>
@@ -664,13 +685,15 @@
 
     <section>
       <h3>Комментарии</h3>
-      <p>Комментарии — это пометки внутри кода,<br>которые не влияют на его отображение</p>
+      <p>Комментарии — это пометки внутри кода,<br>которые не влияют на его отображение.</p>
 
       <p class="center grey">Это что-то вроде сообщения читающему код человеку — себе или кому-то другому. Они могут также использоваться для визуального разделения кода документа на части и для того, чтобы временно спрятать какую-то часть кода.</p>
 
       <div class="img">
         <img src="imgs/16-comments.png">
       </div>
+
+      <p class="center grey">В разных типах документов коминтарии обозначаются по разному,<br>но эти обозначения не обязательно помнить, используйте Cmd + /<br>для комментирования и раскомментирования кода.</p>
     </section>
 
     <h2>Zen Coding</h2>
@@ -682,18 +705,6 @@
     </section>
 
     <section>
-      <h3>Установка Sublime Text и Package Control</h3>
-      <p></p>
-
-      <p>
-        <ol>
-          <li>Устанавливаем <a href="http://www.sublimetext.com/2">Sublime Text 2</a>, если еще не сделали этого.</li>
-        </ol>
-      </p>
-      
-      <p>1) Устанавливаем <a href="http://www.sublimetext.com/2">Sublime Text 2</a>, если еще не сделали этого.</p>
-      <p>2) Копируем код для установки менеджера пакетов <a href="https://sublime.wbond.net/installation#st2">Package Control</a>.</p>
-      <p>ctrl+` shortcut or the View > Show Console menu</p>
 
       <p>3) Открываем командную стоку Sublime Text 2 нажатием Сtrl+Shift+P на Windows или Cmd+Shift+P на OSX и находим Package Control: Install Package.<br>То же самое можно сделать выбрав из меню Preferences -> Package Control</p>
       <p>4) Теперь вы должны увидеть список пакетов доступных для установки. Нужный нам пакет называется Emmet.  Находим пакет Emmet (просто начните вводить <code>"emme..."</code> в Sublime Text 2 предусмотрен умный поиск). И нажимаем Enter чтоб установить.</p>

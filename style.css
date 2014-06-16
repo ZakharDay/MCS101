@@ -306,6 +306,18 @@ img.example {
   border-radius: 3px;
 }
 
+#sublimeIdentationMenu {
+  position: absolute;
+  margin: 148px 0 0 714px;
+  border: 1px solid lightgrey;
+  -webkit-box-shadow: 0px 8px 18px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 8px 18px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 8px 18px 0px rgba(50, 50, 50, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
 #lynx {
   margin-left: -50px;
 }
