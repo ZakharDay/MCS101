@@ -1,0 +1,1043 @@
+<!doctype html>
+<html>
+<head>
+  <title>Moscow Coding School</title>
+  <meta charset="utf-8">
+  <link href="reset.css" rel="stylesheet">
+  <link href="PTSansWeb/stylesheet.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page">
+    <section class="wrapper">
+      <section class="container">
+        <a class="link" href="http://bit.ly">bit.ly/mcs101</a>
+        <div class="line"></div>
+        <div class="basics">Основы</div>
+        <div class="html">HTML</div>
+        <div class="and">и</div>
+        <div class="css">CSS</div>
+        <div class="day">День 1</div>
+      </section>
+    </section>
+  </header>
+
+  <article>
+    <section>
+      <h3>Знакомьтесь, это Google Chrome</h3>
+      <p>Самый передовой на сегодняшний день веб-браузер</p>
+      <div class="img" id="chromeWelcome">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+      <p class="center">
+        <a href="http://fmbip.com/litmus/">Поддержка браузерами HTML5 и CSS3</a>
+      </p>
+    </section>
+
+    <section>
+      <h3>Chrome Dev Tools</h3>
+      <p>Лучший инструмент для отладки кода</p>
+
+      <div class="img" id="chromeOpenInspector">
+        <img src="imgs/02-chrome-inspect.png" id="chromeInspect">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+
+      <div class="img" id="chromeInspector">
+        <img src="imgs/03-chrome-dev-tools.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Первый HTML документ</h3>
+      <p>Создайте на рабочем столе новую папку и назовите её Source,<br>в ней создайте новую папку и назовите её MCS1.</p>
+
+      <div class="img">
+        <img src="imgs/01-folders-organisation.jpg">
+      </div>
+
+      <h3></h3>
+      <p>Откройте Sublime Text, создайте файл и напишите в нём Hello World. Сохраните файл в папку MCS1 под названием index.html</p>
+
+      <div class="img">
+        <img src="imgs/04-hello-world.png">
+      </div>
+    </section>
+
+    <h2>Немножко истории</h2>
+
+    <section>
+      <h3>1990, CERN, Швейцария</h3>
+      <p>Тим Бернерс-Ли выложил в сеть первый браузер WorldWideWeb, сервер,<br>а также сайт, где он описал использование HTML 1.0</p>
+
+      <div class="img">
+        <img src="imgs/04-1st-wedsite.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Краткая история браузеров</h3>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>1991</td>
+          <td>Тим доработал WorldWideWeb и выложил его исходный код в сеть (позже был переименован в Nexus, что бы не путать браузер со всемирной сетью).</td>
+        </tr>
+        <tr>
+          <td>1992</td>
+          <td>Появляются новые браузеры MidasWWW, Erwise и ViolaWWW. Начинается работа над NCSA Mosaic (или просто Mosaic). Выходит Lynx — текстовой браузер, который до сих работает, развивается и обновляется.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-Erwise.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/06-ViolaWWW.png">
+      </div>
+
+      <div class="img" id="lynx">
+        <img src="imgs/06-Lynx-wikipedia.png">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>1993</td>
+          <td>Выходит браузер Mosaic.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-mosaic.gif">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>1994</td>
+          <td>Выходит Web Explorer от IBM. Тим Бернерс-Ли создаёт World Wide Web Consortium (W3C). Начиначется работа над браузером Opera. Выходит браузер Netscape Navigator.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-Mosaic_Netscape_0.9_on_Windows_XP.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/06-Navigator_1-22.png">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>1995</td>
+          <td>Выходит Microsoft Internet Explorer.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-Internet_Explorer_1.0.png">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>1996</td>
+          <td>Выходит браузер Opera под Microsoft Windows. Netscape Navigator на пике своей популярности. Выходит Internet Explorer под Mac OS X.</td>
+        </tr>
+        <tr>
+          <td>1997</td>
+          <td>Прекращается разработка и поддержка Mosaic. Начало разработки браузерного движка Gecko. IE 4 выходит на новом движке Trident.</td>
+        </tr>
+        <tr>
+          <td>1998</td>
+          <td>Начинается работа над браузером Opera под мобильные устройства. Зарождается браузерный движок WebKit (KDE's HTML layout engine (KHTML), KDE's JavaScript engine (KJS)). Создан проект Mozilla.</td>
+        </tr>
+        <tr>
+          <td>1999</td>
+          <td>Начало бума доткомов. Инвесторы вкладывают огромные деньги в онлайн стартапы.</td>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>Выходит кросплатформенный браузер Opera 4.0. Opera Mobile 3.6 впервые начинает использоваться на телефонах. IE навсегда покидает Mac.</td>
+        </tr>
+        <tr>
+          <td>2001</td>
+          <td>Начата работа над WebKit отдельно от KHTML и KJS. Окончание бума доткомов, большинство стартапов растратили вложенные инвестиции, так и не окупившись.</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>Анонсирован JavaScriptCore (компонет WebKit). Зарождение эры Web 2.0. Вышла первая версия браузера Mozilla на базе Gecko. Началась работа над браузером известным сегодня как Firefox (сначала он назывался Phoenix, потом Firebird, позже Mozilla Firefox).</td>
+        </tr>
+        <tr>
+          <td>2003</td>
+          <td>Apple Safari и WebCore (компонент WebKit) был представлен Стивом Джобсом на конференции Macworld Expo. Opera Mobile 6.0 начинает поддерживать Windows Mobile.</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>Начинается работа над Opera Mini. Выходит первая версия Mozilla Firefox на базе Gecko.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-moz17b-debian.png">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>2005</td>
+          <td>WebKit становится общедоступным (open-source), добавлена поддержка векторной графики в формате (SVG).</td>
+        </tr>
+        <tr>
+          <td>2006</td>
+          <td>Выходит Opera для Nintendo DS и Nintendo Wii (браузер назывался Internet Channel). Opera Mobile начинает поддерживать SVG.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-pic_DSiWareMenuDSi.jpg">
+      </div>
+
+      <div class="img">
+        <img src="imgs/06-Nintendo_DS_Browser.jpg">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>2007</td>
+          <td>Стив Джобс показал миру первый iPhone, который поставлялся с Mobile Safari. Позже в этом же году выходит Safari под Windows. После лимитированного распространения в Европе релизится Opera Mini.</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>Выходит Google Chrome, а так же open-source браузер Chromium. Оба на основе WebKit.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-File-Chromium-Linux-Alpha.png">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>2010</td>
+          <td>Выходит Firefox Mobile. Анонсирован WebKit2.</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>Выходит Chrome под Android и iOS. Выходит Яндекс Браузер на основе Chromium.</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="imgs/06-4359654_1.jpg">
+      </div>
+
+      <table class="centeredTable" id="browsersHistory">
+        <tr>
+          <td>2013</td>
+          <td>Анонсирован браузерный движок Blink на который в этом же году перешли Google Chrome, Chromium, Opera и все остальные браузеры использующие в своей основе Chromium. Выходит мобильная версия Яндекс Браузера под Android и iOS.</td>
+        </tr>
+      </table>
+    </section>
+
+    <h2>Современный WEB</h2>
+
+    <section>
+      <h3>Растровая 2D и 3D графика</h3>
+      <p>HTML5 элемент canvas позволяет создавать растровые 2D изображения. Дополнительные библиотеки (например three.js)<br>позволяют работать с 3D моделями.</p>
+
+      <a class="img" target="_blank" href="http://4real.io/liquid">
+        <img src="imgs/sites/Web-Today-02-3d.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="http://ogreen.special-t.com/en/">
+        <img src="imgs/sites/Web-Today-01-3d.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="http://www.playmapscube.com/">
+        <img src="imgs/sites/Web-Today-03-3d.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Векторная 2D графика</h3>
+      <p>Возможно вставлять и управлять SVG файлами.</p>
+      <p class="center grey">SVG — Scalable Vector Graphics</p>
+
+      <a class="img" target="_blank" href="http://letters-inc.jp/">
+        <img src="imgs/sites/Web-Today-04-svg.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Аудио и видео</h3>
+      <p>Управляемое проигрывание аудио и видео позволяет создавать удивительные презентации продуктов.</p>
+
+      <a class="img" target="_blank" href="http://www.apple.com/ipad-air/">
+        <img src="imgs/sites/Web-Today-05-Air.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="http://discover.store.sony.com/be-moved/">
+        <img src="imgs/sites/Web-Today-05-Sony.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Параллакс</h3>
+      <p>Изменение видимого положения объекта относительно удалённого фона в зависимости от положения наблюдателя. Используется во множестве современных сайтов для создания эффекта глубины картинки.</p>
+
+      <a class="img" target="_blank" href="http://hotdot.pro/en/">
+        <img src="imgs/sites/Web-Today-03-Parallax.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>One Page Scroll</h3>
+      <p>Повсеместно используется в продуктовом вебе.</p>
+
+      <a class="img" target="_blank" href="http://www.apple.com/mac-pro/">
+        <img src="imgs/sites/Web-Today-05-Pro.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="http://www.keecker.com/">
+        <img src="imgs/sites/Web-Today-05-Keecker.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Интуитивный интерфейс</h3>
+      <p>Конкурентная среда создаёт условия для борьбы за внимание пользователя. Это обязывает сайты быть простыми,<br>понятными и удобными.</p>
+      <p class="center grey">
+        <a href="http://en.wikipedia.org/wiki/User_experience_design">User experience design (UXD or UED) is the process of enhancing customer satisfaction and loyalty by improving the usability, ease of use, and pleasure provided in the interaction between the customer and the product.</a>
+      </p>
+
+      <a class="img" target="_blank" href="http://www.apple.com/iphone-5c/">
+        <img src="imgs/sites/Web-Today-05-iPhone.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Web Fonts</h3>
+      <p>Возможность подгружать шрифты.</p>
+
+      <a class="img" target="_blank" href="http://zioneceramica.es/">
+        <img src="imgs/sites/Web-Today-06-Web-Fonts.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Инфографика</h3>
+      <p>Информация может быть наглядной.</p>
+
+      <a class="img" target="_blank" href="http://www.ustream.tv/2013">
+        <img src="imgs/sites/Web-Today-07-Infographics.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Асинхронная работа с данными</h3>
+      <p>Возможность обновлять отдельные участки сайта, подгружать необходимые файлы и делать многое другое без перезагрузки страницы.</p>
+
+      <a class="img" target="_blank" href="http://zvooq.ru/">
+        <img src="imgs/sites/Web-Today-09-Zvooq.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="http://instagram.com/zakharday">
+        <img src="imgs/sites/Web-Today-09-Instagram.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Web Socket</h3>
+      <p>Протокол полнодуплексной связи, предназначенный для обмена сообщениями между браузером и сервером в режиме реального времени.</p>
+
+      <a class="img" target="_blank" href="https://www.cubeslam.com">
+        <img src="imgs/sites/Web-Today-08-Web-Sockets.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Веб-приложения</h3>
+      <p>Многие сайты уже совсем не сайты.</p>
+
+      <a class="img" target="_blank" href="https://www.icloud.com/">
+        <img src="imgs/sites/Web-Today-10-iCloud.jpg">
+      </a>
+
+      <a class="img" target="_blank" href="https://www.facebook.com/">
+        <img src="imgs/sites/Web-Today-10-Facebook.jpg">
+      </a>
+    </section>
+
+    <section>
+      <h3>Эффекты</h3>
+      <p>Скругление углов, тени, градиенты, прозрачность, геометрические трансформации, управление временем и многое другое.</p>
+
+      <a class="img" target="_blank" href="http://zakharday.github.io/msc/lesson3/index.html">
+        <img src="imgs/sites/Web-Today-12-CSS-Effects.jpg">
+      </a>
+    </section>
+
+    <section id="responsive">
+      <h3>Адаптивный дизайн</h3>
+      <p>Возможность определять размер окна браузера и<br>применять необходимые правила отображения.</p>
+
+      <div class="img">
+        <img src="imgs/sites/Web-Today-11-Responsive-Web-Design.png">
+      </div>
+    </section>
+
+    <h2>Немножко терминов</h2>
+
+    <section>
+      <h3>Hypertext</h3>
+
+      <p>Текст, который может быть нелинейным и<br>содержать ссылки на другие тексты.</p>
+      <p class="center grey">Термин впервые упомянут Тедом Нэльсоном в 1965 году</p>
+    </section>
+
+    <section>
+      <h3>Hyperlink</h3>
+      <p>Ссылка на другую часть документа документа или на другой документ.</p>
+    </section>
+
+    <section>
+      <h3>Hypermedia</h3>
+      <p>Термин, используемый для обозначения гипертекста, который может содержать в себе ещё и графику (картинки), звуковые файлы, видео, и прочие современные штучки.</p>
+
+      <p class="center"><a href="http://www.w3.org/WhatIs.html">"Что такое гипертекст?" на сайте W3C</a></p>
+    </section>
+
+    <section>
+      <h3>HTML</h3>
+      <p>HyperText Markup Language</p>
+
+      <p class="center grey">Язык гипертекстовой разметки, описывает структуру документа</p>
+    </section>
+
+    <section>
+      <h3>HTTP</h3>
+      <p>HyperText Transfer Protocol</p>
+
+      <p class="center grey">Протокол передачи гипертекста</p>
+    </section>
+
+    <section>
+      <h3>HTTPS</h3>
+      <p>HyperText Transfer Protocol Secure</p>
+
+      <p class="center grey">Расширение протокола HTTP, поддерживающее шифрование</p>
+    </section>
+
+    <section>
+      <h3>HTML Tag</h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;html&gt;</span></span>
+      </p>
+
+      <p class="center grey">Тэг – это метка, специальный синтаксис определяющий начало или конец HTML элемента. Они могут содержать внутри текст и другие тэги, а те в свою очередь другие тэги, таким образом создавая древовидную структуру документа DOM. Тэг состоит из названия элемента, заключённого в угловые скобки. Когда браузер видит тэг он преобразует его в элемент (или объект) DOM.</p>
+
+      <h3></h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;html&gt;</span>Контент<span class="tagColor">&lt;/html&gt;</span>
+      </p>
+
+      <p class="center grey">Есть открывающие и закрывающие тэги. Для обозначения закрывающего тэга используется знак слэш перед названием элемента.</p>
+
+      <h3></h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;img src=<span class="attributeColor">"imgs/05-wireframes.gif"</span>&gt;</span>
+      </p>
+
+      <p class="center grey">Некоторые тэги не требуют закрывающего тега, внутри таких тэгов, соответственно, не может быть других тэгов. Тэги могут содержать атрибуты, описывающие свойства элемента. Атрибуты указываются внутри открывающего тэга через пробел от названия тэга. Большинство аттрибутов имеют значение, которое задается при помощи знака равно «<code>=</code>» и кавычек «<code>""</code>», внутри которых оно указывается.</p>
+
+      <div class="img" id="wireframe">
+        <img src="imgs/05-wireframes.gif">
+      </div>
+
+      <p class="center"><a href="http://dribbble.com/shots/1017934-Free-responsive-wireframes-GIF">Источник картинки</a></p>
+      </p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Добавим несколько тегов</p>
+
+      <div class="img">
+        <img src="imgs/09-hello-world-with-h-and-p.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/04-hello-world-in-browser.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>DOM</h3>
+      <p>Document Object Model</p>
+
+      <p class="center grey">Объектная модель документа,<br>создаётся после считывания структуры документа.</p>
+
+      <div class="img" id="dom">
+        <img src="imgs/06-dom-tree.gif">
+      </div>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Организуем правильный DOM</p>
+
+      <div class="img">
+        <img src="imgs/10-hello-world-with-dom.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/10-hello-world-with-dom-in-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Encoding</h3>
+      <p>Кодировка или как браузер понимает документ</p>
+
+      <p class="center grey">Если мы хотим общаться правильно, нам надо сказать браузеру на каком "языке" мы с ним будем говорить</p>
+
+      <div class="img">
+        <img src="imgs/10-hello-world-with-charset.png">
+      </div>
+    </section>
+
+    <h3>Что обозначает весь этот код?</h3>
+
+    <section>
+      <h3></h3>
+      <p>Структура документа</p>
+
+      <p>Документ всегда навинается с декларации типа документа <code class="tagColor">!</code><code class="grey">DOCTYPE html</code>.</p>
+
+      <p>В «корне» нашего «дерева» находится элемент <code class="tagColor">html</code>, его «детьми» явлются элементы <code class="tagColor">head</code> и <code class="tagColor">body</code>.</p>
+
+      <p>У элементов <code class="tagColor">head</code> и <code class="tagColor">body</code> есть «дети». Элементы <code class="tagColor">meta</code> и <code class="tagColor">title</code> являются детьми <code class="tagColor">head</code>. У элемента <code class="tagColor">meta</code> есть аттрибут <code class="tagColor">charset</code> значение которого <code class="attributeColor">utf-8</code>. Элементы <code class="tagColor">h1 h2 h3 h4 h5 h6</code> и <code class="tagColor">p</code> являются детьми <code class="tagColor">body</code>.</p>
+
+      <p>Наличие иерархии является важным качеством кода HTML — мы можем выстроить наши элементы в виде дерева.</p>
+      <p>Для описания иерархии используются слова parent <em>(родитель)</em> и child <em>(ребенок)</em>.</p>
+      <p>Элементы являющиеся детьми одного элемента называют siblings <em>(сестринскими)</em>.</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Стандартный набор элементов,<br>которые должен содержать HTML документ</p>
+
+      <div class="img">
+        <img src="imgs/13-html-structure.jpg">
+      </div>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;!DOCTYPE html&gt;</code></td>
+          <td>Строчка, которая декларирует тип документа. Она сообщает браузеру, что он работает с документом HTML. Без этой строчки, некоторые браузеры могут некорректно отоброжать полученный документ.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;html&gt;&lt;/html&gt;</code></td>
+          <td>Корень документа. Родитель всех остальных элементов.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;head&gt;&lt;/head&gt;</code></td>
+          <td>Заголовок документа. Элемент содержащий метаданные о странице. Метаданные — это информация, которая говорит машине что это за документ и как с ним работать. Такими данными например могут быть заголовок документа, который потом отображается в гугле, используемая кодировка, ссылка на картинку которую отобразит фейсбук, если запостить эту страницу.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;body&gt;&lt;/body&gt;</code></td>
+          <td>Тело документа. Элемент содержащий данные которые нужно отображать.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Описание документа</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;meta charset="utf-8"&gt;</code></td>
+          <td>Мета тэг описывающий страницу, в данном случае этот тэг сообщает браузеру, что текст в нем представлен в кодировке UTF-8 (unicode). Рекомендуется всегда использовать именно такую кодировку. Декларация кодировки (мета тег описывающий кодировку) должна быть первым элементом внутри элемента <code>head</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;title&gt;Hello World&lt;/title&gt;</code></td>
+          <td>Заголовок страницы, который виден в табе браузера и в поисковике.</td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code><br>
+            <code>&lt;h2&gt;Hello World&lt;/h2&gt;</code><br>
+            <code>&lt;h3&gt;Hello World&lt;/h3&gt;</code><br>
+            <code>&lt;h4&gt;Hello World&lt;/h4&gt;</code><br>
+            <code>&lt;h5&gt;Hello World&lt;/h5&gt;</code><br>
+            <code>&lt;h6&gt;Hello World&lt;/h6&gt;</code>
+          </td>
+          <td>Мы разметили несколько строк “Hello World” обозначив их как заголовки (heading) разного уровня.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;p&gt;Здравствуй мир&lt;/p&gt;</code></td>
+          <td>Строка обозначена как параграф текста.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>CSS</h3>
+      <p>Cascading Style Sheets</p>
+
+      <p class="center grey">Каскадные таблицы стилей, описывают визуальное представление документа</p>
+
+      <div class="img">
+        <img src="imgs/07-google-with-css.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/08-google-without-css.png">
+      </div>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Добавим несколько стилей</p>
+
+      <div class="img">
+        <img src="imgs/11-hello-world-with-css.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/11-hello-world-with-css-in-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>DIV и SPAN</h3>
+      <p>Базовые тэги организации контента</p>
+
+      <p class="center grey">В спецификации HTML описано огромное кол-во тегов. Практически каждый тег имеет свою семантику, но также есть более непосредственные теги для огранизации контента, такие как div и span.</p>
+
+      <div class="img">
+        <img src="imgs/12-hello-world-div-and-span.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/12-hello-world-div-and-span-in-crome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Форматирование</h3>
+      <p>Существуют общепринятые правила форматирования кода. Следование этим правилам сделает ваш код более читаемым и простым для понимания.</p>
+
+      <p class="center grey">Как мы уже сказали, HTML код предствляет иерархию, поэтому правила форматирования HTML помогают увидеть эту иерархию<br> работающему с кодом человеку.</p>
+
+      <div class="img">
+        <img src="imgs/14-html-formatting-1.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/14-html-formatting-2.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/14-html-formatting-3.png">
+      </div>
+
+      <p>Whitespace (пробел), tab (символ табуляции), endspace (перенос строки), они помогают кодерам удобно оформлять и читать текст.</p>
+      <p>Правильное форматирование кода позволяет избежать ошибок, таких как незакрытые тэги или кавычки аттрибутов или неправильного отношения элементов, к тому же Sublime Text покажет вам цветовым выделением всё ли правильно.</p>
+      <p>В зависимости от команды в которой вы будете работать или от вашего личного предпочтения для отступов используется либо знак tab, либо несколько пробелов, обычно от двух до четырех. Для контроля ширины отступов у всех нормальных текстовых редакторов есть специальная настройка.</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Небольшой набор правил для авторства HTML документов</p>
+      <p>Открытые тэги элементов, у которых может быть содержимое, необходимо закрывать.</p>
+      <p>Окрытые кавычки для значений аттрибутов должны быть закрыты.</p>
+      <p>За исключением текста внутри элементов, уровень иерархии отображается при помощи отступов.</p>
+
+      <div class="img">
+        <img src="imgs/15-missed-symbol.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Комментарии</h3>
+      <p>Комментарии — это пометки внутри кода,<br>которые не влияют на его отображение</p>
+
+      <p class="center grey">Это что-то вроде сообщения читающему код человеку — себе или кому-то другому. Они могут также использоваться для визуального разделения кода документа на части и для того, чтобы временно спрятать какую-то часть кода.</p>
+
+      <div class="img">
+        <img src="imgs/16-comments.png">
+      </div>
+    </section>
+
+
+
+    
+    <h2>Zen Coding</h2>
+
+    <section>
+      <h3>Что это такое и с чем его едят</h3>
+      <p></p>
+      <p>История данного термина ведет свое начало из нулевых когда один из наших преподавателей - Сергей Чикуенок, на тот момент работавший в студии Артемия Лебедева создал одноименный плагин который позволял кодерам писать меньше а делать больше.<br>
+      В данный момент поддержка плагина Zen Coding уже прекратилась и его создатель переключился на новое свое творение под названием Emmet и именно его мы и рассмотрим</p>
+      <br />
+      <br />
+
+
+      <h3>Установка</h3>
+      <p></p>
+      <p>1) Устанавливаем Sublime Text 2, если еще не сделали этого, скачав нужный дистрибутив вот тут http://www.sublimetext.com/2</p>
+      <p>2) Устанавливаем Package Control - менеджер пакетов (плагинов), вот отсюда https://sublime.wbond.net/installation#st2</p>
+      <p>3) Открываем командную панель нажатием Сtrl+Shift+P (или Command+Shift+P для OSX) и находим Package Control: Install Package. <br> Тоже самое можно сделать выбрав из меню Preferences -> Package Control</p>
+      <p>4) Теперь вы должны увидеть список пакетов доступных для установки. Нужный нам пакет называется Emmet.  Находим пакет Emmet (просто начните вводить <code>"emme..."</code> в Sublime Text 2 предусмотрен умный поиск). И нажимаем Enter чтоб установить.</p>
+      <br />
+      <br />
+
+
+      <h3>Приступим к Zen кодингу.</h3> 
+      <p>Основные его правила можно описать в нескольких пунктах:</p>
+      <p>0) Главное правило для работы всех подсказок Emmet и Sublime это необходимость сохранить файл в нужном расширении, то есть для нашего случая это будет <code>'.html'</code></p>
+      <p>1) Попробуем создать небольшое меню для этого просто наберем <code>'div#header>ul#nav>li*4'</code> и нажмем клавишу <code>TAB</code></p>
+      <p>Emmet автоматически создаст нам нужную разметку и задаст указанные атрибуты class и id</p>
+      <p>2) Попробуем выделить нашу конструкцию и нажмем сочетание <br /> <code>^W (Shift+Ctrl+G для PC)</code><br />
+      внизу редактора откроется консоль и попросит нас ввести тег которым мы хотим обернуть данный элемент, вводим <code>'html>body'</code> и у нас уже готов базовый mark-up нашей страницы.</p>
+      <p>Также мы можем просто написать в столбец <br>1<br>2<br>3<br>4<br> и выделив снова вызвать консоль оборачивания после чего указать тег списка внутри которого будут находиться элементы списка <code>'ul>li*'</code> где звездочка в данном случае укажет что для каждой строки нужно задать свой отдельный элемент и Emmet выполнит нашу просьбу </p>
+      <p>3) Также Emmet позволяет нам двигаться внутри документа более быстро с зажатой клавишей <code>alt</code></p>
+      <p>4) Это лишь малая доля того как Emmet поможет вам сохранить наше с вами время при написании кода что крайне важно ведь в сутках всего 24 часа а идей для приложений и веб-сайтов всегда будет на много лет вперед.</p>
+      <br>
+      <br>
+      <h3></h3>
+      <p>Для ознакомления с полным функционалом Emmet советую вам сходить на <br><a href="https://github.com/sergeche/emmet-sublime">страницу Github Сергея Чикуенка</a></p>
+    </section>
+
+
+
+
+    <h2>Практика</h2>
+
+    <section>
+      <h3>Давайте попробуем поупражняться в написании кода</h3>
+      <p>Сейчас мы закодим свой вариант википедии</p>
+
+      <p class="center grey"><a href="exercises/exercise1.html">Упражнение 1</a></p>
+
+      <br>
+
+      <p>Откройте, пожалуйста, страницу <a href="http://en.wikipedia.org/wiki/Rick_Ross">Рика Роса</a>.</p>
+      <p>Создайте папку <code>wikipedia</code> внутри нашей папки MCS1</p>
+      <p>Создайте новый файл в текстовом редакторе (File – New File) и сохраните его в папку wikipedia с именем <code>rick-ross.html</code> Пробелы не являются разрешенными символами для адресов страниц, поэтому мы заменяем пробелы на знак «минус». Кроме того, для адресов страниц принято использовать латинские буквы в нижнем регистре.</p>
+    </section>
+
+    <section>
+      <h3>Давайте попробуем поупражняться в написании кода</h3>
+      <p>Сейчас мы закодим свой вариант википедии</p>
+
+      <div class="img plee">
+        <img height="" src="imgs/17-example3.png">
+      </div>
+
+      <p class="center"><a href="examples/example3.html">Результат</a></p>
+    </section>
+
+    <section>
+      <h3>Новые элементы</h3>
+      <p>Разберемся что каждый из них означает</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;section&gt;&lt;/section&gt;</code></td>
+          <td>Этот элемент используется для выделения смыслового фрагмента документа, к этому же классу элементов относятся еще <strong>header</strong> и <strong>aside</strong>. Является одной из новых фич HTML5.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;strong&gt;&lt;/strong&gt;</code></td>
+          <td>Этот элемент используется для выделения слова или части текста как более важного по смыслу, по умолчанию браузер выделит такой текст жирным</td>
+        </tr>
+        <tr>
+          <td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+          <td>Unordered list – несортированный список — элемент использующийся для обозначения списков. Интересным свойством является то, что этот элемент должен всегда сопровождаться хотя бы один «ребенком», элементом списка</td>
+        </tr>
+        <tr>
+          <td><code>&lt;li&gt;&lt;/li&gt;</code></td>
+          <td>List item – элемент списка</td>
+        </tr>
+        <tr>
+          <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+          <td>Anchor – королева всех элементов, ссылка. У ссылки есть необходимый аттрибут — href (hypertext reference) — который указывает куда именно ведет ссылка. В нашем примере мы использовали <em>идентификатор фрагмента документа</em> в качестве адреса ссылки. То есть при навигации по этой ссылке браузер должен перейте к обозначенному фрагменту.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+          <td>Heading 2 – заголовок второго уровня, используется для подзаголовоков, задающих тему последующих кусков информации.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Фрагменты и ссылки</h3>
+      <p>Обратите внимание на аттрибуты секций и ссылок в разделе “Contents”</p>
+
+      <div class="img plee">
+        <img src="imgs/18-iddesc.png">
+      </div>
+
+      <p>Аттрибут <code class="tagColor">id</code> позволяет выделить фрагмент документа, т.е. при помощи этого аттрибута браузер знает к какому фрагменту нужно перейти при навигации по соответствующей ссылке.</p>
+    </section>
+
+    <section>
+      <h3>Ссылки</h3>
+      <p>Мы сделали так, чтобы браузер перешел к определенному фрагменту нашей страницы. Но главное качество гипертекста — это ссылки между разными документами</p>
+
+      <p>Создайте новый файл в папке <code>wikipedia</code> с именем <code>drake.html</code></p>
+      <p>Отройте его и скопируйте в него следующий код, но замените значение аттрибута <code>href</code> на название первого файла, а текст внутри тэга замените на такой, который подходит вашей странице по смыслу</p>
+
+      <div class="img plee">
+        <img src="imgs/19-links1.png">
+      </div>
+
+      <p>Теперь давайте вернемся к первому файлу и в нем в каком-нибудь из первых параграфов поставим ссылку на нашу новую страницу</p>
+
+      <div class="img plee">
+        <img src="imgs/19-links2.png">
+      </div>
+
+      <p>Сохраните оба документа, обновите первую страницу и попробуйте проследовать по ссылкам в обоих документах</p>
+      <br>
+      <p class="center"><a href="examples/example4.html">Результат</a></p>
+      <br>
+      <p>Класс! Мы почти закодили википедию!</p>
+    </section>
+
+    <section>
+      <h3>Картинки</h3>
+      <p>В Википедии довольно часто встречаются картинки, давайте добавим какое-нибудь изображение на нашу страницу</p>
+
+      <p>Для вставки изображений используется тэг <code>&lt;img&gt;</code>. Но просто тэга недостаточно, нам нужно уточнить что именно за изображение мы хотим увидеть. Для этого используется аттрибут <code>src</code>. Его значением будет <em>путь</em> к изображению. Понятие «путь», path по-английски, используется постоянно и является одним из важных для понимания терминов.</p>
+      <p><strong>Path</strong> — строка текста, содержащая адрес к какому-то ресурсу. Это может быть другой HTML документ, картинка или медиа-объект, вроде аудио или видео. Пока будет проще всего думать о путях как об адресах файлов на файловой системе компьютера, но относительно других файлов.</p>
+    </code></pre>
+      <p>Вот примеры относительных путей:</p>
+      <p><code>rick-ross.html</code> – путь к файлу rick-ross.html находящийся в той же папке что и ресурс, который ссылается на этот файл</p>
+      <p><code>../index.html</code> — путь к файлу index.html находящийся в родительской папке, один шаг «вверх» по деревеу файлов</p>
+      <p><code>../../typography.css</code></li> – путь к стилю typography.css на два уровня выше в файловой структуре</p>
+      <p><code>imgs/header/logo.png</code> — путь к изображению logo.png на два уровня «ниже» в файловой структуре, в папке header, в папке imgs, которая находится в одной папке с файлом, который ссылается на это изображение</p>
+    </section>
+
+    <section>
+      <p>В папке wikipedia создайте папку imgs, откройте картинку по <a href="imgs/rick-ross.jpg">ссылке</a> и сохраните ее в только что созданную папку imgs</p>
+      <p>Давайте добавим новую секцию в нашу страницу на википедии сразу за первой секцией с параграфом текста.</p>
+
+      <div class="img plee">
+        <img src="imgs/19-links3.png">
+      </div>
+
+      <p class="center"><a href="examples/example5.html">Результат</a></p>
+    </section>
+
+    <section>
+      <h3>Стили</h3>
+      <p>Есть несколько способов подключить стили к документу HTML</p>
+    </section>
+
+    <section>
+      <h3>Элемент &lt;style></h3>
+      <p>Давайте откроем код нашей страницы и добавим новый элемент <code>style</code> внутри элемента <code>head</code></p>
+
+      <div class="img plee">
+        <img src="imgs/css1.png">
+      </div>
+
+      <p class="center">Напишем наш первый CSS</p>
+
+      <div class="img plee">
+        <img src="imgs/css2.png">
+      </div>
+
+      <p class="center"><a href="examples/example6.html">Результат</a></p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Разберем написанное по строчке</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;style&gt;&lt;/style&gt;</code></td>
+          <td>это элемент, предназначенный для подключения стилей к странице. Стилевые правила, которые будут применены к элементам страницы описаны внутри этого элемента при помощи специального синтаксиса. Этот элемент обычно является <em>ребенком</em> элемента <code>head</code>.</td>
+        </tr>
+        <tr>
+          <td><code>body {color: red;}</code></td>
+          <td>Здесь body, это селектор (selector), который, как следует из названия, выбирает элементы к которым будет применены стилевые правила. Красным выделены блоки объявлений, (declaration block), которые представляют из себя фигурные кавычки и набор из одного или более правил.</td>
+        </tr>
+        <tr>
+          <td><code>a {color: black;}</code></td>
+          <td>Здесь селектором является элемент ссылки и он деклаирует цвет символов черным.</td>
+      </table>
+    </section>
+
+    <section>
+      <h3>Стили в отдельном файле</h3>
+      <p>Обычно удобнее использовать отдельный файл, для определния стилей</p>
+
+      <p>Одна из главных причин — можно подключать один и тот же файл стилей к разным страницам – что в случае с сайтами, которые часто имеют общий визуальный стиль, помогает не дублировать код.
+      <p>Кроме того, разделение ответственности (separation of concerns) при написании кода помогает в простоте поддержки проекта – изменение стилей страницы (CSS) не должно быть причиной изменения стуктуры и информации страницы (HTML).</p>
+
+      <br>
+
+      <p>Создайте новый файл и сохраните его в папке проекта с именем <code>style.css</code> (обратите внимание на расширение <code>.css</code>)</p>
+      <p>В этот файл скопируйте код из тэга <code>style</code>, который мы написали до этого</p>
+      <p>В HTML коде статьи внутри элемента <code>head</code> добавьте следующий код:<br />
+        <code>&lt;link href="style.css" rel="stylesheet"></code>
+      </p>
+      <p>Удалите элемент <code>style</code> вместе с его содержимым и обновите страницу.</p>
+      <p class="center"><a href="examples/example7.html">Результат HTML</a>, <a href="examples/style-1.css">Результат CSS</a></p>
+
+      <p class="center grey">К одному документу HTML можно подключать несколько стилей, кроме того, подключать можно файлы стилей хранящиеся на других серверах, что позволяет использовать библиотеки с предопределенными стилями или писать такие библиотеки самим.</p>
+    </section>
+
+    <section>
+      <h3>Синтаксис CSS</h3>
+      <p>У CSS довольно простой синтаксис – определения стилей страницы это набор правил, каждое правило CSS имеет две основные части — селектор и блок объявлений</p>
+
+      <div class="img plee">
+        <img src="imgs/css3.png">
+      </div>
+
+
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Селектор</p>
+
+      <div class="img plee">
+        <img src="imgs/css3.png">
+      </div>
+
+      <p><em>Селектор</em>, расположенный в левой части правила, определяет, на какие части документа распространяется правило. </p>
+      <p><em>Блок объявлений</em> располагается в правой части правила. Он помещается в фигурные скобки, и, в свою очередь, состоит из одного или более объявлений, разделённых знаком <code>;</code>. Каждое объявление представляет собой сочетание свойства CSS и значения, разделённых знаком <code>:</code>. Селекторы могут группироваться при помощи запятых. В таком случае описанные стили применяются к элементам, выбранным этими селекторами.</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Стили по-умолчанию</p>
+
+      <p>Когда мы до этого работали над нашей страницей, текст, который мы разметили разными тэгами отображался по-разному — то есть несмотря на то, что мы не подключали к странице никаких стилей, разные элементы были оформлены по-разному.</p>
+      <p>Заголовок жирный и большой, элементы списков выделены горизонтальными отступами и маркерами списка, ссылки синего цвета и подчеркнуты. Всё это стили которые браузеры применяют по умолчанию к разным элементам.</p>
+      <p>Наличие стилей по-умолчанию позволяет отображать документы к которым не подключены никакие стили так, чтобы пользователю было ясно где заголовок, а где список. Однако в случае когда вы контролируете стили своей страницы, стили по-умолчанию могут мешать оформить страницу так, как хочется.</p>
+      <p>Самой главной помехой обычно являются отступы, поэтому давайте пока отключим разные отступы определенные браузером.</p>
+      <p>Скопируйте следующий код в файл стилей и вставьте так, чтобы это были первые строчки файла стилей.</p>
+
+      <div class="img plee">
+        <img src="imgs/css4.png">
+      </div>
+
+      <p class="center"><a href="examples/example8.html">Результат</a></p>
+    </section>
+
+    <section>
+      <h3>Селекторы</h3>
+      <p>Бывают разные типы селекторов, в зависимости от того, к каким элементам они будут применены</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>h1 {...} <br /> p {...}</code></td>
+          <td>Селекторы, которые применяются ко всем элементам определенного типа</td>
+        </tr>
+
+        <tr>
+          <td><code>* {...}</code></td>
+          <td>Универсальный селектор (он выделяет все элементы)</td>
+        </tr>
+        <tr>
+          <td><code>section p {...}<br /> section li h1 {...}</code></td>
+          <td>Селекторы, применяющиеся к элементам, в зависимости от их положения в дереве элементов</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Свойства</h3>
+      <p>Пoсмотрим на несколько свойств и их возможных значений</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>color: red;</code></td>
+          <td>Определяет цвет текста. Есть несколько способов обозначения цветов:
+английским названием цвета, как в примере (red, green, yellow etc.)
+при помощи схемы RGB, где цвет выражен смешанными каналами красного, зеленого и голубого. Интенсивность цвета определенного канал выражена значениями от 0 до 255. (rgb(255, 0, 0), rgb(0, 255, 0)…)
+при помощи HEX-кода, который на самом деле является тем же RGB, но числовые значения записаны в шестнадцатиричной системе (отсюда название, hexadecimal) и перед значением стоит знак # (#ff0000, #00FF00…)
+при помощи схемы HSL — на самом деле это один из самых классных способов определения цвета, об этом подробнее можно почитать тут. (hsl(0, 100%, 50%), hsl(120, 100%, 50%)…)</td>
+        </tr>
+
+        <tr>
+          <td><code>background-color: yellow;</code></td>
+          <td>определяет цвет бэкграунда элемента</td>
+        </tr>
+        <tr>
+          <td><code>font-family: Helvetica, Arial, sans-serif;</code></td>
+          <td>определеяет набор шрифтов для отображения текста элемента. Например, font-family: Helvetica, Arial, sans-serif. Эта запись означает, что если у пользователя установлен шрифт Helvetica (как на всех маках, айфонах, айпэдах и т.д.), то текст будет отображен в этом шрифте, в противном случае будет использован Arial (установлен на всех устройствах с Windows), а если нету ни одного, ни другого, будет использоваться дефолтный системный шрифт без засечек (sans-serif). Еще примеры: font-family: Georgia, Cambria, "Times New Roman", Times, serif; – шрифты с засечками, хорошо подходящие для основной массы текста, font-family: Tahoma, Verdana, Geneva — набор шрифтов без засечек, подходящий для элементов пользовательского интерфейса</td>
+        </tr>
+
+      </table>
+    </section>
+
+    <section>
+      <h3>Сила стилей</h3>
+      <p>Сделаем из википедии что-нибудь покрасивее, не меняя кода HTML</p>
+
+      <p>Сохраните еще одну картинку в папку imgs — <a href="imgs/rick-boss.jpg">rick-boss.jpg</a></p>
+      <p>Скопируйте следующий код в файл style.css</p>
+
+      <div class="img plee">
+        <img src="imgs/css5.png">
+      </div>
+
+      <p class="center"><a href="examples/example9.html">Результат</a></p>
+    </section>
+
+    <section>
+      <h3>Рассмотрим новые свойства</h3>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>font-size: 20px;</code></td>
+          <td>Определяет размер текста элемента</td>
+        </tr>
+
+        <tr>
+          <td><code>line-height: 1.5;</code></td>
+          <td>Определяет высоту строки для текста элемента</td>
+        </tr>
+        <tr>
+          <td><code>text-align: center;</code></td>
+          <td>Определяет горизонтальное выравнивание элемента</td>
+        </tr>
+        <tr>
+          <td><code>background: url(imgs/rick-boss.jpg)</code></td>
+          <td>Определяет изображение для фона элемента</td>
+        </tr>
+
+        <tr>
+          <td><code>background-position: bottom center;</code></td>
+          <td>Определяет расположение фона элемента</td>
+        </tr>
+        <tr>
+          <td><code>background-attachment: fixed;</code></td>
+          <td>Определяет свойства фона элемента при прокрутке</td>
+        </tr>
+        <tr>
+          <td><code>text-shadow: 0 0 2px black;</code></td>
+          <td>Создает тень для текста элемента.</td>
+        </tr>
+        <tr>
+          <td><code>width: 65%;</code></td>
+          <td>Определяет ширину элемента</td>
+        </tr>
+      </table>
+
+    </section>
+
+  </article>
+
+</body>

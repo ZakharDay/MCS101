@@ -1,0 +1,27 @@
+#videoSection .blackOverlay {
+  opacity: 0.3;
+}
+
+#videoSection {
+  background: url(../images/video-background.jpg) center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+#videoSection > section {
+  position: relative;
+  z-index: 2;
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.30);
+}
+
+#videoSection video {
+  position: relative;
+  z-index: 3;
+  border-radius: 5px;
+}
