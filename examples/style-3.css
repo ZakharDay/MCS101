@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: url(../imgs/rick-boss.jpg);
+  background: url(images/rick-boss.jpg);
   background-position: bottom center;
   background-attachment: fixed;
 }
