@@ -21,7 +21,9 @@ h1, h2, h3, h3 + p {
   text-transform: uppercase;
 }
 
-h1, .fa-chevron-down, .circleLogo {
+h1,
+.fa-chevron-down,
+.circleLogo {
   text-shadow: 0 6px 15px rgba(0,0,0,.3);
 }
 
@@ -179,8 +181,6 @@ body > nav ul li a:hover {
   visibility: visible;
 }
 
-
-
 /* Works Section Flex */
 
 .works#flex {
@@ -190,7 +190,6 @@ body > nav ul li a:hover {
 .works#flex li {
   position: relative;
 }
-
 
 /* Works Section Inline */
 
