@@ -10,18 +10,19 @@ body {
   font-size: 10px;
 }
 
-body,
+/*body,
 .welcomeScreen,
 .portfolio {
   min-width: 996px;
-}
+}*/
 
-h1, h2, h3, h3 + p {
+h1, h1 + p, h2, h3, h3 + p {
   text-align: center;
   text-transform: uppercase;
 }
 
 h1,
+h1 + p,
 .fa-chevron-down,
 .circleLogo {
   text-shadow: 0 6px 15px rgba(0,0,0,.3);
@@ -33,9 +34,10 @@ h1 {
   color: #fff;
 }
 
-h1 span {
+h1 + p {
   font-size: 20px;
   color: #fff;
+  line-height: 3;
 }
 
 h2 {
@@ -112,6 +114,7 @@ body > nav ul li a:hover {
   min-height: 655px;
   background: url(images/h2.jpg);
   background-size: cover;
+  text-align: center;
 }
 
 .welcomeScreen * {
