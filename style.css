@@ -198,13 +198,8 @@ article {
 }
 
 article section {
-  width: 1000px;
+  width: 982px;
   margin: 200px auto;
-}
-
-.gist {
-  width: 996px;
-  margin: 0 auto;
 }
 
 /*section {
@@ -402,4 +397,11 @@ img.example {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+li {
+  width: 700px;
+  margin: 0 auto;
+  list-style-type: circle;
+  line-height: 40px;
 }
