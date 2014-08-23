@@ -1,0 +1,750 @@
+<!doctype html>
+<html>
+<head>
+  <title>MCS101</title>
+  <meta charset="utf-8">
+  <link href="reset.css" rel="stylesheet">
+  <link href="PTSansWeb/stylesheet.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="gist.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page">
+    <section class="wrapper">
+      <section class="container">
+        <a class="link" href="http://bit.ly/MCS101" target="_blank">bit.ly/MCS101</a>
+        <div class="line"></div>
+        <div class="basics">Основы</div>
+        <div class="html">HTML</div>
+        <div class="and">и</div>
+        <div class="css">CSS</div>
+        <div class="day">День 1</div>
+      </section>
+    </section>
+  </header>
+
+  <article>
+    <section>
+      <h3>Знакомьтесь, это Google Chrome</h3>
+      <p>Самый передовой на сегодняшний день веб-браузер</p>
+      <div class="img" id="chromeWelcome">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+      <p class="center">
+        <a href="http://fmbip.com/litmus/" target="_blank">Поддержка браузерами HTML5 и CSS3</a>
+      </p>
+    </section>
+
+    <section>
+      <h3>Chrome Dev Tools</h3>
+      <p>Лучший инструмент для отладки кода</p>
+
+      <div class="img" id="chromeOpenInspector">
+        <img src="imgs/02-chrome-inspect.png" id="chromeInspect">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+
+      <div class="img" id="chromeInspector">
+        <img src="imgs/03-chrome-dev-tools.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Установка Sublime Text и Package Control</h3>
+      <P>После установки <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>, скопируйте код для установки <a href="https://sublime.wbond.net/installation#st2" target="_blank">Package Control</a>. Нажмите Ctrl + ` или зайдите во View > Show Console для вызова консоли Sublime Text.</p>
+    </section>
+
+    <section>
+      <h3>Установка Emmet</h3>
+      <p>Для установки дополнительных плагинов в Sublime Text входим в командную сроку нажатием Cmd + Shift + P и находим<br>Package Control: Install Package.</p>
+
+      <p class="center grey">То же самое можно сделать выбрав из меню<br>Preferences -> Package Control.</p>
+
+      <p>Наните вводить название необходимого плагина и он появится в выдаче поиска. После выбора плагина нажмите Enter.</p>
+
+      <div class="img">
+        <img src="imgs/26-emmet.png">
+      </div>
+
+      <p>Главное правило для работы всех подсказок Emmet и Sublime — необходимость сохранить файл в нужном расширении,<br>то есть для нашего случая это будет <code class="tagColor">.html</code>.</p>
+
+      <p class="center grey"><a href="http://emmet.io/" target="_blank">Документаци Emmet</a></p>
+    </section>
+
+    <section>
+      <h3>Первый HTML документ</h3>
+      <p>Создайте на рабочем столе новую папку и назовите её Source,<br>в ней создайте новую папку и назовите её MCS1.</p>
+
+      <div class="img">
+        <img src="imgs/01-folders-organisation.jpg">
+      </div>
+
+      <h3></h3>
+      <p>Откройте Sublime Text, создайте файл и напишите в нём Hello World. Сохраните файл в папку MCS1 под названием index.html</p>
+
+      <script src="https://gist.github.com/ZakharDay/00383ac32228d1210189.js"></script>
+
+      <p data-width="982" data-height="268" data-theme-id="0" data-slug-hash="bICmt" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/bICmt/'>mcs101-index-v1</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <h2>Немножко терминов</h2>
+
+    <section>
+      <h3>Hypertext</h3>
+
+      <p>Текст, который может быть нелинейным и<br>содержать ссылки на другие тексты.</p>
+      <p class="center grey">Термин впервые упомянут Тедом Нэльсоном в 1965 году</p>
+    </section>
+
+    <section>
+      <h3>Hyperlink</h3>
+      <p>Ссылка на другую часть документа или на другой документ.</p>
+    </section>
+
+    <section>
+      <h3>Hypermedia</h3>
+      <p>Термин, используемый для обозначения гипертекста, который может содержать в себе ещё и графику (картинки), звуковые файлы, видео, и прочие современные штучки.</p>
+
+      <p class="center"><a href="http://www.w3.org/WhatIs.html" target="_blank">"Что такое гипертекст?" на сайте W3C</a></p>
+    </section>
+
+    <section>
+      <h3>HTML</h3>
+      <p>HyperText Markup Language</p>
+
+      <p class="center grey">Язык гипертекстовой разметки, описывает структуру документа</p>
+    </section>
+
+    <section>
+      <h3>HTTP</h3>
+      <p>HyperText Transfer Protocol</p>
+
+      <p class="center grey">Протокол передачи гипертекста</p>
+    </section>
+
+    <section>
+      <h3>HTTPS</h3>
+      <p>HyperText Transfer Protocol Secure</p>
+
+      <p class="center grey">Расширение протокола HTTP, поддерживающее шифрование</p>
+    </section>
+
+    <section>
+      <h3>HTML Tag</h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;html&gt;</span></span>
+      </p>
+
+      <p class="center grey">Тэг – это метка, специальный синтаксис определяющий начало или конец HTML элемента. Они могут содержать внутри текст и другие тэги, а те в свою очередь другие тэги, таким образом создавая древовидную структуру документа DOM. Тэг состоит из названия элемента, заключённого в угловые скобки. Когда браузер видит тэг он преобразует его в элемент (или объект) DOM.</p>
+
+      <h3></h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;html&gt;</span>Контент<span class="tagColor">&lt;/html&gt;</span>
+      </p>
+
+      <p class="center grey">Есть открывающие и закрывающие тэги. Для обозначения закрывающего тэга используется знак слэш перед названием элемента.</p>
+
+      <h3></h3>
+      <p>
+        <br>
+        <span class="tagColor">&lt;img src=<span class="attributeColor">"imgs/05-wireframes.gif"</span>&gt;</span>
+      </p>
+
+      <p class="center grey">Некоторые тэги не требуют закрывающего тега, внутри таких тэгов, соответственно, не может быть других тэгов. Тэги могут содержать атрибуты, описывающие свойства элемента. Атрибуты указываются внутри открывающего тэга через пробел от названия тэга. Большинство аттрибутов имеют значение, которое задается при помощи знака равно «<code>=</code>» и кавычек «<code>""</code>», внутри которых оно указывается.</p>
+
+      <div class="img" id="wireframe">
+        <img src="imgs/05-wireframes.gif">
+      </div>
+
+      <p class="center"><a href="http://dribbble.com/shots/1017934-Free-responsive-wireframes-GIF" target="_blank">Источник картинки</a></p>
+      </p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Добавим несколько тегов</p>
+
+      <p>Для быстрого написания открывающего и закрывающего тегов<br>напишите название тега и нажмите Tab.</p>
+
+      <p>В некоторых случаях можно удобно раздвинуть курсор на несколько строк используя сочетания Ctrl + Shift + &uarr; и Ctrl + Shift + &darr;. Дополнительный курсор можно вставить в любое место зажав Cmd.</p>
+
+      <script src="https://gist.github.com/ZakharDay/6c07f565fc2ba080218e.js"></script>
+
+      <p data-height="360" data-theme-id="0" data-slug-hash="LdwBs" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/LdwBs/'>mcs101-index-v2</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <section>
+      <h3>Encoding</h3>
+      <p>Кодировка или как браузер понимает документ.</p>
+
+      <p>Если мы хотим общаться правильно, нам надо сказать браузеру<br>на каком "языке" мы с ним будем говорить.</p>
+
+      <p>Замените любой текст в нашем документе на русский и проверьте в браузере как он выглядит.</p>
+
+      <script src="https://gist.github.com/ZakharDay/660546ae9f64ef19d014.js"></script>
+
+      <p>Необходимо указать кодировку в которой мы будем передавать данные. Основным стандартом на сегодняшний день является UTF-8 или Unicode.</p>
+
+      <script src="https://gist.github.com/ZakharDay/e09fdfb169c97feec400.js"></script>
+
+      <p data-height="354" data-theme-id="0" data-slug-hash="Hcfuq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/Hcfuq/'>mcs101-index-v4</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <section>
+      <h3>DOM</h3>
+      <p>Document Object Model</p>
+
+      <p class="center grey">Объектная модель документа,<br>создаётся после считывания структуры документа.</p>
+
+      <div class="img" id="dom">
+        <img src="imgs/06-dom-tree.gif">
+      </div>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Организуем правильный DOM</p>
+
+      <p>Для развёртывания базовой HTML структуры введите восклицательный знак и нажмите Tab.</p>
+
+      <script src="https://gist.github.com/ZakharDay/775a7450982ce8221a12.js"></script>
+
+      <p>В тег <code class="tagColor">title</code> пишется заголовок, который будет отображаться в окне браузера и в поисковике. Замените на что-то более релевантное нашей странице, например Hello World.</p>
+
+      <script src="https://gist.github.com/ZakharDay/0e5ac60640ad5592eee9.js"></script>
+
+      <p>Теперь перенесите заголовки и параграф текста внутрь тега <code class="tagColor">body</code>.<br>Для управления уровнем вложенности тега используйте сочетания<br>Cmd + [ и Cmd + ].</p>
+
+      <script src="https://gist.github.com/ZakharDay/b33136a1d73070d996d4.js"></script>
+
+      <p class="center grey">В редакторах кода предусмотрены различные цветовые схемы. Что бы код у нас с вами выглядел одинакого переключите цветовую схему<br>Preferences > Color Scheme > Twilight.</p>
+    </section>
+
+    <h3>Что обозначает весь этот код?</h3>
+
+    <section>
+      <h3></h3>
+      <p>Структура документа</p>
+
+      <p>Документ всегда навинается с декларации типа документа <code class="tagColor">!</code><code class="grey">DOCTYPE html</code>.</p>
+
+      <p>В «корне» нашего «дерева» находится элемент <code class="tagColor">html</code>, его «детьми» явлются элементы <code class="tagColor">head</code> и <code class="tagColor">body</code>.</p>
+
+      <p>У элементов <code class="tagColor">head</code> и <code class="tagColor">body</code> есть «дети». Элементы <code class="tagColor">meta</code> и <code class="tagColor">title</code> являются детьми <code class="tagColor">head</code>. У элемента <code class="tagColor">meta</code> есть аттрибут <code class="tagColor">charset</code> значение которого <code class="attributeColor">utf-8</code>. Элементы <code class="tagColor">h1 h2 h3 h4 h5 h6</code> и <code class="tagColor">p</code> являются детьми <code class="tagColor">body</code>.</p>
+
+      <p>Наличие иерархии является важным качеством кода HTML — мы можем выстроить наши элементы в виде дерева.</p>
+      <p>Для описания иерархии используются слова parent <em>(родитель)</em> и child <em>(ребенок)</em>.</p>
+      <p>Элементы являющиеся детьми одного элемента называют siblings <em>(сестринскими)</em>.</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Стандартный набор элементов,<br>которые должен содержать HTML документ</p>
+
+      <div class="img">
+        <img src="imgs/13-html-structure.jpg">
+      </div>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;!DOCTYPE html&gt;</code></td>
+          <td>Строчка, которая декларирует тип документа. Она сообщает браузеру, что он работает с документом HTML. Без этой строчки, некоторые браузеры могут некорректно отоброжать полученный документ.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;html&gt;&lt;/html&gt;</code></td>
+          <td>Корень документа. Родитель всех остальных элементов.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;head&gt;&lt;/head&gt;</code></td>
+          <td>Заголовок документа. Элемент содержащий метаданные о странице. Метаданные — это информация, которая говорит машине что это за документ и как с ним работать. Такими данными например могут быть заголовок документа, который потом отображается в гугле, используемая кодировка, ссылка на картинку которую отобразит фейсбук, если запостить эту страницу.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;body&gt;&lt;/body&gt;</code></td>
+          <td>Тело документа. Элемент содержащий данные которые нужно отображать.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Описание остальных элементов документа</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>&lt;meta charset="utf-8"&gt;</code></td>
+          <td>Мета тэг описывающий страницу, в данном случае этот тэг сообщает браузеру, что текст в нем представлен в кодировке UTF-8 (unicode). Рекомендуется всегда использовать именно такую кодировку. Декларация кодировки (мета тег описывающий кодировку) должна быть первым элементом внутри элемента <code>head</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;title&gt;Hello World&lt;/title&gt;</code></td>
+          <td>Заголовок страницы, который виден в табе браузера и в поисковике.</td>
+        </tr>
+        <tr>
+          <td>
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code><br>
+            <code>&lt;h2&gt;Hello World&lt;/h2&gt;</code><br>
+            <code>&lt;h3&gt;Hello World&lt;/h3&gt;</code><br>
+            <code>&lt;h4&gt;Hello World&lt;/h4&gt;</code><br>
+            <code>&lt;h5&gt;Hello World&lt;/h5&gt;</code><br>
+            <code>&lt;h6&gt;Hello World&lt;/h6&gt;</code>
+          </td>
+          <td>Мы разметили несколько строк “Hello World” обозначив их как заголовки (heading) разного уровня.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;p&gt;Здравствуй мир&lt;/p&gt;</code></td>
+          <td>Строка обозначена как параграф текста.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>CSS</h3>
+      <p>Cascading Style Sheets</p>
+
+      <p class="center grey">Каскадные таблицы стилей, описывают визуальное представление документа</p>
+
+      <div class="img">
+        <img src="imgs/07-google-with-css.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/08-google-without-css.png">
+      </div>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Добавим наш первый стиль</p>
+
+      <script src="https://gist.github.com/ZakharDay/b336774f986a8435bc2f.js"></script>
+
+      <p data-height="354" data-theme-id="0" data-slug-hash="nyJvL" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/nyJvL/'>mcs101-index-v8</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+
+    <section>
+      <h3>CSS Rules</h3>
+      <p>
+        <br>
+        <span class="tagColor">body</span> { <span>background-color</span>: <span>steelblue</span>; }
+      </p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>style</code></td>
+          <td>Тэг для написания стилей внутри документа.</td>
+        </tr>
+        <tr>
+          <td><code>body</code></td>
+          <td>Селектор — указатель на необходимый элемент.</td>
+        </tr>
+        <tr>
+          <td><code>background-color: steelblue;</code></td>
+          <td>Декларация или по другому правило.</td>
+        </tr>
+        <tr>
+          <td><code>background-color</code></td>
+          <td>Свойство — что мы декларируем (описываем).</td>
+        </tr>
+        <tr>
+          <td><code>steelblue</code></td>
+          <td>Значение — что мы присваиваем определённому свойству. В данном случае цвет стальной синий.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Selectors</h3>
+      <p>Бывают разные типы <a href="http://www.w3schools.com/cssref/css_selectors.asp">селекторов</a>, вот некотрые из них</p>
+
+      <script src="https://gist.github.com/ZakharDay/ec8d2250d18f1502e41c.js"></script>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>* {...}</code></td>
+          <td><a href="http://en.wikipedia.org/wiki/Wildcard_character">Wildcard</a>. Указывает на все элементы.</td>
+        </tr>
+        <tr>
+          <td><code>h1 {...}<br />p {...}</code></td>
+          <td>Указывает на тег.</td>
+        </tr>
+        <tr>
+          <td><code>h1, h2, h3, h4, h5, h6 {...}</code></td>
+          <td>Указывает на теги.</td>
+        </tr>
+        <tr>
+          <td><code>section p {...}<br /> section li h1 {...}</code></td>
+          <td>Указывает на тэг внутри другого тега.</td>
+        </tr>
+        <tr>
+          <td><code>h1 > p {...}</code></td>
+          <td>Указывает на тэг идущий внутри тэга но не глубже.</td>
+        </tr>
+        <tr>
+          <td><code>h1 + p {...}</code></td>
+          <td>Указывает на тэг идущий после тэга.</td>
+        </tr>
+        <tr>
+          <td><code>h1 ~ p {...}</code></td>
+          <td>Указывает на тэг предворённый тэгом.</td>
+        </tr>
+        <tr>
+          <td><code>.class</code></td>
+          <td>Указывает на элемент с классом.</td>
+        </tr>
+        <tr>
+          <td><code>#id</code></td>
+          <td>Указывает на элемент с идентификатором.</td>
+        </tr>
+        <tr>
+          <td><code>h1.class</code></td>
+          <td>Указывает на тэг с классом.</td>
+        </tr>
+        <tr>
+          <td><code>h1#id</code></td>
+          <td>Указывает на тэг с идентификатором.</td>
+        </tr>
+      </table>
+
+      <p class="center grey"><a href="http://www.w3.org/TR/CSS21/selector.html" target="_blank">Спецификация на английском</a><br>для более подробного изучения</p>
+    </section>
+
+    <section>
+      <h3>Color Values</h3>
+      <p></p>
+
+      <p class="center grey">Цветовая модель монитора называется абревеатурой RGB,<br>что означает Red, Green, Blue.</p>
+
+      <script src="https://gist.github.com/ZakharDay/a96b0a5a865e60745c84.js"></script>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>darkblue</code></td>
+          <td>Запись в виде <a href="http://en.wikipedia.org/wiki/Web_colors" target="_blank">HTML color</a>.</td>
+        </tr>
+        <tr>
+          <td><code>rgb(0,0,139)</code></td>
+          <td>RGB запись.</td>
+        </tr>
+        <tr>
+          <td><code>#00008B</code></td>
+          <td>Хэш запись.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Font & Text</h3>
+      <p></p>
+
+      <script src="https://gist.github.com/ZakharDay/a5819e7911c49585c018.js"></script>
+
+      <p data-height="364" data-theme-id="0" data-slug-hash="GaAfl" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/GaAfl/'>mcs101-index-v10</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+      <p class="center grey">Работа со шрифтами и текстом осуществялется<br>с помощью следующийх правил.</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>color</code></td>
+          <td>Цвет текста.</td>
+        </tr>
+        <tr>
+          <td><code>font-family</code></td>
+          <td>Определяет сам шрифт, которым будет написан текст. Запись производится через запятую. Если первый указанный шрифт доступен, он будет использован, если нет, будет выбран следующий. Если ни один из указанных шрифтов не доступен, будет использован один из доступных шрифтов указанного типа.</td>
+        </tr>
+        <tr>
+          <td><code>font-size</code></td>
+          <td>Размер шрифта.</td>
+        </tr>
+        <tr>
+          <td><code>font-weight</code></td>
+          <td>Толщина шрифта или по другому — вес.</td>
+        </tr>
+        <tr>
+          <td><code>font-style</code></td>
+          <td>Начертание, например, курсив.</td>
+        </tr>
+        <tr>
+          <td><code>text-decoration</code></td>
+          <td>Различные подчёркивания и зачёркивания текста.</td>
+        </tr>
+        <tr>
+          <td><code>text-transform</code></td>
+          <td>Трансформации текста из регистра в регистр и прочие трансформации.</td>
+        </tr>
+        <tr>
+          <td><code>line-height</code></td>
+          <td>Высота строки.</td>
+        </tr>
+        <tr>
+          <td><code>letter-spacing</code></td>
+          <td>Расстояние между букв (трекинг).</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Стили по умолчанию</h3>
+      <p>В браузеры предустановлены стили по умолчанию,<br>которые можно перезаписать</p>
+
+      <script src="https://gist.github.com/ZakharDay/ee0885cdfa1a47a81b5f.js"></script>
+
+      <p data-height="364" data-theme-id="0" data-slug-hash="EwdBi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/EwdBi/'>mcs101-index-v11</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <section>
+      <h3>Наследование</h3>
+      <p>Элемент может наследовать стиль от родителя</p>
+
+      <script src="https://gist.github.com/ZakharDay/e59f7dce06a10fdef584.js"></script>
+    </section>
+
+    <section>
+      <h3>DIV и SPAN</h3>
+      <p>Базовые тэги организации контента</p>
+
+      <p class="center grey">В спецификации HTML описано огромное кол-во тегов. Практически каждый тег имеет свою семантику, но также есть более непосредственные теги для огранизации контента, такие как div и span.</p>
+
+      <script src="https://gist.github.com/ZakharDay/894a508c124158f59afa.js"></script>
+
+      <p data-height="500" data-theme-id="0" data-slug-hash="iJGhk" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/iJGhk/'>mcs101-index-v13</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <section>
+      <h3>Новые HTML5 тэги</h3>
+      <p>В спецификацию добавлены <a href="http://www.w3schools.com/html/html5_new_elements.asp">новые теги</a>, которые делают код семантическим, т.е. привносят смысл</p>
+
+      <script src="https://gist.github.com/ZakharDay/8db95c4a8d6683e60b88.js"></script>
+
+      <h3></h3>
+      <p>Давайте пложим наши заголовки и параграф в секцию</p>
+
+      <p class="center grey">Выделите все заголовки и параграф и нажмите <code>Ctrl + W (Shift+Ctrl+G для PC)</code>. В появившейся снизу строке введите section и нажмите Enter.</p>
+
+      <script src="https://gist.github.com/ZakharDay/a93819cb7adf400da5aa.js"></script>
+    </section>
+
+    <section>
+      <h3>Box Model</h3>
+      <p>Устройство блока</p>
+
+      <div class="img" id="boxModel">
+        <img src="imgs/24-boxdim.png">
+      </div>
+
+      <h3></h3>
+      <p>Давайте попробуем эту модель в деле</p>
+
+      <script src="https://gist.github.com/ZakharDay/8895cc094af88fc12cc0.js"></script>
+
+      <p data-height="770" data-theme-id="0" data-slug-hash="upKna" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/upKna/'>mcs101-index-v15</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+      <p class="center grey"><a href="http://www.w3.org/TR/CSS2/box.html" target="_blank">Спецификация на английском</a><br>для более подробного изучения</p>
+    </section>
+
+    <section>
+      <h3>CSS Units</h3>
+      <p>Наиболее используемые в CSS величины</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>px</code></td>
+          <td>Пиксели.</td>
+        </tr>
+        <tr>
+          <td><code>%</code></td>
+          <td>Проценты. Кол-во процентов от величины того же параметра у родителя.</td>
+        </tr>
+        <tr>
+          <td><code>em</code></td>
+          <td><a href="http://en.wikipedia.org/wiki/Em_(typography)">Емы</a>. <code>1em</code> равняется размеру <code>font-size</code> в данном контексте.</td>
+        </tr>
+      </table>
+
+      <p class="center grey"><a href="http://www.w3schools.com/cssref/css_units.asp">Описание всех величин</a></p>
+    </section>
+
+    <section>
+      <h3>Shorthand Rules</h3>
+      <p>Составные правила CSS</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>border: 10px solid white;</code></td>
+          <td>Это три значения border-width, border-style и border-color. При такой записи значения пишутся через пробел.</td>
+        </tr>
+      </table>
+
+      <p class="center grey"><a href="http://www.w3schools.com/css/css_border.asp">Описание свойств border</a></p>
+    </section>
+
+    <section>
+      <h3>CSS Reset</h3>
+      <p>Сброс стилей браузера</p>
+
+      <p>В браузере предустановлены стили для различных эллементов (например <code class="tagColor">h1</code>, <code class="tagColor">h2</code>, <code class="tagColor">h3</code>, <code class="tagColor">h4</code>, <code class="tagColor">h5</code>, <code class="tagColor">h6</code>, <code class="tagColor">p</code> и пр.). Что бы эти предустановки не влияли на наш дизайн и вёрстку, мы используем различные техники сброса этих стилей.</p>
+
+      <p>Ниже приведён код Eric Meyer’s “Reset CSS” 2.0, который я рекомендую использовать.</p>
+
+      <script src="https://gist.github.com/ZakharDay/b480f3e98922222cb63e.js"></script>
+
+      <p class="grey center">Этот и другие ресеты вы можете скопировать на сайте <a href="http://cssreset.com/" target="_blank">CSS Reset</a>.</p>
+    </section>
+
+    <section>
+      <h3>HTML &lt;link&gt; Tag и Unobtrusive CSS</h3>
+      <p>Link тэг позволяет подключить дополнительный внешний контент</p>
+
+      <p>Принято разделять ответственость при написании кода (separation of concerns). Мы выносим стили в отдельные файлы и подключаем их тэгом <code>link</code>. Таким образом, упрощаем работу с проектом. На не нужно лезть в структуру HTML если нужно поправить какой-то стиль. Так же, это хорошо тем, что можно подключать один и тот же файл стилей к разным страницам, что в случае с многостраничными сайтами, которые часто имеют общий шаблон страниц, помогает не дублировать код.</p>
+
+      <p>Кроме того, можно подключать файлы стилей хранящиеся на других серверах, что позволяет использовать библиотеки с предопределенными стилями или писать такие библиотеки самим.</p>
+
+      <p>Сздайте новый файл и сохраните его в папку MCS1 под названием style.css</p>
+      <p>Вставьте в него код reset CSS</p>
+      <p>Схраните файл ещё раз (Cmd + S | Ctrl + S)</p>
+
+      <script src="https://gist.github.com/ZakharDay/b33be1dec70df1f2ca54.js"></script>
+
+      <p data-height="570" data-theme-id="0" data-slug-hash="CFrAz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/CFrAz/'>mcs101-index-v20</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    </section>
+
+    <section>
+      <h3>Комментарии</h3>
+      <p>Пометки внутри кода, которые не влияют<br>на его отображение</p>
+
+      <p class="center grey">Это что-то вроде сообщения читающему код человеку — себе или кому-то другому. Они могут также использоваться для визуального разделения кода документа на части и для того, чтобы временно спрятать какую-то часть кода.</p>
+
+      <script src="https://gist.github.com/ZakharDay/e4afc5eaf3a6148f6626.js"></script>
+
+      <p class="center grey">В разных типах документов коминтарии обозначаются по разному,<br>но эти обозначения не обязательно помнить, используйте Cmd + /<br>для комментирования и раскомментирования кода.</p>
+    </section>
+
+    <section>
+      <h3>Форматирование</h3>
+      <p>Существуют общепринятые правила форматирования кода.<br>Следование этим правилам сделает ваш код более читаемым<br>и простым для понимания.</p>
+
+      <p class="center grey">HTML код предствляет иерархию, поэтому правила форматирования HTML помогают увидеть эту иерархию работающему с кодом человеку.</p>
+
+      <script src="https://gist.github.com/ZakharDay/8895cc094af88fc12cc0.js"></script>
+      <script src="https://gist.github.com/ZakharDay/6813c45cdd1c2350eab3.js"></script>
+      <script src="https://gist.github.com/ZakharDay/fd81bf347901e0d11d5c.js"></script>
+
+      <p>Whitespace (пробел), tab (символ табуляции), endspace (перенос строки), они помогают кодерам удобно оформлять и читать текст.</p>
+
+      <p>Управлять отступами можно через меню, находящееся в нижнем правом углу.</p>
+
+      <div class="img" id="sublimeIdentation">
+        <img src="imgs/14-html-formatting-5.png" id="sublimeIdentationMenu">
+        <img src="imgs/14-html-formatting-4.png">
+      </div>
+
+      <p>Правильное форматирование кода позволяет избежать ошибок, таких как незакрытые тэги или кавычки аттрибутов или неправильного отношения элементов, к тому же Sublime Text покажет вам цветовым выделением всё ли правильно.</p>
+      <p>В зависимости от команды в которой вы будете работать или от вашего личного предпочтения для отступов используется либо знак tab, либо несколько пробелов, обычно от двух до четырех. Для контроля ширины отступов у всех нормальных текстовых редакторов есть специальная настройка.</p>
+
+      <h3></h3>
+      <p>Небольшой набор правил для авторства HTML документов</p>
+      <p>Открытые тэги элементов, у которых может быть содержимое, необходимо закрывать.</p>
+      <p>Окрытые кавычки для значений аттрибутов должны быть закрыты.</p>
+      <p>За исключением текста внутри элементов, уровень иерархии отображается при помощи отступов.</p>
+
+      <script src="https://gist.github.com/ZakharDay/50c8fa9c84a9f41e9382.js"></script>
+    </section>
+
+    <section>
+      <h3>MCS2</h3>
+      <p>Давайте закодим наш первый лендинг. Сделаем свой сайт визитку.</p>
+
+      <p class="center grey"><a href="https://cloud.mail.ru/public/93243edd5c92/MCS101-Sources.zip">Скачайте исходники</a></p>
+
+      <p>
+        <ul>
+          <li>Создайте в папке Source новую папку и назовите её MCS2.</li>
+          <li>Перетяните созданную папку на иконку Sublime Text, что бы открыть проект.</li>
+          <li>Создайте файл index.html и разверните там базовую структуру HTML.</li>
+          <li>Скопируйте из первого проекта строку, подключающую reset.</li>
+          <li>Давайте создадим папки для контента.</li>
+          <li>Создайте папку stylesheets. Так обычно называют папку с таблицами стилей.</li>
+          <li>Создайте папку images.</li>
+          <li>Поменяйте путь к стилю reset.css на stylesheets/reset.css.</li>
+          <li>Скопируйте файл reset.css из предидущего проекта в папку stylesheets в новом проекте.</li>
+          <li>Положите картинки из папки MCS2-images в папку images в нашем новом проекте.</li>
+          <li>Создайте файл style.css в папке stylesheets.</li>
+          <li>Подключите новый файл стилей таким же образом как и reset.css.</li>
+        </ul>
+
+        <h3></h3>
+        <p>Наша базовая структура проекта готова, давайте теперь договоримся о том, что мы будем делать.</p>
+
+        <p>
+          <ul>
+            <li>Давайте создадим 3 блока: header, две section и footer.</li>
+            <li>В header создадим заголовок с именем и параграф текста с кратким представлением.</li>
+            <li>Теперь в стилях давайте зададим нашему элементу header фон.</li>
+          </ul>
+        </p>
+      </p>
+    </section>
+
+    <section>
+      <h3>Path</h3>
+      <p>Адрес к какому-то ресурсу.</p>
+
+      <p class="center grey">Это может быть другой HTML документ, картинка или медиа-объект, вроде аудио или видео.</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>index.html</code></td>
+          <td>Путь к файлу <code>index.html</code> находящийся в той же папке что и ресурс, который ссылается на этот файл.</td>
+        </tr>
+        <tr>
+          <td><code>../index.html</code></td>
+          <td>Путь к файлу <code>index.html</code> находящийся в родительской папке, один шаг «вверх» в файловой структуре.</td>
+        </tr>
+        <tr>
+          <td><code>../../typography.css</code></td>
+          <td>Путь к стилю <code>typography.css</code> на два уровня выше в файловой структуре.</td>
+        </tr>
+        <tr>
+          <td><code>images/header/logo.png</code></td>
+          <td>Путь к изображению <code>logo.png</code> на два уровня «ниже» в файловой структуре, в папке <code>header</code>, в папке <code>images</code>, которая находится в одной папке с файлом, который ссылается на это изображение.</td>
+        </tr>
+      </table>      
+    </section>
+
+    <section>
+      <h3>Свойства</h3>
+      <p>Background</p>
+
+      <table class="centeredTable" id="htmlStructure">
+        <tr>
+          <td><code>background-color</code></td>
+          <td>Цвет фона.</td>
+        </tr>
+        <tr>
+          <td><code>background-image</code></td>
+          <td>Фновая картинка.</td>
+        </tr>
+        <tr>
+          <td><code>background-repeat</code></td>
+          <td>Повтор фоновой картинки.</td>
+        </tr>
+        <tr>
+          <td><code>background-attachment</code></td>
+          <td>Определяет поведение фоновой картинки.</td>
+        </tr>
+        <tr>
+          <td><code>background-position</code></td>
+          <td>Определяет прилипание картинки.</td>
+        </tr>
+        <tr>
+          <td><code>background-size</code></td>
+          <td>Определяет как картинка будет растягиваться.</td>
+        </tr>
+      </table> 
+    </section>
+  </article>
+
+  <script async src="http://codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>
