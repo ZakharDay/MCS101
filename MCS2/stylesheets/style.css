@@ -4,6 +4,7 @@
 }
 
 body {
+  min-width: 940px;
   font-family: "HelveticaNeue-Light", Arial, sans-serif;
 }
 
@@ -24,8 +25,9 @@ body > header {
 body > header .headerBg {
   height: 500px;
   background-image: url(../images/header-bg.jpg);
-  background-position: center;
+  background-position: top left;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 body > header .content {
@@ -61,8 +63,16 @@ p {
 .alignRight { margin-left: 400px; }
 
 #promoSite {
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*position: relative;*/
+  width: 486px;
+  height: 260px;
   margin-top: 80px;
-  margin-right: -130px;
+  background-image: url(../images/promo-site.jpg);
+  background-position: center;
+  /*transform: scale(.95);*/
+  /*z-index: -1;*/
 }
 
 #clock {
@@ -73,6 +83,7 @@ p {
 }
 
 .about {
+  /*position: relative;*/
   min-height: 200px;
   padding-bottom: 70px;
 }
@@ -164,7 +175,7 @@ footer section {
 }
 
 footer {
-  padding: 120px;
+  padding: 120px 0;
   border-top: 1px solid lightgrey;
   text-align: center;
 }
@@ -174,9 +185,85 @@ footer {
 
 @media all and (max-width: 400px) {
 
-  .welcomeScreen,
+  body {
+    min-width: 400px;
+  }
+
+  h2 {
+    width: 380px !important;
+    font-size: 30px;
+  }
+
+  body > header .content {
+    width: 400px;
+    padding: 10px 0;
+  }
+
+  .about,
   .portfolio {
     min-width: 400px;
+  }
+
+  .portfolio header {
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body > header .headerBg {
+    height: 130px;
+    background-attachment: initial;
+  }
+
+  body > header .content .userPic {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin-top: -26px;
+    margin-left: 20px;
+    border: 2px solid white;
+  }
+
+  body > header .content h1,
+  body > header .content p {
+    margin-left: 95px;
+  }
+
+  body > header .content h1 {
+    font-size: 26px;
+    margin-top: 4px;
+  }
+
+  body > header .content p {
+    width: 360px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 18px;
+    margin-left: 20px;
+  }
+
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about figure,
+  .about img {
+    display: none;
+  }
+
+  .about h3,
+  .about p {
+    width: 360px;
+    margin-left: 0;
+  }
+
+  .about h3 {
+
+  }
+
+  .about p {
+
   }
 
   .works figcaption {
@@ -199,6 +286,11 @@ footer {
     display: block;
     width: 100%;
     overflow: hidden;
+  }
+
+  .about,
+  footer section {
+    width: 400px;
   }
 
 }
