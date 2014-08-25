@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all .3s ease-out;
   text-decoration: none;
 }
 
@@ -17,39 +18,9 @@ h2 {
   font-size: 34px;
 }
 
-body > header {
-  padding-bottom: 4px;
-  border-bottom: 1px solid lightgrey;
-}
-
-body > header .headerBg {
-  height: 500px;
-  background-image: url(../images/header-bg.jpg);
-  background-position: top left;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-body > header .content {
-  width: 900px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-
-body > header .content .userPic {
-  position: absolute;
-  width: 148px;
-  height: 148px;
-  margin-top: -64px;
-  border: 4px solid white;
-  background-image: url(../images/userpic.jpg);
-  background-size: cover;
-  border-radius: 5px;
-}
-
-body > header .content h1,
-body > header .content p {
-  margin-left: 175px;
+h3 {
+  margin-top: 84px;
+  font-size: 24px;
 }
 
 p {
@@ -58,239 +29,208 @@ p {
   line-height: 20px;
 }
 
-.floatRight { float: right; }
-.floatLeft { float: left; }
-.alignRight { margin-left: 400px; }
+#welcome,
+#about,
+#portfolio {
+  border-bottom: 1px solid lightgrey;
+}
 
-#promoSite {
-  /*position: absolute;*/
-  /*right: 0;*/
-  /*position: relative;*/
-  width: 486px;
-  height: 260px;
-  margin-top: 80px;
-  background-image: url(../images/promo-site.jpg);
-  background-position: center;
-  /*transform: scale(.95);*/
-  /*z-index: -1;*/
+#welcome footer,
+#about header,
+#about section,
+#portfolio header {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#welcome section {
+  height: 500px;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#welcome footer {
+  min-height: 106px;
+  padding: 16px 0;
+}
+
+#welcome h1,
+#welcome p {
+  margin-left: 175px;
+}
+
+#welcome aside {
+  float: left;
+  width: 148px;
+  height: 148px;
+  margin-top: -64px;
+  background-image: url(../images/userpic.jpg);
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 5px;
+}
+
+#about {
+  padding-bottom: 100px;
+}
+
+#promo {
+  float: right;
+  /*margin-right: -80px;*/
 }
 
 #clock {
+  float: left;
   width: 340px;
   height: 340px;
-  margin-top: 80px;
-  margin-left: -40px;
+  margin: 80px 100px 0 -60px;
 }
 
-.about {
-  /*position: relative;*/
-  min-height: 200px;
+#portfolio header {
   padding-bottom: 70px;
-}
-
-.about h2,
-.about p {
-  width: 470px;
-}
-
-.about h3 {
-  font-size: 24px;
-  margin-top: 84px;
-}
-
-.about p {
-  margin-top: 10px;
-}
-
-.about,
-footer section {
-  width: 900px;
-  margin: 0 auto;
-}
-
-/*  Portfolio Section  */
-
-.portfolio {
-  width: 100%;
-  border-top: 1px solid lightgrey;
-}
-
-.portfolio header {
-  width: 900px;
-  padding: 40px 0 100px 0;
-  margin: 0 auto;
-}
-
-.portfolio h3 {
-  font-size: 16px;
-}
-
-.portfolio h3 + p {
-  font-size: 12px;
 }
 
 .works {
   font-size: 0;
 }
 
-.works li {
-  position: relative;
+.works img {
+  width: 100%;
+}
+
+.works#inline li {
+  display: inline-block;
+  width: 33.3333%;
+}
+
+.works#flex {
+  display: flex;
 }
 
 .works li:hover figcaption {
-  margin-top: -80px;
+  margin-top: -86px;
   opacity: 1;
 }
 
-.works img {
-  width: 100%;
-  height: 100%;
+.works li {
+  position: relative;
+  overflow: hidden;
 }
 
 .works figcaption {
   position: absolute;
   width: 100%;
   padding: 20px;
-  font-size: 10px;
-  background: rgba(0,0,0,.8);
-  opacity: 0;
-  transition: all .3s ease-out;
   color: white;
+  background: rgba(0,0,0,.6);
+  opacity: 0;
 }
 
-
-/*  Flex List  */
-
-.works#flex {
-  display: flex;
+.works h3 {
+  margin-top: 0;
+  font-size: 16px;
 }
 
-
-/*  Inline List  */
-
-.works#inline li {
-  display: inline-block;
-  width: 33.3333%;
-  overflow: hidden;
+.works p {
+  font-size: 12px;
 }
 
-footer {
-  padding: 120px 0;
-  border-top: 1px solid lightgrey;
+body > footer {
+  padding: 100px 0;
   text-align: center;
 }
 
+body > footer a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  border-radius: 18px;
+}
 
-/*  Media Queries  */
+.facebook {
+  background-image: url(../images/social-facebook.png);
+}
+
+.instagram {
+  background-image: url(../images/social-instagram.png);
+}
+
+.vk {
+  background-image: url(../images/social-vk.png);
+}
+
+
+
+
+
 
 @media all and (max-width: 400px) {
 
-  body {
+  body,
+  #welcome,
+  #about,
+  #portfolio,
+  body > footer {
+    width: 400px;
     min-width: 400px;
   }
 
-  h2 {
-    width: 380px !important;
-    font-size: 30px;
+  #welcome footer,
+  #about header,
+  #about section,
+  #portfolio header {
+    width: 360px;
   }
 
-  body > header .content {
-    width: 400px;
-    padding: 10px 0;
-  }
-
-  .about,
-  .portfolio {
-    min-width: 400px;
-  }
-
-  .portfolio header {
-    width: 400px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  body > header .headerBg {
+  #welcome section {
     height: 130px;
-    background-attachment: initial;
+    background-attachment: scroll;
   }
 
-  body > header .content .userPic {
-    position: absolute;
+  #welcome aside {
     width: 64px;
     height: 64px;
     margin-top: -26px;
-    margin-left: 20px;
     border: 2px solid white;
   }
 
-  body > header .content h1,
-  body > header .content p {
-    margin-left: 95px;
+  #welcome h1 {
+    margin-top: 8px;
+    margin-left: 75px;
   }
 
-  body > header .content h1 {
-    font-size: 26px;
-    margin-top: 4px;
-  }
-
-  body > header .content p {
-    width: 360px;
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 18px;
-    margin-left: 20px;
-  }
-
-  .about {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .about figure,
-  .about img {
-    display: none;
-  }
-
-  .about h3,
-  .about p {
-    width: 360px;
+  #welcome p {
     margin-left: 0;
   }
 
-  .about h3 {
-
+  #promo {
+    float: none;
+    width: 100%;
+    margin-top: 70px;
   }
 
-  .about p {
+  #clock {
+    float: none;
+    display: block;
+    width: 260px;
+    height: 260px;
+    margin: 80px auto 0;
+  }
 
+  .works li {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .works#flex {
+    display: block;
   }
 
   .works figcaption {
-    margin-top: -80px;
+    margin-top: -86px;
     opacity: 1;
-  }
-
-
-  /*  Flex List  */
-
-  .works#flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-
-  /*  Inline List  */
-
-  .works#inline li {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .about,
-  footer section {
-    width: 400px;
   }
 
 }
