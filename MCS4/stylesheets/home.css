@@ -1,0 +1,126 @@
+.oceanOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/home-background-optimized.jpg) bottom;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+#homeSection {
+  position: relative;
+  z-index: 12;
+  background: black;
+}
+
+#homeSection .flex {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  text-align: center;
+}
+
+#homeSection header,
+#homeSection ul,
+#homeSection .flex > section,
+#homeSection footer {
+  display: block;
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+
+/*#homeSection header {
+  padding-top: 30px;
+}*/
+
+#homeSection header h1 {
+  font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+  font-size: 68px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#homeSection ul {
+  display: flex;
+  justify-content: center;
+}
+
+#homeSection li {
+  width: 228px;
+  height: 228px;
+  margin: 0 15px;
+  overflow: none;
+}
+
+#homeSection li a {
+  position: absolute;
+  display: block;
+  z-index: 14;
+  width: 208px;
+  height: 208px;
+  background-size: cover;
+  border: 10px solid white;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.30);
+  text-decoration: none;
+}
+
+#homeSection ul li:nth-child(odd) a {
+  /*transform: rotate(5deg);*/
+  -webkit-transform: rotate(-5deg);
+}
+
+#homeSection ul li:nth-child(even) a {
+  /*transform: rotate(5deg);*/
+  -webkit-transform: rotate(5deg);
+}
+
+a#food { background: url(../images/home-01-food.jpg) center center; }
+a#legs { background: url(../images/home-02-legs.jpg) center center; }
+a#cats { background: url(../images/home-03-cats.jpg) center center; }
+a#selfies { background: url(../images/home-04-selfies.jpg) center center; }
+
+#homeSection li:hover a {
+  width: 300px;
+  height: 300px;
+  margin: -46px 0 0 -46px;
+  z-index: 15;
+  border-top: 14px solid white;
+  border-right: 14px solid white;
+  border-bottom: 66px solid white;
+  border-left: 14px solid white;
+  box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, 0.30);
+  -webkit-transform: rotate(0deg) !important;
+}
+
+#homeSection li h2 {
+  position: relative;
+  font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: margin-top 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+#homeSection li:hover h2 {
+  margin-top: 318px;
+  visibility: visible;
+  opacity: 1;
+}
+
+#homeSection footer a {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
