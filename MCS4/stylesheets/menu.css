@@ -17,6 +17,10 @@ menu:hover {
   line-height: 50px;
 }
 
+#more {
+  float: right;
+}
+
 menu ul {
   margin: 0 auto;
 }
