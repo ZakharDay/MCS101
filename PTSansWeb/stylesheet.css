@@ -1,6 +1,11 @@
-@font-face {font-family: 'PT Sans';
+@font-face {
+  font-family: 'PT Sans';
   src: url('pts55f_w.eot');
-  src: local('PT Sans'), url('PTS55F_W.woff') format('woff'),url('PTS55F_W.ttf') format('truetype'), url('PTS55F_W.svg#PTSans-Regular') format('svg');}
+  src: local('PT Sans'),
+  url('PTS55F_W.woff') format('woff'),
+  url('PTS55F_W.ttf') format('truetype'), 
+  url('PTS55F_W.svg#PTSans-Regular') format('svg');
+}
 
 @font-face {font-family: 'PT Sans';
   font-style: italic;
