@@ -18,43 +18,17 @@
         <div class="html">HTML</div>
         <div class="and">и</div>
         <div class="css">CSS</div>
-        <div class="day">День 1</div>
       </section>
     </section>
   </header>
 
   <article>
-    <section>
-      <h3>Знакомьтесь, это Google Chrome</h3>
-      <p>Самый передовой на сегодняшний день веб-браузер</p>
-      <div class="img" id="chromeWelcome">
-        <img src="imgs/01-chrome-welcome.png">
-      </div>
-      <p class="center">
-        <a href="http://fmbip.com/litmus/" target="_blank">Поддержка браузерами HTML5 и CSS3</a>
-      </p>
-    </section>
-
-    <section>
-      <h3>Chrome Dev Tools</h3>
-      <p>Лучший инструмент для отладки кода</p>
-
-      <div class="img" id="chromeOpenInspector">
-        <img src="imgs/02-chrome-inspect.png" id="chromeInspect">
-        <img src="imgs/01-chrome-welcome.png">
-      </div>
-
-      <div class="img" id="chromeInspector">
-        <img src="imgs/03-chrome-dev-tools.png">
-      </div>
-    </section>
-
-    <section>
+    <section id="install-sublime">
       <h3>Установка Sublime Text и Package Control</h3>
       <P>После установки <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text 2</a>, скопируйте код для установки <a href="https://sublime.wbond.net/installation#st2" target="_blank">Package Control</a>. Нажмите Ctrl + ` или зайдите во View > Show Console для вызова консоли Sublime Text.</p>
     </section>
 
-    <section>
+    <section id="install-emmet">
       <h3>Установка Emmet</h3>
       <p>Для установки дополнительных плагинов в Sublime Text входим в командную сроку нажатием Cmd + Shift + P и находим<br>Package Control: Install Package.</p>
 
@@ -71,7 +45,32 @@
       <p class="center grey"><a href="http://emmet.io/" target="_blank">Документаци Emmet</a></p>
     </section>
 
-    <section>
+    <section id="say-hi-to-chrome">
+      <h3>Знакомьтесь, это Google Chrome</h3>
+      <p>Самый передовой на сегодняшний день веб-браузер</p>
+      <div class="img" id="chromeWelcome">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+      <p class="center">
+        <a href="http://fmbip.com/litmus/" target="_blank">Поддержка браузерами HTML5 и CSS3</a>
+      </p>
+    </section>
+
+    <section id="chrome-dev-tools">
+      <h3>Chrome Dev Tools</h3>
+      <p>Лучший инструмент для отладки кода</p>
+
+      <div class="img" id="chromeOpenInspector">
+        <img src="imgs/02-chrome-inspect.png" id="chromeInspect">
+        <img src="imgs/01-chrome-welcome.png">
+      </div>
+
+      <div class="img" id="chromeInspector">
+        <img src="imgs/03-chrome-dev-tools.png">
+      </div>
+    </section>
+
+    <section id="first-html-doc">
       <h3>Первый HTML документ</h3>
       <p>Создайте на рабочем столе новую папку и назовите её Source,<br>в ней создайте новую папку и назовите её MCS1.</p>
 
@@ -87,7 +86,9 @@
       <p data-width="982" data-height="268" data-theme-id="0" data-slug-hash="bICmt" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/bICmt/'>mcs101-index-v1</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     </section>
 
-    <h2>Немножко терминов</h2>
+    <section id="dictionary">
+      <h2>Немножко терминов</h2>
+    </section>
 
     <section>
       <h3>Hypertext</h3>
@@ -485,12 +486,21 @@
     </section>
 
     <section>
-      <h3>Стили по умолчанию</h3>
+      <h3>CSS Reset</h3>
       <p>В браузеры предустановлены стили по умолчанию,<br>которые можно перезаписать</p>
 
       <script src="https://gist.github.com/ZakharDay/ee0885cdfa1a47a81b5f.js"></script>
-
       <p data-height="364" data-theme-id="0" data-slug-hash="EwdBi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/ZakharDay/pen/EwdBi/'>mcs101-index-v11</a> by ZakharDay (<a href='http://codepen.io/ZakharDay'>@ZakharDay</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+      <p>
+        В браузере предустановлены стили для различных эллементов (например <code class="tagColor">h1</code>, <code class="tagColor">h2</code>, <code class="tagColor">h3</code>, <code class="tagColor">h4</code>, <code class="tagColor">h5</code>, <code class="tagColor">h6</code>, <code class="tagColor">p</code> и пр.). Что бы эти предустановки не влияли на наш дизайн и вёрстку, мы используем различные техники сброса этих стилей.
+      </p>
+
+      <p>Ниже приведён код Eric Meyer’s “Reset CSS” 2.0, который я рекомендую использовать.</p>
+
+      <script src="https://gist.github.com/ZakharDay/b480f3e98922222cb63e.js"></script>
+
+      <p class="grey center">Этот и другие ресеты вы можете скопировать на сайте <a href="http://cssreset.com/" target="_blank">CSS Reset</a>.</p>
     </section>
 
     <section>
@@ -577,19 +587,6 @@
       </table>
 
       <p class="center grey"><a href="http://www.w3schools.com/css/css_border.asp">Описание свойств border</a></p>
-    </section>
-
-    <section>
-      <h3>CSS Reset</h3>
-      <p>Сброс стилей браузера</p>
-
-      <p>В браузере предустановлены стили для различных эллементов (например <code class="tagColor">h1</code>, <code class="tagColor">h2</code>, <code class="tagColor">h3</code>, <code class="tagColor">h4</code>, <code class="tagColor">h5</code>, <code class="tagColor">h6</code>, <code class="tagColor">p</code> и пр.). Что бы эти предустановки не влияли на наш дизайн и вёрстку, мы используем различные техники сброса этих стилей.</p>
-
-      <p>Ниже приведён код Eric Meyer’s “Reset CSS” 2.0, который я рекомендую использовать.</p>
-
-      <script src="https://gist.github.com/ZakharDay/b480f3e98922222cb63e.js"></script>
-
-      <p class="grey center">Этот и другие ресеты вы можете скопировать на сайте <a href="http://cssreset.com/" target="_blank">CSS Reset</a>.</p>
     </section>
 
     <section>
@@ -709,7 +706,7 @@
           <td><code>images/header/logo.png</code></td>
           <td>Путь к изображению <code>logo.png</code> на два уровня «ниже» в файловой структуре, в папке <code>header</code>, в папке <code>images</code>, которая находится в одной папке с файлом, который ссылается на это изображение.</td>
         </tr>
-      </table>      
+      </table>
     </section>
 
     <section>
@@ -741,8 +738,365 @@
           <td><code>background-size</code></td>
           <td>Определяет как картинка будет растягиваться.</td>
         </tr>
-      </table> 
+      </table>
     </section>
+
+    <section>
+      <h2>Как всё работает?</h2>
+    </section>
+
+    <section>
+      <h3>Flow</h3>
+      <p>Поток</p>
+
+      <p>Поток — это порядок в котором элементы отображаются и распологаются внутри страницы.</p>
+
+      <p>Существует несколько типов элементов и сейчас мы поговорим о двух самых распространенных: inline элементы (строчные) и block элементы (блоки).</p>
+
+      <p>Block — это элементы которые можно представить в виде контейнеров и они разделяют документ на какие-то части. Блоками по-умолчанию будут не только элементы <code class="tagColor">section</code> и <code class="tagColor">header</code> о которых мы говорили, но и <code class="tagColor">p</code>, и <code class="tagColor">h1</code>. Блоки обычно являются «родительскими» для инлайн-элементов.</p>
+
+      <p>Inline — как следует из названия, это элементы которые находятся «в строке» и о них можно думать как о «словах» в предложении.</p>
+
+      <p>По умолчанию, в потоке блоки занимают всю ширину родительского элемента (если элемент является дочерним элементу <code  class="tagColor">body</code> то он займет ширину окна) и идут один за одним сверху вниз в том же порядке, в котором они появляются в коде HTML.</p>
+
+      <p>Строчные элементы в потоке ведут себя как слова, то есть занимают только ширину своего содержимого и следуют один за одним слева направо.</p>
+    </section>
+
+    <section>
+      <h3>Блоки</h3>
+      <p></p>
+
+      <div class="img">
+        <img src="imgs/21-block-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/21-block-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Инлайны</h3>
+      <p></p>
+
+      <div class="img">
+        <img src="imgs/22-inline-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/22-inline-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <p>Важно! Мы можем задавать размеры (свойства height и width) только блокам — на инлайн элементы размеры не действуют, их размер зависит от их текстового содержимого.</p>
+    </section>
+
+    <section>
+      <h3>Свойство display</h3>
+      <p></p>
+
+      <p>Несмотря на то, что у всех элементов имеется принадлежность к блокам или инлайнам по-умолчанию, мы можем контролировать то, как они будут вести себя при помощи CSS свойства <code>display</code>.</p>
+
+      <div class="img">
+        <img src="imgs/23-display-showcase.png">
+      </div>
+
+      <div class="img">
+        <img src="imgs/23-display-showcase-chrome.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Свойство position</h3>
+      <p>Позиционирование элементов</p>
+
+      <p class="center grey">Существует несколько значений свойства position</p>
+
+      <table class="centeredTable">
+        <tr>
+          <td><code>absolute</code></td>
+          <td>Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента.</td>
+        </tr>
+        <tr>
+          <td><code>fixed</code></td>
+          <td>По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элемента.</td>
+        </tr>
+        <tr>
+          <td><code>relative</code></td>
+          <td>Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</td>
+        </tr>
+        <tr>
+          <td><code>static</code></td>
+          <td>Значение по умолчанию. Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.</td>
+        </tr>
+        <tr>
+          <td><code>inherit</code></td>
+          <td>Наследует значение родителя.</td>
+        </tr>
+      </table>
+
+      <p class="center grey">Источник <a href="http://htmlbook.ru/css/position" target="_blank">HTML Book</a></p>
+    </section>
+
+    <section>
+      <h3>Responsive & Adaptive</h3>
+
+      <p>Техники создания веб-сайтов под разные размеры экранов</p>
+
+      <p>Responsive Web Design или RWD — это концепция "резиновых" сайтов. Сайтов, которые могут растягиваться в зависимости от размера экрана.</p>
+
+      <p>Adaptive Web Design или AWD — это концепция предопределённых дизайнов сайта под различные размеры экранов.</p>
+
+      <p>В идеале, нужно использовать обе техники одновременно. Нужно иметь несколько макетов сайта под разные экраны, а также продумывать состояния "между" одним размером экрана и другим.</p>
+
+      <p class="center"><a href="http://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/">What is the difference between responsive vs. adaptive web design?</a></p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Минимальный и максимальный размер элемента</p>
+
+      <table class="centeredTable" id="minMaxSize">
+        <tr>
+          <td><code>min-width</code></td>
+          <td>Минимальная ширина эллемента</td>
+        </tr>
+        <tr>
+          <td><code>max-width</code></td>
+          <td>Максимальная ширина эллемента</td>
+        </tr>
+        <tr>
+          <td><code>min-height</code></td>
+          <td>Минимальная высота эллемента</td>
+        </tr>
+        <tr>
+          <td><code>max-height</code></td>
+          <td>Максимальная высота эллемента</td>
+        </tr>
+      </table>
+
+      <p class="grey center">Также, эти правила очень полезны в случае <a href="http://davidwalsh.name/textarea-resize">изменения размера textarea</a>, о чём мы говорили выше.</p>
+    </section>
+
+    <section>
+      <h3>Позиционирование с помощью Flexbox</h3>
+      <p>Разберитесь однажды, получайте удовольствие</p>
+
+      <p class="center"><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/"  target="_blank">A Complete Guide to Flexbox</a></p>
+    </section>
+
+    <section>
+      <h3>Media Queries</h3>
+      <p>В зависимости от размера экрана можно подключать<br>и/или использовать другие стили и правила.</p>
+
+      <p class="grey center"><a href="http://css-tricks.com/css-media-queries/">CSS Media Queries & Using Available Space</a></p>
+    </section>
+
+    <section>
+      <h2>Современный WEB</h2>
+    </section>
+
+    <section>
+      <h3>HTML5 & CSS3</h3>
+      <p>Новые возможности современного веба</p>
+
+      <p class="center grey">Это последние общепринятые версии спецификаций, которые дают нам огромные возможности по работе с контентом и пользователем. Прямо в HTML документе можно проиграть аудио и видео, рисовать и анимировать 2D и 3D на специальном слое Canvas, хранить дополнительную информацию и контент у пользователя, работать с векторной графикой (SVG), отправлять в браузер оповещения о произошедших на сервере событиях, вычислять местонахождение пользователя, объяснять поисковику какого рода контент он видит и что этот контент обозначает.</p>
+    </section>
+
+    <section>
+      <h3>Video & Audio Tags</h3>
+      <p>Мультимедиа без боли</p>
+
+      <p>Мультимедиа эллементы добавляются на страничку элементарно, просто копируйте готовый код.</p>
+
+      <p class="center"><a href="http://www.w3schools.com/html/html5_video.asp" target="_blank">Video</a> & <a href="http://www.w3schools.com/html/html5_audio.asp">Audio</a></p>
+
+      <br>
+
+      <p>Основная проблема может быть с форматами файлов, так как разные браузеры понимают разные форматы.</p>
+      <p class="center"><a href="http://fmbip.com/litmus/#html5-graphics-embedded-content" target="_blank">Таблица поддержки форматов</a></p>
+    </section>
+
+    <section>
+      <h3>Шрифты</h3>
+      <p></p>
+
+      <p class="center grey">Сервис <a href="http://www.google.com/fonts" target="blank">Google Fonts</a> даёт нам возможность возможность<br>очень просто вставить шрифт в наш сайт</p>
+    </section>
+
+    <section>
+      <h3>Иконки</h3>
+      <p></p>
+
+      <p class="center grey">Замечательный шрифт <a href="http://fortawesome.github.io/Font-Awesome/get-started/" target="_blank">Font Awesome</a> позволяет очень быстро и просто использовать иконки на нашем сайте</p>
+    </section>
+
+    <section>
+      <h3></h3>
+      <p>Результат</p>
+
+      <div class="img">
+        <img src="imgs/20-fonts-icons.png">
+      </div>
+    </section>
+
+    <section>
+      <h3>Сетка</h3>
+      <p>У вас должна быть продумана система</p>
+
+      <p class="grey center">Мы вешаем на эллементы классы в которых описаны<br>необходимые нам размеры.</p>
+      <p class="grey center"><a href="https://gist.github.com/ZakharDay/921f84e960751749e1d6"  target="_blank">Сетка</a></p>
+    </section>
+
+    <section>
+      <h3>Структура проекта</h3>
+      <p>Как организовать свой код</p>
+
+      <p class="center">Я предлагаю следующую логику</p>
+
+      <table class="centeredTable">
+        <tr>
+          <td><code>reset.css</code></td>
+          <td>Сбрасывает браузер</td>
+        </tr>
+        <tr>
+          <td><code>basics.css</code></td>
+          <td>Настраевает базовые элементы</td>
+        </tr>
+        <tr>
+          <td><code>layout.css</code></td>
+          <td>Описывает стилистику главных элементов шаблона</td>
+        </tr>
+        <tr>
+          <td><code>content.css</code></td>
+          <td>Описывает контент</td>
+        </tr>
+      </table>
+
+      <div class="img">
+        <img src="examples-new/project-structure.png">
+      </div>
+
+      <p>Контент — это абстрактное название, называйте свои описания контента понятными для вас названиями. В нашем дизайне у нас есть фото и видео секции, которые логически отличаются, но в целом могут быть похожи. Отсюда можно выделить структуру: <span class="attributeColor">photo-section.css</span>, <span class="attributeColor">video-sections.css</span>, в которых можно описывать соответствующие свойства. Какие-то смежные свойства можно описывать в <span class="attributeColor">layout.css</span>, а какие-то фундаментальные свойства в <span class="attributeColor">basics.css</span>.</p>
+
+      <p>Хороший принцип для любого кодера — не повторять, а переиспользовать код или по другому <a href="http://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself"  target="_blank">DRY</a>.</p>
+    </section>
+
+    <section>
+      <h3>Пользуйтесь генераторами</h3>
+      <p>Как можно чаще</p>
+
+      <p class="center"><a href="http://css3gen.com"  target="_blank">Easy CSS3 Generator</a></p>
+      <p class="center"><a href="http://css3maker.com"  target="_blank">CSS3 Maker</a></p>
+      <p class="center"><a href="http://border-radius.com/"  target="_blank">Border Radius Generator</a></p>
+      <p class="center"><a href="http://www.colorzilla.com/gradient-editor/"  target="_blank">Gradient Generator</a></p>
+    </section>
+
+    <section>
+      <h3>Параметр overflow</h3>
+      <p>Как положить в блок больше чем он может в себя вместить</p>
+
+      <p class="center">Свойства</p>
+
+      <table class="centeredTable" id="overflowProperty">
+        <tr>
+          <td><code>overflow</code></td>
+          <td>Определяет что будет если контент внутри бока по размеру будет больше чем сам блок</td>
+        </tr>
+        <tr>
+          <td><code>overflow-x</code></td>
+          <td>Определяет что будет если контент внутри бока по ширине будет больше чем сам блок</td>
+        </tr>
+        <tr>
+          <td><code>overflow-y</code></td>
+          <td>Определяет что будет если контент внутри бока по высоте будет больше чем сам блок</td>
+        </tr>
+      </table>
+
+      <p class="center">Значения</p>
+
+      <table class="centeredTable" id="overflowProperty">
+        <tr>
+          <td><code>visible</code></td>
+          <td>Покажет всё, что выходит за границы элемента</td>
+        </tr>
+        <tr>
+          <td><code>hidden</code></td>
+          <td>Спрячем всё, что выходит за границы элемента</td>
+        </tr>
+        <tr>
+          <td><code>scroll</code></td>
+          <td>Появится скроллинг (полоса прокрутки). В зависимости от указанного свойства и размера внутреннего блока, может быть скролл по горизонтали, по вертикали или оба сразу.</td>
+        </tr>
+        <tr>
+          <td><code>auto</code></td>
+          <td>Скроллы будут показыватся при неободимости</td>
+        </tr>
+        <tr>
+          <td><code>initial</code></td>
+          <td>Сбрасывает значение на значение по умолчанию</td>
+        </tr>
+        <tr>
+          <td><code>inherit</code></td>
+          <td>Будет насдедовать значение родителя</td>
+        </tr>
+      </table>
+
+      <p class="grey center"><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp" target="_blank">CSS Overflow</a> на русском</p>
+      <p class="grey center">Чуть более правильное описание на английском<br><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp" target="_blank">CSS Overflow Property</a></p>
+    </section>
+
+    <section>
+      <h3>Forms, Inputs, Textareas</h3>
+      <p>Формы на сайте</p>
+
+      <p>Вообще, формы сложная штука, потому что вы передаёте через интернет какие-то данные и иногда эти данные являются конфиденциальной информацией, но это вопрос к back-end разработчикам и специалистам по защите информации.</p>
+
+      <p>Что касается стилизации, в целом, всё то же самое что и с обычными блоками. Есть два правила, которые вам могут помочь.</p>
+
+      <p>
+        <code>
+          <span class="tagColor">textarea</span>, <span class="tagColor">input</span> { <span class="propertyColor">outline</span>: <span class="valueColor">none</span>; }
+        </code>
+        <br>
+        <code>
+          <span class="tagColor">textarea</span> { <span class="propertyColor">resize</span>: <span class="valueColor">none</span>; }
+        </code>
+      </p>
+
+      <br>
+
+      <p class="grey center"><a href="http://htmlbook.ru/css/outline" target="_blank">CSS Outlines</a></p>
+      <p class="grey center"><a href="http://htmlbook.ru/css/resize" target="_blank">CSS3 resize Property</a></p>
+    </section>
+
+    <section>
+      <h3>Классные инструменты</h3>
+      <p></p>
+
+      <p><a href="http://cyberduck.io/" target="_blank">Cyberduck</a> — FTP клиент</p>
+      <p><a href="http://codepen.io/" target="_blank">Codepen</a> — онлайн инструмент для написания, проверки и шэринга front-end кода</p>
+      <p><a href="http://jsfiddle.net/" target="_blank">JSFiddle</a> — ещё один хороший инструмент для шеринга кода</p>
+      <p><a href="https://github.com/" target="_blank">GitHub</a> — сервис для хранения <code>.git</code> репозиториев</p>
+      <p><a href="https://gist.github.com/" target="_blank">GitHub Gist</a> — сервис от GitHub чтобы быстро делиться кодом сохраняя форматирование</p>
+      <p><a href="https://goo.gl/wdpcFv" target="_blank">1GB</a> — русский хостинг, удобен в использовании</p>
+      <p><a href="https://goo.gl/Qyymcj" target="_blank">DigitalOcean</a> — заграничный хостинг для более серьёзных проектов, требуется настройка сервера</p>
+      <p><a href="http://www.hetzner.de/en/" target="_blank">Hetzner</a> — не дорогой хостинг для больших, сильно нагруженных проектов с огромной аудиторией, может понадобится, если ваш стартап станет супер популярным</p>
+    </section>
+
+    <section>
+      <h3>Давайте дружить</h3>
+      <br><br>
+
+      <p class="center">Захар День<br><a href="mailto:zakhar.day@gmail.com">zakhar.day@gmail.com</a>, <a href="http://facebook.com/zakhar.day" target="_blank">Facebook</a>, <a href="http://zakharday.com" target="_blank">сайт</a></p>
+    </section>
+
+    <section>
+      <h2>Спасибо за внимание</h2>
+      <h3>Приходите ещё</h3>
+    </section>
+
   </article>
 
   <script async src="http://codepen.io/assets/embed/ei.js"></script>
